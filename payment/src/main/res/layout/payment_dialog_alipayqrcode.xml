@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qrcode_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e60e1215">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_480"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/payment_background_qr_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_44"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_qrcode_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="1"
+                android:text="订单合计 ¥ 99.99"
+                android:textColor="@color/payment_color_black"
+                android:textSize="@dimen/dp_36" />
+
+            <TextView
+                android:id="@+id/tv_qrcode_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="请使用【支付宝】完成付款"
+                android:textAlignment="center"
+                android:textColor="@color/payment_color_black"
+                android:textSize="@dimen/dp_26" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_18"
+            android:background="#00000000"
+            android:layerType="software"
+            android:src="@drawable/payment_dashline" />
+
+        <TextView
+            android:id="@+id/message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:text="手机操作太麻烦？快捷支付帮到您"
+            android:textAlignment="center"
+            android:textColor="@color/payment_color_black"
+            android:textSize="@dimen/dp_26" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/message2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="【支付宝】扫码开通快捷支付"-->
+        <!--android:textColor="@color/payment_color_black"-->
+        <!--android:textSize="@dimen/sp_26" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/message3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="【支付宝】全程担保交易安全"-->
+        <!--android:textColor="@color/payment_color_black"-->
+        <!--android:textSize="@dimen/sp_26" />-->
+
+        <ImageView
+            android:id="@+id/qrcode_image"
+            android:layout_width="@dimen/dp_400"
+            android:layout_height="@dimen/dp_400"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/msg3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_44"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:gravity="center"
+        android:text="支付宝需要您确认开通免密支付"
+        android:textAlignment="center"
+        android:textColor="#999999"
+        android:textSize="@dimen/dp_20" />
+
+</RelativeLayout>

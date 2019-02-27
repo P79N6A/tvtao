@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yunos.tvtaobao.live">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true" >
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="tvlive"
+                    android:scheme="tvtaobao" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.TMallLiveActivity" />
+
+        <activity android:name=".activity.TBaoLiveActivity" />
+
+        <activity android:name=".activity.TestLiveActivity"/>
+
+        <!--<service-->
+            <!--android:name="com.taobao.accs.data.MsgDistributeService"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.accs.intent.action.RECEIVE" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <!--<receiver-->
+            <!--android:name="com.taobao.accs.ServiceReceiver"-->
+            <!--android:process=":channel">-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+            <!--&lt;!&ndash;<action android:name="com.taobao.accs.intent.action.COMMAND" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service-->
+            <!--android:name="com.taobao.orange.service.OrangeApiService"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.orange.service.OrangeApiService" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <!--<service-->
+            <!--android:name=".tvtaomsg.TvTaobaoReceviceService"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.accs.intent.action.RECEIVE" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+    </application>
+</manifest>

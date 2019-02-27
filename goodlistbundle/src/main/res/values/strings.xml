@@ -1,0 +1,22 @@
+<resources>
+    <!-- 优惠券 -->
+    <string name="ytsdk_coupon_title">卡券包</string>
+    <string name="ytsdk_coupon_unit">元</string>
+    <string name="ytsdk_coupon_indate">有效期:</string>
+    <string name="ytsdk_coupon_use">立即使用</string>
+
+
+    <!-- 店铺界面 -->
+    <string name="ytsdk_description_is_consistent">描述相符： %1$s</string>
+    <string name="ytsdk_higher_the_same_industry">高于同行业：  %1$.2f %%</string>
+    <string name="ytsdk_shop_location">所在地：%1$s</string>
+    <string name="ytsdk_service_attitude">服务态度：  %1$s</string>
+    <string name="ytsdk_delivery_speed">物流服务：  %1$s</string>
+    <string name="ytsdk_low_the_same_industry">低于同行业：  %1$.2f %%</string>
+    <string name="ytsdk_flat">持平 --- </string>
+    <string name="ytsdk_empty_param">缺少参数 </string>
+    <string name="ytsdk_shop_all_goods">全部宝贝</string>
+
+    <!-- 商品列表页 -->
+
+</resources>

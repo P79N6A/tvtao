@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--购物车列表-->
+
+    <!--购物车组标识选中的空隙-->
+    <dimen name="newcart_hint_focus_padding_left">4dip</dimen>
+    <dimen name="newcart_hint_focus_padding_top">5dip</dimen>
+    <dimen name="newcart_hint_focus_padding_right">3dip</dimen>
+    <dimen name="newcart_hint_focus_padding_bottom">3dip</dimen>
+
+    <!--购物车组标识文字的大小-->
+    <!--购物车列表的组标识内部的空隔-->
+
+    <dimen name="newcart_item_infor_card_width">240dip</dimen>
+    <dimen name="newcart_item_infor_selected_icon_padding">18dip</dimen>
+
+    <!--购物车商品选中的空隙-->
+    <dimen name="newcart_item_focus_padding_left">5px</dimen>
+    <dimen name="newcart_item_focus_padding_top">1px</dimen>
+    <dimen name="newcart_item_focus_padding_right">6px</dimen>
+    <dimen name="newcart_item_focus_padding_bottom">8px</dimen>
+
+    <dimen name="newcart_item_controller_height">114dip</dimen>
+
+    <!--结算Focus框的空隙-->
+    <dimen name="newcart_item_account_padding_left">1px</dimen>
+</resources>

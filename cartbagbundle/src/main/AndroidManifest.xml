@@ -1,0 +1,14 @@
+<manifest package="com.yunos.tvtaobao.cartbag"
+
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup"
+        >
+        <activity android:name=".activity.ShopCartListActivity"/>
+    </application>
+
+</manifest>

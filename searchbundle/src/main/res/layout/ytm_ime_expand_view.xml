@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.search.widget.ImeExpandView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_pinyin_expand"
+    android:layout_width="@dimen/dp_213"
+    android:layout_height="@dimen/dp_213"
+    android:layout_gravity="left|top"
+    android:background="@drawable/ytm_search_keyboard_pop_bg"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/ime_py_left"
+        android:layout_width="@dimen/dp_71"
+        android:layout_height="@dimen/dp_133"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_34"
+        android:background="@drawable/ytm_ime_pinyin_left"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/ime_py_bottom"
+        android:nextFocusLeft="@null"
+        android:nextFocusRight="@+id/ime_py_center"
+        android:nextFocusUp="@+id/ime_py_top"
+        android:textColor="@drawable/ytm_ime_grid_text_color"
+        android:textSize="@dimen/sp_28" />
+
+    <TextView
+        android:id="@+id/ime_py_top"
+        android:layout_width="@dimen/dp_133"
+        android:layout_height="@dimen/dp_71"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_7"
+        android:background="@drawable/ytm_ime_pinyin_top"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/ime_py_center"
+        android:nextFocusLeft="@+id/ime_py_left"
+        android:nextFocusRight="@+id/ime_py_right"
+        android:nextFocusUp="@null"
+        android:textColor="@drawable/ytm_ime_grid_text_color"
+        android:textSize="@dimen/sp_28" />
+
+    <TextView
+        android:id="@+id/ime_py_right"
+        android:layout_width="@dimen/dp_71"
+        android:layout_height="@dimen/dp_133"
+        android:layout_marginLeft="@dimen/dp_128"
+        android:layout_marginTop="@dimen/dp_34"
+        android:background="@drawable/ytm_ime_pinyin_right"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/ime_py_bottom"
+        android:nextFocusLeft="@+id/ime_py_center"
+        android:nextFocusRight="@null"
+        android:nextFocusUp="@+id/ime_py_top"
+        android:textColor="@drawable/ytm_ime_grid_text_color"
+        android:textSize="@dimen/sp_28" />
+
+    <TextView
+        android:id="@+id/ime_py_bottom"
+        android:layout_width="@dimen/dp_133"
+        android:layout_height="@dimen/dp_71"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_122"
+        android:background="@drawable/ytm_ime_pinyin_bottom"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@null"
+        android:nextFocusLeft="@+id/ime_py_left"
+        android:nextFocusRight="@+id/ime_py_right"
+        android:nextFocusUp="@+id/ime_py_center"
+        android:textColor="@drawable/ytm_ime_grid_text_color"
+        android:textSize="@dimen/sp_28" />
+
+    <TextView
+        android:id="@+id/ime_py_center"
+        android:layout_width="@dimen/dp_93"
+        android:layout_height="@dimen/dp_93"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_53"
+        android:background="@drawable/ytm_ime_pinyin_center"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/ime_py_bottom"
+        android:nextFocusLeft="@+id/ime_py_left"
+        android:nextFocusRight="@+id/ime_py_right"
+        android:nextFocusUp="@+id/ime_py_top"
+        android:textColor="@drawable/ytm_ime_grid_text_color"
+        android:textSize="@dimen/sp_28" />
+
+</com.yunos.tvtaobao.search.widget.ImeExpandView>

@@ -1,0 +1,26 @@
+<manifest package="com.yunos.tvtaobao.flashsale"
+
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup"
+        >
+        <activity
+            android:name=".activity.MainActivity"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="flashsale"
+                    android:scheme="tvtaobao"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.RecommendActivity"/>
+    </application>
+
+</manifest>

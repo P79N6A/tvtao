@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="to_ol_detail_corner_shape_size">@dimen/dp_13</dimen>
+
+    <dimen name="to_od_detail_left_size_20">@dimen/sp_20</dimen>
+
+    <dimen name="to_ol_shop_cart_item_card_width">@dimen/dp_252</dimen>
+
+    <dimen name="to_ol_shop_cart_item_infor_detail_name_size">@dimen/sp_24</dimen>
+
+
+</resources>

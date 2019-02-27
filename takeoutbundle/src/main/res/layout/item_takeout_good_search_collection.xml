@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_10"
+    >
+    <RelativeLayout
+        android:layout_width="@dimen/dp_260"
+        android:layout_height="@dimen/dp_61_3"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20">
+
+        <TextView
+            android:id="@+id/good_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_60"
+            android:textSize="@dimen/sp_24"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/white_ffffffff"
+            android:lineSpacingExtra="0sp"
+            android:text="特色番茄增味汤" />
+
+        <TextView
+            android:id="@+id/good_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_24"
+            android:textColor="@color/white_ffffffff"
+            android:lineSpacingExtra="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="x1" />
+
+        <TextView
+            android:id="@+id/good_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_24"
+            android:textColor="#ff6000"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="￥40" />
+
+        <TextView
+            android:id="@+id/good_ori_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/good_price"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/white_8396ae"
+            android:layout_alignParentBottom="true"
+            android:text="￥22" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/good_sku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:textSize="16sp"
+        android:textColor="#8396ae"
+        android:lineSpacingExtra="6sp"
+        android:text="中份，微辣，半糖，不加葱中份微辣半糖不加葱" />
+
+</LinearLayout>

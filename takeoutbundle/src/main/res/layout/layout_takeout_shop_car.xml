@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.biz.focus_impl.FocusArea xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/collection_focus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dp_4"
+    android:background="@drawable/good_collection_bac_normal">
+
+    <LinearLayout
+        android:id="@+id/shop_cart_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/good_collection_empty"
+                android:layout_width="@dimen/dp_232"
+                android:layout_height="@dimen/dp_232"
+                android:layout_gravity="center"
+                android:src="@drawable/shop_bag_notice_empty" />
+
+            <com.yunos.tvtaobao.biz.focus_impl.FocusFakeListView
+                android:id="@+id/good_collection_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/good_collection_pay_bac_sta_click_no"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_4">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_88">
+
+                <TextView
+                    android:id="@+id/txt_start_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:textColor="#8396ae"
+                    android:textSize="@dimen/sp_34"
+                    tools:text="¥ 20" />
+
+                <TextView
+                    android:id="@+id/txt_start_price_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toRightOf="@id/txt_start_price"
+                    android:text="起送"
+                    android:textColor="#8396ae"
+                    android:textSize="@dimen/sp_28"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/collection_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:textColor="@color/red_ff6000"
+                    android:textSize="@dimen/sp_32"
+                    android:visibility="invisible"
+                    tools:text="¥ 42" />
+
+
+                <TextView
+                    android:id="@+id/collection_pay_ori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:layout_toRightOf="@+id/collection_pay"
+                    android:textColor="#8396ae"
+                    android:textSize="@dimen/sp_20"
+                    android:visibility="gone"
+                    tools:text="¥ 48" />
+
+                <TextView
+                    android:id="@+id/collection_pay_dlive_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:textColor="#8396ae"
+                    android:textSize="@dimen/sp_20"
+                    tools:text="另需配送费 ¥ 4" />
+            </RelativeLayout>
+
+            <com.yunos.tvtaobao.takeoutbundle.widget.ShopCartActionView
+                android:id="@+id/shop_cart_action_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/dp_4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_shop_closed_tag"
+        android:layout_width="@dimen/dp_232"
+        android:layout_height="@dimen/dp_232"
+        android:layout_gravity="center"
+        android:src="@drawable/shop_bag_notice_close"
+        android:visibility="gone" />
+
+</com.yunos.tvtaobao.biz.focus_impl.FocusArea>

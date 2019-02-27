@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunos.tvtaobao.splashscreen">
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".LoadingActivity"
+            android:theme="@style/ytm_style_launch_no_animation">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="home"
+                    android:scheme="tvtaobao" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".RedirectActivity"
+            android:theme="@style/ytm_style_launch_no_animation">
+            <intent-filter>
+                <action android:name="com.tvtaobao.action.StartApp" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/ytm_style_start_launch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".YunosOrDmodeActivity"></activity>
+
+        <service
+            android:name=".service.LoadingService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

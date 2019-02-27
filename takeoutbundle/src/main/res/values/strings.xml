@@ -1,0 +1,15 @@
+<resources>
+    <string name="order_action_again">再来一单</string>
+    <string name="order_action_delivery">查看物流</string>
+    <string name="order_action_cancel">取消订单</string>
+    <string name="order_action_detail">订单详情</string>
+    <string name="order_action_pay">等待支付</string>
+    <string name="sku_addbag_error">加购失败，请稍后尝试</string>
+    <string name="vouchers_error">领取失败，请稍后尝试</string>
+    <string name="order_action_again_fail">店铺繁忙 请稍后重试</string>
+    <string name="sku_first_line_name">规格</string>
+    <string name="shop_resting_hint">掌柜休息中\n去看看别的店铺吧</string>
+    <string name="shop_cart_empty_hint">购物车还是空的\n再忙也要记得吃饱哦</string>
+    <string name="not_reach_start_price_hint">未到起送价\n再来份小吃吧</string>
+    <string name="out_of_deliver_range">超出配送范围\n看看附近的店铺吧</string>
+</resources>

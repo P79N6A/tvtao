@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/default_background</item>
+    </style>
+
+    <style name="pianwie_pop_animation">
+
+        <item name="android:windowEnterAnimation">@anim/pianwei_in</item>
+
+        <item name="android:windowExitAnimation">@anim/pianwei_out</item>
+    </style>
+
+    <style name="pop_add_tip_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_alpha_in</item>
+
+        <item name="android:windowExitAnimation">@anim/pop_alpha_out</item>
+
+    </style>
+
+    <style name="pop_bottom_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_from_bottom_in</item>
+
+        <item name="android:windowExitAnimation">@anim/pop_from_bottom_out</item>
+
+    </style>
+
+    <style name="pop_count_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_right_in</item>
+
+        <item name="android:windowExitAnimation">@anim/pop_alpha_out</item>
+
+    </style>
+
+    <style name="pop_get_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_alpha_in</item>
+
+        <item name="android:windowExitAnimation">@anim/pop_right_out</item>
+
+    </style>
+
+    <style name="pop_get_ok_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_right_in</item>
+
+        <item name="android:windowExitAnimation">@anim/pop_right_out</item>
+
+    </style>
+
+
+    <style name="pop_top_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_from_top_in</item>
+
+        <item name="android:windowExitAnimation">@anim/pop_from_top_out</item>
+
+    </style>
+</resources>

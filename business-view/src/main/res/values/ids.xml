@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="gllgv" type="id">gllgv</item>
+    <item name="tag_position" type="id"/>
+    <item name="tag_second" type="id"/>
+    <item name="tag_loadtimes" type="id"></item>
+    <item name="comment_page_id" type="id"/>
+    <item name="item_info_id" type="id"/>
+    <item name="item_pic_page_id" type="id"/>
+    <item name="price_v_id" type="id"/>
+    <item name="gridview1" type="id">gridview1</item>
+    <item name="gridview2" type="id">gridview2</item>
+    <item name="gridview3" type="id">gridview3</item>
+    <item name="gridview4" type="id">gridview4</item>
+    <item name="gridview5" type="id">gridview5</item>
+    <item name="gridview6" type="id">gridview6</item>
+</resources>

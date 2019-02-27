@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.yunos.voice">
+
+    <application android:allowBackup="false">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="voice"
+                    android:scheme="tvtaobao" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.CreateOrderActivity"
+            android:theme="@style/translucent"/>
+
+        <activity android:name=".activity.VoiceSearchActivity"/>
+
+        <activity android:name=".activity.VoiceVideoDemoActivity"/>
+
+        <activity android:name=".activity.LoginAuthActivity"
+            android:theme="@style/translucent"/>
+
+        <activity android:name=".activity.NoviceGuideActivity"/>
+    </application>
+
+</manifest>

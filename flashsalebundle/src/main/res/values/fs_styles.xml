@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- 提醒框退出、进入动画 -->
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/fs_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/fs_fade_out</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qrcode_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e60e1215">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_480"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/payment_background_otherqr_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_qrcode_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="亲，已为您下单啦"
+                android:textColor="@color/payment_color_black"
+                android:textSize="@dimen/sp_26" />
+
+            <TextView
+                android:id="@+id/tv_qrcode_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="1"
+                android:text="订单合计 ¥ 99.99"
+                android:textColor="@color/payment_color_black"
+                android:textSize="@dimen/sp_36" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/errordesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_44"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/payment_color_black"
+            android:textSize="@dimen/sp_26" />
+
+        <TextView
+            android:id="@+id/message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="打开【手机淘宝】扫码完成付款"
+            android:textColor="@color/payment_color_black"
+            android:textSize="@dimen/sp_26" />
+
+        <ImageView
+            android:id="@+id/qrcode_image"
+            android:layout_width="@dimen/dp_324"
+            android:layout_height="@dimen/dp_324"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@android:color/white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

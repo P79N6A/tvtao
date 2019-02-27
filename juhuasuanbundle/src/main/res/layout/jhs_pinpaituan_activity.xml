@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pingpai_mainFramelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+	<RelativeLayout
+		android:id="@+id/title_right"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_86"  
+		android:background="@drawable/jhs_bj_top"
+		android:scrollbars="horizontal"
+		android:visibility="visible">
+	
+	    <TextView
+			android:id="@+id/type"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="@dimen/dp_16"
+			android:layout_toLeftOf="@+id/divider_line"
+			android:textSize="@dimen/dp_24" />
+			
+		<View
+		    android:id="@+id/divider_line"
+		    android:layout_width="@dimen/dp_2"
+		    android:layout_height="@dimen/dp_24"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@+id/num"
+		    android:layout_marginRight="@dimen/dp_16"
+		    android:background="@android:color/white" />
+		
+		<TextView
+		    android:id="@+id/num"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="@dimen/dp_12"
+		    android:layout_toLeftOf="@+id/category_all"
+		    android:text="品牌"
+		    android:textSize="@dimen/dp_24" />
+		
+		<ImageView android:id="@+id/category_all"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="@dimen/dp_18"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:focusable="true"
+		    android:src="@drawable/jhs_btn_category_all_selector"/>
+	</RelativeLayout> 
+
+	<FrameLayout
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="@dimen/dp_86"
+		android:focusable="false"
+		android:background="@drawable/jhs_brand_category_bj_xml">  
+			    
+	    <RelativeLayout 
+            android:id="@+id/pingpai_default_display"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_234" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+	
+	       <ImageView
+	              android:id="@+id/pinpai_default_image"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content" 
+	              android:layout_centerHorizontal="true" 
+	              android:scaleType="center"
+	              android:src="@drawable/jhs_na_data_icon" /> 
+	      
+	      <TextView
+              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_below="@+id/pinpai_default_image"
+	              android:layout_marginTop="@dimen/dp_10"
+	              android:layout_centerHorizontal="true" 
+	              android:singleLine="true" 
+	              android:text="@string/jhs_brand_list_null"
+	              android:textColor="@color/jhs_white"
+	              android:textSize="@dimen/dp_24" /> 
+		</RelativeLayout>
+	</FrameLayout>  
+
+	<RelativeLayout 
+	   android:id="@+id/pingpai_relative"
+	   android:visibility="gone"
+	   android:layout_marginTop="@dimen/dp_640"
+	   android:layout_marginBottom="@dimen/dp_20"
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent">
+	
+	   <TextView
+	       android:id="@+id/current_num"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" 
+	       android:layout_toLeftOf="@+id/line"
+	       android:layout_alignParentBottom="true"
+	       android:textColor="@color/jhs_brand_num_color"
+	       android:text="@string/jhs_num_1"
+	       android:textSize="@dimen/dp_30" />
+	
+	   <TextView
+	       android:id="@+id/line"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_centerHorizontal="true"
+	       android:layout_alignParentBottom="true" 
+	       android:layout_alignBaseline="@+id/current_num"
+	       android:text="@string/jhs_page_fuhao"
+	       android:textColor="@color/jhs_brand_num_color"
+	       android:textSize="@dimen/dp_20" />
+	
+	   <TextView
+	       android:id="@+id/all_num"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignParentBottom="true"
+	       android:layout_alignBaseline="@+id/current_num"
+	       android:layout_toRightOf="@+id/line"
+	       android:textColor="@color/jhs_brand_num_color"
+	       android:textSize="@dimen/dp_20" />
+	</RelativeLayout>
+</FrameLayout>
+

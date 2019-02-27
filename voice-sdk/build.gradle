@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile project(':tvtaobao-core')
+    compile project(':business-request')
+
+    compile rootProject.ext.dependencies.appcompatV7
+    compile rootProject.ext.dependencies.recyclerviewV7
+    compile 'com.taobao.android:taobao-purchase-sdk:3.0.4.4'
+    compile 'com.yunos.tv.alitvasrsdk:alitvasrsdk:1.0.1.8'
+
+
+    //    compile ('com.yunos.tv.tao.speech:client:1.0.0-SNAPSHOT') {
+    //        exclude(group: 'org.apache.commons', module: 'commons-lang3')
+    //        exclude(group: 'com.alibaba', module: 'fastjson')
+    //        exclude(group: 'com.taobao.wireless', module: 'mtop-common-service')
+    //    }
+}

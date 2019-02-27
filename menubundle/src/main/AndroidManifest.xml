@@ -1,0 +1,15 @@
+<manifest package="com.yunos.tvtaobao.menu"
+
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup"
+        >
+        <activity android:name=".activity.MenuActivity"
+                  android:theme="@style/ytm_ThemeMenuActivity"/>
+    </application>
+
+</manifest>

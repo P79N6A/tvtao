@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_110"
+        android:orientation="horizontal" 
+    	android:gravity="center"
+    	android:layout_marginLeft="@dimen/dp_2"
+    	android:layout_marginRight="@dimen/dp_2">
+    	
+	    <TextView
+	        android:id="@+id/item_tv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_horizontal|top"
+	        android:textSize="@dimen/sp_30" 
+	        android:textColor="@drawable/jhs_navigation_text_selector"
+	        android:paddingTop="13dip"
+	        android:background="@drawable/jhs_navigation_item_bg_selector"
+			android:ellipsize="marquee"
+			android:singleLine="true"
+			android:marqueeRepeatLimit="marquee_forever"
+			/>
+		</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_60"
+    android:focusable="false"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/ll_sku_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_sku_value"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_sku_select"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:focusable="false"
+            android:src="@drawable/bg_sku_icon"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_sku_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_10"
+            android:focusable="false"
+            android:textColor="@color/color_202020"
+            android:textSize="@dimen/sp_24"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

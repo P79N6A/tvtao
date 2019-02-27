@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunos.tvtaobao.tvshoppingbundle">
+
+    <permission android:name="android.permission.boot_tvshop_service" />
+    <uses-permission android:name="android.permission.boot_tvshop_service" />
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <receiver
+            android:name=".broadcast.TvShopBootBroadcast"
+            android:exported="true"
+            android:permission="android.permission.boot_tvshop_service">
+            <intent-filter android:priority="1000">
+                <action android:name="com.yunos.tvshopping.broadcast.boot_tvshop_service"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.TvShopService"
+            android:enabled="true">
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">splashscreen</string>
+    <!-- loading -->
+
+    <string name="ytm_loading_uuid_wait">应用正在初始化, 请稍候</string>
+    <string name="ytm_loading_uuid_fail">应用初始化失败, 请重试</string>
+    <string name="ytm_open_setting_activity_error">打开设置页面失败，请手动进入设置页面</string>
+
+    <!-- dmode的包误装yunos系统 -->
+    <string name="yunos_dmode_tips1">当前设备不支持您安装的【电视淘宝】</string>
+    <string name="yunos_dmode_tips2">请通过【当贝】或【沙发管家】搜索：DSTB</string>
+    <string name="yunos_dmode_tips3">下载安装</string>
+
+    <!-- dmode的包误装yunos系统 -->
+    <string name="yunos_dmode_tips4">当前设备不支持您安装的【电视淘宝】</string>
+    <string name="yunos_dmode_tips5">请进入 “ 应用中心 ” 搜索: “ DSTB ” 下载安装</string>
+
+</resources>

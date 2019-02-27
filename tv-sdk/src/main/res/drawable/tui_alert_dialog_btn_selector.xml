@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 
+    <item android:state_focused="true"
+        android:drawable="@drawable/tui_notification_alert_list_selector" />
+     -->
+        
+    <item android:state_focused="true"
+        android:drawable="@drawable/tui_dialog_focus_selector" />    
+	<item android:state_focused="false"
+        android:drawable="@drawable/tui_dialog_btn_bg_top_line" />
+</selector>

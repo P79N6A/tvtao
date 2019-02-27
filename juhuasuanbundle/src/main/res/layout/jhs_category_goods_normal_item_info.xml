@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 上面是图片  下面是折扣和价格 -->
+     <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="@drawable/jhs_item_info_bg"
+        android:gravity="bottom">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|top"
+            android:layout_marginBottom="@dimen/jhs_category_goods_normal_item_info_discount_tv_parent_marginBottom"
+            android:layout_marginLeft="@dimen/jhs_category_goods_normal_item_info_discount_tv_parent_marginLeft">
+            <TextView
+                android:id="@+id/discount_tv"
+				android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:focusable="false"
+                android:textSize="@dimen/jhs_page_goods_text_big_size" 
+                android:textStyle="italic|bold"
+                android:textColor="@color/jhs_white"
+                android:lineSpacingExtra="@dimen/dp_0"
+                android:layout_marginTop="@dimen/jhs_category_goods_normal_item_info_discount_tv_marginTop"
+                android:paddingBottom="@dimen/jhs_category_goods_normal_item_info_discount_tv_paddingBottom"
+                android:paddingTop="@dimen/jhs_category_goods_normal_item_info_discount_tv_paddingTop" />
+        </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent" 
+	        android:layout_height="match_parent" 
+	        android:paddingLeft="@dimen/jhs_category_goods_normal_item_info_LinearLayout_paddingH" 
+	        android:paddingRight="@dimen/jhs_category_goods_normal_item_info_LinearLayout_paddingH"
+	        android:paddingTop="0dp"
+	        android:paddingBottom="@dimen/jhs_category_goods_normal_item_info_LinearLayout_paddingBottom"
+	        android:gravity="bottom"
+	        android:orientation="horizontal">
+
+			<LinearLayout
+                android:layout_width="@dimen/dp_0"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal"
+	            android:layout_weight="1"
+	            android:layout_marginBottom="@dimen/jhs_category_goods_normal_item_info_discount_info_marginBottom"
+	            android:gravity="left|bottom">
+	            <TextView
+	                android:id="@+id/activityPrice_tv"
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content"
+	                android:focusable="false"
+	                android:singleLine="true"
+	                android:textStyle="italic|bold" 
+	                android:textColor="@color/jhs_text_red" />
+			    <TextView
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content"
+	                android:focusable="false" 
+	                android:singleLine="true"
+	                android:layout_marginLeft="@dimen/dp_5"
+	                android:textColor="@color/jhs_gray" 
+	                android:textSize="@dimen/jhs_page_goods_text_infor_normal_size"
+	                android:text="@string/jhs_dollar_sign" />
+	            
+	            <TextView
+	                android:id="@+id/originalPrice_tv"
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content"
+	                android:focusable="false"
+	                android:singleLine="true"
+	                android:textColor="@color/jhs_gray" 
+	                android:textSize="@dimen/jhs_page_goods_text_infor_normal_size"/>
+	        </LinearLayout>
+	        <TextView
+	           android:id="@+id/itemCount_tv"
+	           android:layout_width="@dimen/dp_100" 
+	           android:gravity="right"
+	           android:layout_height="wrap_content"
+	           android:textColor="@color/jhs_text_red" 
+	           android:textSize="@dimen/sp_20"
+	           android:alpha="0.7"/>
+        </LinearLayout>
+	</LinearLayout>
+	
+	<ImageView
+	    android:id="@+id/sold_image"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="right|bottom"
+	    android:layout_marginRight="@dimen/dp_16" 
+	    android:layout_marginBottom="@dimen/dp_59"
+	    android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tvtaobao.voice">
+    <uses-sdk tools:overrideLibrary="com.bftv.fui.thirdparty" />
+    <application
+        android:allowBackup="false"
+        tools:replace="android:allowBackup">
+
+
+    </application>
+</manifest>

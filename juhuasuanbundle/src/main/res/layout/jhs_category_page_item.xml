@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<com.yunos.tvtaobao.juhuasuan.activity.Category.PageItemView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/page_layout"
+        android:layout_width="@dimen/dp_1070"
+    	android:layout_height="@dimen/dp_564" 
+        android:gravity="center"
+        android:focusable="true"
+        android:nextFocusUp="@+id/category_List_bar">
+        
+    <com.yunos.tvtaobao.juhuasuan.activity.Category.GoodsNormalItemView
+		android:id="@+id/item1"
+		android:layout_width="@dimen/dp_530"
+		android:layout_height="@dimen/dp_320"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="@dimen/dp_30"
+		android:focusable="true"
+		android:nextFocusUp="@+id/category_List_bar" />
+
+   	<com.yunos.tvtaobao.juhuasuan.activity.Category.GoodsNormalItemView
+		android:id="@+id/item2"
+		android:layout_width="@dimen/dp_530"
+		android:layout_height="@dimen/dp_320"
+		android:layout_toRightOf="@id/item1"
+		android:layout_marginLeft="@dimen/dp_10"
+		android:layout_marginTop="@dimen/dp_30"
+		android:focusable="true"
+		android:nextFocusUp="@id/category_List_bar" />
+    
+	<com.yunos.tvtaobao.juhuasuan.activity.Category.GoodsNormalItemView
+	    android:id="@+id/item3"
+        android:layout_width="@dimen/dp_350"
+        android:layout_height="@dimen/jhs_category_item_below_height"
+		android:layout_below="@id/item1"
+		android:layout_marginTop="@dimen/dp_10"
+        android:focusable="true"/>
+   	<com.yunos.tvtaobao.juhuasuan.activity.Category.GoodsNormalItemView
+   	    android:id="@+id/item4"
+        android:layout_width="@dimen/dp_350"
+        android:layout_height="@dimen/jhs_category_item_below_height"
+        android:layout_toRightOf="@id/item3"
+        android:layout_below="@id/item1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:focusable="true"/>     
+   	<com.yunos.tvtaobao.juhuasuan.activity.Category.GoodsNormalItemView
+   	    android:id="@+id/item5"
+        android:layout_width="@dimen/dp_350"
+        android:layout_height="@dimen/jhs_category_item_below_height"
+        android:layout_toRightOf="@id/item4"
+        android:layout_below="@id/item1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:focusable="true"/>    
+</com.yunos.tvtaobao.juhuasuan.activity.Category.PageItemView  >
+

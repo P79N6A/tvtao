@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tv.app.widget.focus.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_6" >
+
+    <TextView
+        android:id="@+id/card_coupon_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="@string/ytm_coupon_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:visibility="gone" />
+
+    <com.yunos.tv.app.widget.focus.FocusLinearLayout
+        android:id="@+id/hongbao_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_coupon_item_text"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <include layout="@layout/ytm_hongbao_item" />
+
+        <include layout="@layout/ytm_hongbao_item" />
+
+        <include layout="@layout/ytm_hongbao_item" />
+
+        <include layout="@layout/ytm_hongbao_item" />
+
+        <include layout="@layout/ytm_hongbao_item" />
+    </com.yunos.tv.app.widget.focus.FocusLinearLayout>
+
+    <com.yunos.tv.app.widget.focus.FocusLinearLayout
+        android:id="@+id/coupon_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_coupon_item_text"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <include layout="@layout/ytm_coupon_item" />
+
+        <include layout="@layout/ytm_coupon_item" />
+
+        <include layout="@layout/ytm_coupon_item" />
+    </com.yunos.tv.app.widget.focus.FocusLinearLayout>
+
+</com.yunos.tv.app.widget.focus.FocusRelativeLayout>

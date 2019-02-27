@@ -1,0 +1,147 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.alibaba.gradle.solib'
+
+
+def dMode = getEnvValue("dmode", "false")
+def channel = getEnvValue("channel", "")
+if (channel != "")
+    dMode = "true"
+println "dmode:" + dMode + (dMode == "true")
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        buildConfigField 'String', 'DeviceFake', "\"" + rootProject.ext.android.DeviceFake + "\""
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ["libs"]
+        }
+
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+
+    compile project(':tv_imageloader')
+    //compile files('libs/tyid_sdk.jar')
+    compile project(':payment')
+
+//    compile project(':resbundle')
+    if (dMode == "true") {
+        compile project(':dmode-core')
+    } else compile project(':yunos-core')
+
+
+    compile rootProject.ext.dependencies.appcompatV7
+    compile(rootProject.ext.dependencies.atlas_core) {
+//        transitive = true
+    }
+    compile(rootProject.ext.dependencies.atlasupdate) {
+        exclude(group: 'io.reactivex.rxjava2', module: 'rxjava')
+        exclude(group: 'org.reactivestreams', module: 'reactive-streams')
+    }
+    //network
+    compile 'com.taobao.android:networksdk:2.1.1.4-tv'
+    compile 'com.taobao.android:tnet-jni:3.1.11'
+    compile 'com.taobao.android:tnet-so:3.1.11'
+    compile('com.taobao.android:orange:1.5.3.32') {
+        exclude(group: 'com.taobao.android', module: 'usertrack')
+        exclude(group: 'com.alibaba.mtl', module: 'app-monitor-sdk')
+    }
+    //mtop sdk
+    compile(rootProject.ext.dependencies.mtop) {
+        exclude(group: 'com.taobao.android', module: 'securityguard')
+        exclude(group: 'com.taobao.android', module: 'securityjni')
+        exclude(group: 'com.taobao.android', module: 'securityguard-so')
+        exclude(group: 'com.google.android', module: 'support-v4')
+        exclude(group: 'com.google.android', module: 'annotations')
+//        exclude(group: 'com.alibaba.mtl', module: 'app-monitor-sdk')
+
+    }
+    //无线安全保镖
+    compile 'com.taobao.android:securityguardsdk:6.4.112@aar'
+    compile 'com.taobao.android:securitybody:6.4.76@aar'
+    compile 'com.taobao.android:nocaptcha:6.4.29@aar'
+    compile 'com.taobao.android:compatible:6.4.19@aar'
+    compile 'com.taobao.android:misc:6.4.36@aar'
+    compile 'com.taobao.android:avmp:6.4.32@aar'
+//    compile 'com.taobao.android:securityguardaccsadapter:1.0.1@aar'//(有接入accs的应用必须接入)
+
+    //blitz新debug版（给前端同学调试用，非线上正式发布）
+//     compile('com.yunos.blitz:blitzsdk-standalone:2.0.1.201810241353-SNAPSHOT')
+
+    //blitz新版（线上正式发布）
+
+    compile('com.yunos.blitz:blitzsdk-standalone:2.0.1.201804161008-SNAPSHOT@aar')
+            {
+                exclude(group: 'com.taobao.android', module: 'securityguard')
+                exclude(group: 'com.taobao.android', module: 'securityjni')
+                exclude(group: 'com.taobao.android', module: 'securityguard-so')
+                exclude(group: 'com.google.android', module: 'support-v4')
+                exclude(group: 'com.google.android', module: 'annotations')
+            }
+
+
+    provided('com.ali.auth.sdk:alibabauth_offline:1.6.1.5')
+    provided('com.ali.auth.sdk:alibabauth_core:1.6.1.5')
+    provided('com.ali.auth.sdk:alibabauth_ext:1.6.1.5')
+//    provided('com.ali.auth.sdk:alibabauth_offline:1.6.1.10-SNAPSHOT')
+//    provided('com.ali.auth.sdk:alibabauth_core:1.6.1.10-SNAPSHOT')
+//    provided('com.ali.auth.sdk:alibabauth_ext:1.6.1.10-SNAPSHOT')
+
+    compile project(':payment')
+    compile 'com.taobao.android:utdid4all:2.0.5'
+    compile 'com.google.gson:gson:2.2.4'
+
+    //魔兔crash report
+    compile 'com.taobao.android:crashreporter:3.0.0.69@aar'
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+
+    //判断系统是否是yunos
+    compile 'com.yunos.ott.sdk:core:1.0.1-SNAPSHOT@aar'
+
+    compile 'com.taobao.android:mtopsdk_extra:2.0.5-SNAPSHOT@aar'
+    compile 'com.taobao.android:taobao-cart-sdk:3.1.6.9-tv-SNAPSHOT@aar'
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.1.10'
+    compile group: 'io.reactivex.rxjava2', 'name': 'rxandroid', 'version': '2.0.2'
+    compile group: 'com.alibaba', 'name': 'fastjson', 'version': '1.1.45.android'
+    compile 'com.taobao.android:windvane:8.0.2.5'
+
+//    //ACCS推送
+//    compile ('com.taobao.android:accs_sdk_taobao:3.3.2'){
+//        transitive = false
+//    }
+
+    compile rootProject.ext.dependencies.zxing
+
+//    compile('com.google.zxing:core:3.3.1')
+    //powermsg
+//
+//    compile group: 'com.taobao.android', name: 'powermsg_common', version: '2.0.0', ext: 'aar'
+//    compile (group: 'com.taobao.android', name: 'messagekit', version: '2.0.0', ext: 'aar'){
+//        transitive = true
+//    }
+//    compile  (group: 'com.taobao.android', name: 'powermsg', version: '2.0.0_aar', ext: 'aar'){
+//        transitive = true
+//    }
+
+    compile files('libs/ut-analytics-6.3.2.7.jar')
+//
+//    compile files('libs/alitvcompliance-1.1.1-2016112901.jar')
+//    provided('com.ali.auth.sdk:alibabauth_offline:1.5.1.5@aar')
+//    provided('com.ali.auth.sdk:alibabauth_core:1.5.1.5@jar')
+//    provided('com.ali.auth.sdk:alibabauth_ext:1.5.1.5@jar')
+
+
+}

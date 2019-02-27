@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_148"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_42"
+        >
+        <View
+            android:layout_width="@dimen/dp_404"
+            android:layout_height="@dimen/dp_2"
+            android:background="@color/color_4cffffff" />
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:textColor="@color/color_ffbe2d"
+            android:text="现已领取商家代金券"
+            android:textSize="@dimen/sp_32" />
+
+        <View
+            android:layout_width="@dimen/dp_404"
+            android:layout_height="@dimen/dp_2"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:background="@color/color_4cffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_89"
+        android:text="可以在我的优惠中查看"
+        android:textColor="@color/color_80ffffff"
+        android:textSize="@dimen/sp_24" />
+
+</RelativeLayout>

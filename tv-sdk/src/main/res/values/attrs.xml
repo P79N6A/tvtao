@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TvAlertDialog by leiming.yanlm -->
+    <declare-styleable name="TvAlertDialog">
+        <attr name="fullDark" format="reference|color" />
+        <attr name="topDark" format="reference|color" />
+        <attr name="centerDark" format="reference|color" />
+        <attr name="bottomDark" format="reference|color" />
+        <attr name="fullBright" format="reference|color" />
+        <attr name="topBright" format="reference|color" />
+        <attr name="centerBright" format="reference|color" />
+        <attr name="bottomBright" format="reference|color" />
+        <attr name="bottomMedium" format="reference|color" />
+        <attr name="centerMedium" format="reference|color" />
+        <attr name="layout" format="reference" />
+        <attr name="listLayout" format="reference" />
+        <attr name="multiChoiceItemLayout" format="reference" />
+        <attr name="singleChoiceItemLayout" format="reference" />
+        <attr name="listItemLayout" format="reference" />
+        <attr name="progressLayout" format="reference" />
+        <attr name="horizontalProgressLayout" format="reference" />
+    </declare-styleable>
+
+    <attr name="alertDialogStyle" format="reference" />
+    <attr name="alertDialogButtonGroupStyle" format="reference" />
+    <attr name="alertDialogCenterButtons" format="boolean" />
+    <attr name="alertDialogTheme" format="reference" />
+
+    <declare-styleable name="FocusFloatView">
+        <attr name="scaleAlign">
+            <enum name="BOTTOM_CENTER" value="0"></enum>
+            <enum name="BOTTOM_LEFT" value="1"></enum>
+            <enum name="BOTTOM_RIGHT" value="2"></enum>
+        </attr>
+        <attr name="animDuraction" format="integer" />
+        <attr name="topSpace" format="dimension" />
+        <attr name="floatWidth" format="dimension" />
+        <attr name="floatHeight" format="dimension" />
+        <attr name="floatMarginLeft" format="dimension" />
+        <attr name="floatMarginTop" format="dimension" />
+        <attr name="floatMarginRight" format="dimension" />
+        <attr name="floatMarginBottom" format="dimension" />
+        <attr name="floatPaddingLeft" format="dimension" />
+        <attr name="floatPaddingTop" format="dimension" />
+        <attr name="floatPaddingRight" format="dimension" />
+        <attr name="floatPaddingBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageViewAttr">
+        <attr name="src" format="reference" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="frameCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="HomeshellNetWorkAttr">
+        <attr name="auto_hide" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RoundCornerImageViewAttr">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="MarqueeTextViewAttr">
+        <attr name="firstDrawIntervel" format="integer" />
+        <attr name="textGravity" format="integer">
+            <enum name="left" value="0"></enum>
+            <enum name="center" value="1"></enum>
+            <enum name="right" value="2"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="VideoViewMargin">
+        <attr name="leftMargin" format="dimension" />
+        <attr name="topMargin" format="dimension" />
+        <attr name="rightMargin" format="dimension" />
+        <attr name="bottomMargin" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="KeyboardView">
+        <attr name="keyboardViewStyle" format="reference" />
+        <attr name="popupWidth" format="dimension" />
+        <attr name="popupHeight" format="dimension" />
+    </declare-styleable>
+    <attr name="alpha" format="float" />
+    <declare-styleable name="ProgressBarAttr">
+        <attr name="alpha" />
+    </declare-styleable>
+
+</resources>

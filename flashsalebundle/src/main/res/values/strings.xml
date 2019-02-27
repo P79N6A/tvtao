@@ -1,0 +1,27 @@
+<resources>
+    <string name="str_title_past_tip">本场还有宝贝可以抢购 </string>
+    <string name="str_title_myconcern_tip">我的关注/别忘了来抢哦！ </string>
+    <string name="str_title_finally_buy_tip">再不抢宝贝就没啦！ </string>
+    <string name="str_title_current_tip">距离本场结束</string>
+    <string name="str_title_future_tip">距离本场开始</string>
+    <string name="str_my_concern">我的关注</string>
+    <string name="str_period_of_buying">限时抢购</string>
+    <string name="str_finally_berserk">最后疯抢</string>
+    <string name="str_panic_buying">已抢购</string>
+    <string name="str_buying">开抢</string>
+    <string name="str_jian">件</string>
+    <string name="str_people_concern">人已关注</string>
+    <string name="str_seckill">秒杀</string>
+    <string name="str_in_work">进行中</string>
+    <string name="str_buying_futrue">将开场</string>
+    <string name="str_req_error">获取时间场次失败</string>
+    <string name="str_remind_info_head">开抢喽！</string>
+    <string name="str_remind_key">键去看看</string>
+    <string name="str_remind_info_time">即将开抢</string>
+    <string name="str_remind_info_tip">有您看中要抢购的商品哦</string>
+    <string name="str_start_activity_error">打开页面失败</string>
+    <string name="str_recommend_tip">同店推荐宝贝</string>
+    <string name="str_qiangguang">抢光</string>
+    <string name="max_remind_begin">您最多只能设置</string>
+    <string name="max_remind_end">个关注。</string>
+</resources>

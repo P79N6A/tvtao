@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunos.tvtaobao.takeoutbundle">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".activity.TakeOutShopHomeActivity"
+            android:theme="@style/ytm_sku_theme" />
+        <activity
+            android:name=".activity.TakeOutShopDetailActivity"
+            android:theme="@style/takeout_detail" />
+        <activity android:name=".activity.TakeOutOrderDetailActivity" />
+        <activity android:name=".activity.TakeOutOrderListActivity" />
+        <activity
+            android:name=".activity.TakeOutShopSearchActivity"
+            android:theme="@style/ytm_sku_theme" />
+
+        <activity
+            android:name=".activity.TakeOutSkuActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" />
+        <activity
+            android:name=".activity.ShopVouchersListActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+    </application>
+
+</manifest>

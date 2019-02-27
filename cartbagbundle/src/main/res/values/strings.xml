@@ -1,0 +1,27 @@
+<resources>
+    <!-- 购物车列表页面 -->
+    <string name="ytm_shop_market_cart_title">超市购物车(%1$d)</string>
+    <string name="ytm_shop_cart_empty_1">购物车快饿瘪了</string>
+    <string name="ytm_shop_cart_empty_2">主人快给我挑点宝贝吧</string>
+    <string name="ytm_shop_cart_account_count">结算(%1$d)</string>
+    <string name="ytm_shop_cart_account_price">合计%1$s</string>
+    <string name="ytm_shop_cart_account_express">不包含邮费</string>
+    <string name="ytm_shop_cart_hint_text_checked_all">店铺</string>
+    <string name="ytm_shop_cart_text_cancel_checked">取消</string>
+    <string name="ytm_shop_cart_text_checked">选择</string>
+    <string name="ytm_shop_cart_text_delete">删除</string>
+    <string name="ytm_shop_cart_text_invalid">失效</string>
+    <string name="ytm_shop_cart_text_edit">编辑</string>
+    <string name="ytm_shop_cart_text_detail">详情</string>
+    <string name="ytm_shop_cart_delete_all_invalid_shop">是否确定删除全部无效商品？</string>
+    <string name="ytm_shop_cart_delete_shop">是否确定删除商品？</string>
+    <string name="ytm_shop_cart_submit_error_no_shop">请选择商品后再结算</string>
+    <string name="ytm_shop_cart_submit_error_goods_too_much">购物车最多只支持%1$d个宝贝一起支付哦</string>
+    <string name="ytm_shop_cart_submit_error_tv_not_support">选中商品仅支持手机扫码购买</string>
+    <string name="ytm_shop_cart_update_quantity_fail">更新商品数量失败</string>
+    <string name="ytm_shop_cart_only_support">该商品不能和已选商品合并下单</string>
+
+    <string name="ytm_shop_cart_item_cost_down_net_text">商品已降</string>
+    <string name="ytm_shop_cart_item_cost_down_text">商品降价</string>
+    <string name="ytm_shop_cart_item_tight">库存紧张</string>
+</resources>

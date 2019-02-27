@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_72"
+    android:focusable="false"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_number_sub"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@drawable/bg_sku_number_sub"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/color_202020"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_number_add"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:background="@drawable/bg_sku_number_add"
+        android:focusable="true" />
+
+</LinearLayout>

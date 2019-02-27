@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="jhs_white">#FFFFFF</color>
+    <color name="jhs_gray">#808080</color>
+    <color name="jhs_text_red">#c6223f</color>
+    <color name="jhs_background">#e4e6e5</color>
+
+    <!-- common color -->
+    <color name="jhs_transparent">#00000000</color>
+    <color name="jhs_active_price_soldover">#666666</color>
+    <color name="jhs_active_price_start">#00996c</color>
+
+    <!-- brand -->
+    <color name="jhs_brand_num_color">#a87076</color>
+    <color name="jhs_brand_detail_background_color">#FFF3C8</color>
+    <color name="jhs_brand_detail_font_green_color">#339900</color>
+    <color name="jhs_brand_detail_sold_background">#d3f1cf</color>
+    <color name="jhs_brand_detail_red_font_color">#c6223f</color>
+    <color name="jhs_brand_detail_black_font_color">#333333</color>
+    <!-- detail -->
+
+    <!-- 下单步骤 -->
+
+    <!-- order_submit_activity -->
+    <color name="jhs_address_username_current">#c6223f</color>
+    <!-- 当前选中收货地址的收货人姓名颜色 -->
+    <color name="jhs_address_username">#666666</color>
+    <!-- 未选中收货地址的收货人姓名颜色 -->
+    <color name="jhs_address_detail">#666666</color>
+    <!-- 详细地址颜色 -->
+    <color name="jhs_address_area">#999999</color>
+    <!-- 省市区字体颜色 -->
+    <!-- 商品信息描述标题字体颜色 -->
+    <!-- 商品信息内容标题字体颜色 -->
+    <!-- 被选中的配送方式字体颜色 -->
+    <!-- 被选中的配送方式字体颜色 -->
+
+
+    <!-- order_activity -->
+    <!-- jhs_4th -->
+    <color name="jhs_navigation_item_text_color">#5a5a5a</color>
+    <color name="no_goods_text">#222222</color>
+
+</resources>

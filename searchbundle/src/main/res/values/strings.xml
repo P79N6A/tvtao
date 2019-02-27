@@ -1,0 +1,32 @@
+<resources>
+    <!-- 搜索输入提示 -->
+    <string name="ytm_search_input_tip_first">大家都在搜:</string>
+    <string name="ytm_search_input_tip_second">输入提示:</string>
+    <string name="ytm_search_input_tip_text_pinyin">
+<![CDATA[
+		拼音首字母搜索:<br />
+		例如: <font color="#ffffff">柠檬</font> <br />
+    	只需输入： “<font color="#ff5e0e">NM</font>” 即可
+    	]]>
+    </string>
+
+    <string name="sound_toast">按住遥控器语音键，说出想买的宝贝</string>
+    <string name="delete_search_history">您要删除全部历史记录吗？</string>
+
+    <string name="input_box_tips">输入首字母或全拼搜索</string>
+    <string name="ytm_search_history">历史搜索</string>
+    <string name="ytm_search_history_delete">删除历史</string>
+    <string name="ytm_search_found">搜索发现</string>
+    <string name="ytm_think_you_like">您可能想搜</string>
+    <string name="ytm_search_not_you_like">没有您想搜的？可以尝试用全拼哦</string>
+    <string name="ytm_search_price_symbol">&#165;</string>
+    <string name="shop_name">淘宝店</string>
+    <string name="no_more_goods">没有更多宝贝啦</string>
+    <string name="search_all_goods">搜全部商品</string>
+    <string name="search_default_goods">综合排序</string>
+    <string name="search_sales_goods">销量优先</string>
+    <string name="search_all_goods_tmail">搜天猫商品</string>
+    <string name="search_default_goods_tmail">综合排序</string>
+    <string name="search_sales_goods_tmail">销量优先</string>
+
+</resources>

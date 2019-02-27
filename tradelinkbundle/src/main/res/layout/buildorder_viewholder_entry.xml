@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.tradelink.buildorder.view.BuildOrderItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingBottom="@dimen/dp_16">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_22"
+            app:layout_constraintBottom_toTopOf="@+id/subtitle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:lineSpacingExtra="@dimen/dp_12"
+            android:text="副标题"
+            android:textColor="#a2aaba"
+            android:textSize="@dimen/dp_22"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:text="具体描述 "
+            android:textColor="#a2aaba"
+            android:textSize="@dimen/dp_22"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/detail_arrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/detail_arrow"
+            android:layout_width="@dimen/dp_11"
+            android:layout_height="@dimen/dp_19"
+            android:src="@drawable/trade_buildorder_detailarrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</com.yunos.tvtaobao.tradelink.buildorder.view.BuildOrderItemView>

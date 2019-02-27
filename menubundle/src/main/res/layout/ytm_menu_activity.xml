@@ -1,0 +1,67 @@
+<com.yunos.tv.app.widget.focus.FocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <com.yunos.tvtaobao.menu.view.MenuFocusRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <include
+            android:id="@+id/menu_search_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/ytm_menu_item_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <include
+            android:id="@+id/menu_shopping_cart_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/menu_search_layout"
+            layout="@layout/ytm_menu_item_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <include
+            android:id="@+id/menu_collect_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/menu_shopping_cart_layout"
+            layout="@layout/ytm_menu_item_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <include
+            android:id="@+id/menu_my_taobao_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/menu_collect_layout"
+            layout="@layout/ytm_menu_item_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <include
+            android:id="@+id/menu_sort_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/menu_my_taobao_layout"
+            layout="@layout/ytm_menu_item_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+    </com.yunos.tvtaobao.menu.view.MenuFocusRelativeLayout>
+
+</com.yunos.tv.app.widget.focus.FocusPositionManager>

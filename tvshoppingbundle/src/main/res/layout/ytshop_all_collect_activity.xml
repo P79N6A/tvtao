@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ytshop_collect_goods_mark"
+        android:focusable="false" />
+
+    <com.yunos.tvtaobao.tvshoppingbundle.view.TvShopFocusPositionManager
+        android:id="@+id/position_manager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_221"
+        android:layout_alignParentBottom="true" >
+
+        <com.yunos.tvtaobao.tvshoppingbundle.view.TvShopFocusHListView
+            android:id="@+id/all_collect_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:paddingTop="@dimen/dp_5" />
+    </com.yunos.tvtaobao.tvshoppingbundle.view.TvShopFocusPositionManager>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/position_manager_layout"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:text="@string/ytshop_relative_goods"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_38" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:autotext="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_450"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_voice_card_mark"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_135"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:src="@drawable/head_tao" />
+
+        <com.tvtaobao.voicesdk.view.AutoTextView
+            android:id="@+id/voice_card_search_reply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="您最近10笔订单的物流信息在这里哦。"
+            autotext:lines="1"
+            autotext:textcolor="#ffffff"
+            autotext:textSize="@dimen/sp_22" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_120"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/ll_logistics_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+           >
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_128"
+                android:layout_height="@dimen/dp_120"
+                android:paddingLeft="@dimen/dp_42"
+                android:paddingRight="@dimen/dp_2">
+                <ImageView
+                    android:layout_width="@dimen/dp_84"
+                    android:layout_height="@dimen/dp_84"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_logistics_query_car" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_logistics"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

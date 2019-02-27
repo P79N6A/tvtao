@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_661"
+    android:layout_height="@dimen/dp_626"
+    android:layout_marginBottom="@dimen/dp_56"
+    android:layout_marginLeft="@dimen/dp_538"
+    android:layout_marginTop="@dimen/dp_36"
+    android:orientation="vertical">
+
+    <com.yunos.tvtaobao.tradelink.buildorder.view.BuildorderFocusListView
+        android:id="@+id/buildorder_buyorder_listview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_386"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:focusable="true"
+        android:scrollingCache="false" />
+
+    <ImageView
+        android:id="@+id/ytm_buildorder_mask_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buildorder_buyorder_listview"
+        android:layout_alignTop="@+id/buildorder_buyorder_listview"
+        android:background="@drawable/ytm_buildorder_mask_up"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ytm_buildorder_mask_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buildorder_buyorder_listview"
+        android:layout_alignLeft="@+id/buildorder_buyorder_listview"
+        android:background="@drawable/ytm_buildorder_mask_down"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:visibility="gone" />
+
+
+    <com.yunos.tvtaobao.tradelink.buildorder.view.BuildOrderAddressRelativeLayout
+        android:id="@+id/buildorder_address_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_162"
+        android:layout_above="@+id/buildorder_button_wrapper"
+        android:layout_marginBottom="@dimen/dp_11"
+        android:layout_marginTop="@dimen/dp_11"
+        android:background="@drawable/ytm_buildorder_address_selector"
+        android:focusable="true"
+        android:nextFocusDown="@+id/buildorder_button"
+        android:nextFocusUp="@+id/buildorder_buyorder_listview">
+
+        <ImageView
+            android:id="@+id/addres_right_arrow"
+            android:layout_width="@dimen/dp_11"
+            android:layout_height="@dimen/dp_19"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/ytm_buildorder_address_right_normal"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <com.yunos.tvtaobao.tradelink.buildorder.view.BuildOrderGallery
+            android:id="@+id/buildorder_address_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_toLeftOf="@id/addres_right_arrow"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/addres_left_arrow"
+            android:layout_width="@dimen/dp_11"
+            android:layout_height="@dimen/dp_19"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:background="@drawable/ytm_buildorder_address_left_normal"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/presaleaddresshint"
+            android:layout_width="@dimen/dp_364"
+            android:layout_height="@dimen/dp_26"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:background="@drawable/buildorder_address_hint"
+            android:visibility="gone" />
+    </com.yunos.tvtaobao.tradelink.buildorder.view.BuildOrderAddressRelativeLayout>
+
+    <com.yunos.tv.app.widget.focus.FocusLinearLayout
+        android:id="@+id/buildorder_button_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_67"
+        android:layout_alignParentBottom="true"
+        android:background="#eb7413"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/ytm_buildorder_info_layout"
+        android:orientation="horizontal">
+        <!--android:background="@drawable/icon_build_order_bg"-->
+
+        <TextView
+            android:id="@+id/rebate_money"
+            android:layout_width="@dimen/dp_260"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:gravity="center"
+            android:lineSpacingExtra="1sp"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_31"
+            android:paddingTop="@dimen/dp_6"
+            android:text=""
+            android:textColor="@color/ytm_create_order_rebate_focuse"
+            android:textSize="@dimen/sp_28"
+            android:visibility="gone" />
+
+        <com.yunos.tvtaobao.tradelink.buildorder.view.BuildOrderTextView
+            android:id="@+id/buildorder_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rebate_money"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/ytm_buildorder_ok"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_32"></com.yunos.tvtaobao.tradelink.buildorder.view.BuildOrderTextView>
+
+        <TextView
+            android:id="@+id/ytm_buildorder_ok_hint"
+            android:layout_width="@dimen/dp_190"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_19"
+            android:text="电视淘宝红包会在支付\n时自动抵扣"
+            android:textColor="@color/ytbv_white"
+            android:textSize="@dimen/sp_18"
+            android:visibility="gone" />
+    </com.yunos.tv.app.widget.focus.FocusLinearLayout>
+
+
+</RelativeLayout>

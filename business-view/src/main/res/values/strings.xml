@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">business-view</string>
+
+    <!-- 公用 -->
+    <string name="ytm_main_app_name">电视淘宝</string>
+    <string name="ytm_immediately_buy">立即购买</string>
+    <string name="ytm_invalid_parameter">无效的参数值！</string>
+    <string name="ytm_network_error_goto_set">网络连接错误，请设置网络连接</string>
+    <string name="ytm_contentDescription"></string>
+    <string name="ytm_content">内容</string>
+    <string name="ytm_network_data_failed">获取数据失败</string>
+    <string name="ytm_uninstall_taobaosdk">未发现订单应用，可能需要更新系统版本</string>
+    <string name="ytm_api_error">系统错误</string>
+    <string name="ytm_no_data">暂无商品数据</string>
+    <string name="ytm_image_download_failed">图片下载失败</string>
+    <string name="ytm_guide_item_detail_toast">点击OK键查看商品详情</string>
+    <string name="ytm_space_text">&#160;</string>
+    <string name="ytm_rate_unit_text">折</string>
+    <string name="ytm_tmall_chaoshi">天猫超市</string>
+    <string name="ytm_pay_initfail">支付初始化失败</string>
+    <string name="ytm_start_activity_error">打开页面失败</string>
+
+    <!-- 共用 -->
+    <string name="ytbv_app_version">版本信息: </string>
+    <string name="ytbv_title">标题</string>
+    <string name="ytbv_content">内容</string>
+    <string name="ytbv_setting">设置</string>
+    <string name="ytbv_confirm">确定</string>
+    <string name="ytbv_cancel">取消</string>
+    <string name="ytbv_next_step">下一步</string>
+    <string name="ytbv_leave">退出</string>
+    <string name="ytbv_not_open">暂时无内容,请稍后重试</string>
+    <string name="ytbv_no_goods">暂无商品信息</string>
+    <string name="ytbv_no_coupon">暂无优惠券信息</string>
+    <string name="ytbv_price_unit_text">&#165;</string>
+    <string name="ytbv_invalid_h5_url">请配置合法的网页地址</string>
+    <string name="ytbv_not_found_page">未找到打开的页面</string>
+    <string name="ytbv_start_activity_error">打开页面失败</string>
+    <string name="ytm_nodata_text">暂无相关信息</string>
+    <string name="ytsdk_dollar_sign">&#165;</string>
+    <string name="ytsdk_unit">件</string>
+
+    <!-- 二维码 -->
+    <string name="ytbv_qr_buy_item">请使用手机淘宝扫码购买该商品</string>
+    <string name="ytbv_qr_buy_nottv">该商品仅支持手机扫码购买</string>
+    <string name="ytbv_qr_buy_error">该商品仅支持手机扫码购买</string>
+    <string name="ytbv_qr_buy_pre_item">该商品为预售商品，请扫码支付定金</string>
+    <string name="ytbv_qr_code_dsc">支持手机淘宝、天猫、支付宝扫描购买</string>
+
+    <!-- 加入购物车 -->
+    <string name="ytbv_success_add_cart">加入购物车成功！</string>
+    <string name="ytbv_goto_jiesuan">去结算</string>
+    <string name="ytbv_zai_guangguang">再逛逛</string>
+    <string name="ytbv_add_to_cart">加入购物车</string>
+
+    <!-- 网络请求 -->
+    <string name="ytbv_network_connect_err">获取数据失败，请检查网络</string>
+    <string name="ytbv_no_network">没有可用的网络</string>
+    <string name="ytbv_network_error_goto_set">网络连接错误，设置网络连接</string>
+    <string name="ytbv_network_error_time">网络连接错误，可能超时</string>
+    <string name="ytbv_network_error_colose">网络连接错误,请检查网络设置</string>
+    <string name="ytbv_open_setting_activity_error">打开设置页面失败，请手动进入设置页面</string>
+
+    <!-- DocumentUtil 这个类中使用的string -->
+    <string name="ytbv_document_tv">TV端</string>
+    <string-array name="ytbv_document_wireless">
+        <!-- 在这里追加要被替换的文案 -->
+        <item>无线端</item>
+        <item>无线客户端</item>
+        <item>终端</item>
+    </string-array>
+
+    <!--侧边栏穿透-->
+    <string name="ytbv_pierce_back_home">返回首页</string>
+    <string name="ytbv_pierce_cart_buy">购 物 车</string>
+    <string name="ytbv_pierce_block">卡券包</string>
+    <string name="ytbv_pierce_come_back">返回顶部</string>
+    <string name="ytbv_pierce_contact">客服:0571-85135297</string>
+    <string name="ytbv_pierce_red_package">我的红包</string>
+    <string name="ytbv_pierce_my_taobao">我的淘宝</string>
+    <string name="ytbv_pierce_my_jifen">我的积分</string>
+
+
+    <string name="ytm_home_start_activity_error">打开页面失败</string>
+
+
+    <!-- join group -->
+
+    <string name="ytsdk_no_address">您还没有设置收货地址，请先到淘宝网设置收货地址！</string>
+    <string name="ytsdk_exceed_purchase">对不起，您输入的数量超过了可购买的最大数量！</string>
+    <string name="ytsdk_can_not_buy">对不起，该商品暂时不能购买！</string>
+    <string name="ytsdk_can_not_buy_for_chang_address">对不起，当前收货地址暂时不能购买！</string>
+    <string name="ytsdk_no_pay">对不起，该商品您还有未付款的订单，请不要重复购买！</string>
+    <string name="ytsdk_account_error">对不起，您的账号还未登录，请您先去登录！</string>
+    <string name="ytsdk_server_error">对不起，服务暂时无响应，请稍后重试！</string>
+    <string name="ytsdk_promotions">促销价</string>
+    <string name="ytsdk_buy_num">数量</string>
+    <string name="ytsdk_limit_num">1</string>
+    <string name="ytsdk_default_price">&#165; 99.00</string>
+    <string name="ytsdk_purchase">限购</string>
+    <string name="ytsdk_please_select_sku">请选择</string>
+    <string name="ytsdk_join_timeout">参团超时了，请返回重新参团！</string>
+    <string name="ytsdk_order_more">您的未付款订单过多,请先到淘宝网关闭一些订单!</string>
+    <string name="ytsdk_can_not_buy_for_user_change">您已切换账号,请重新购买！</string>
+
+
+    <string name="bs_up_app_name">UpdateApp</string>
+    <string name="bs_up_update">立即更新</string>
+    <string name="bs_up_leave">下次再说</string>
+    <string name="bs_up_remind">有新版本可以更新啦！</string>
+    <string name="bs_up_line">渐变线</string>
+    <string name="bs_up_network_error">网络连接异常！</string>
+    <string name="bs_up_retry">请重试</string>
+    <string name="bs_up_fail_text">版本升级失败！</string>
+    <string name="bs_up_confirm_exit">确定</string>
+    <string name="bs_up_prompt_content">亲，版本过低，升级后才能继续使用哦</string>
+
+
+    <!-- 提示升级的弹框标题默认文档-->
+    <string name="bs_up_dilog_title">有新版本可用</string>
+
+    <!-- 强制升级的弹框默认文档-->
+    <string name="bs_before_up_default_memo">一起开启购物新体验</string>
+
+    <!--sku-->
+    <string name="new_shop_change_sku_sucess">完成修改</string>
+    <string name="new_shop_add_cart_sucess">成功加入购物车</string>
+    <string name="new_shop_choose_product_info">请完整选择宝贝信息</string>
+    <string name="new_shop_choose_product_info_again">请重新选择商品规格</string>
+    <string name="new_shop_product_stockout">此选项宝贝缺货</string>
+    <string name="new_shop_sku_num_exceed_kucun">超出库存数量了</string>
+    <string name="new_shop_sku_num_exceed_limit">超出限购数量了</string>
+    <string name="new_shop_sku_num_exceed_minimum">宝贝不能再减少啦</string>
+    <string name="new_shop_cart_sku_presale">&#165;&#160;</string>
+    <!--takeout sku-->
+    <string name="take_out_sku_num_exceed_minimum">商品不能再减少啦</string>
+    <string name="take_out_sku_num_exceed_kucun">我们只有这么多了</string>
+    <string name="take_out_sku_add_bag_error">商品出了点小意外\n再试试吧</string>
+    <string name="take_out_sku_coupon_exceed_limit">该商品限%s份优惠\n超出需按原价购买哦</string>
+    <string name="take_out_sku_num_exceed_limit">每单只能购买%s份哦</string>
+    <string name="take_out_sku_choose_product_info">请完整选择商品规格哦</string>
+    <string name="take_out_sku_num_limit">限购%s份</string>
+    <string name="take_out_sku_num_stock">仅有%s份</string>
+
+    <string name="ytbv_save">保留</string>
+    <string name="ytbv_delete">删除</string>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common color -->
+    <color name="ytshop_gray">#888888</color>
+    <color name="ytshop_my_collect_title_num">#ff7200</color>
+    
+    <color name="ytshop_button_normal">#7e4821</color>
+
+</resources>

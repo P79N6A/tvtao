@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">homebundle</string>
+
+    <!-- 猜你喜欢 -->
+    <string name="ytsdk_detainment_weinituijian">[为你推荐]</string>
+    <string name="ytsdk_detainment_goshoping">再逛逛</string>
+    <string name="ytsdk_detainment_leave_app">离开</string>
+    <string name="ytsdk_detainment_title">猜你喜欢</string>
+</resources>

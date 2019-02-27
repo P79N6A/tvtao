@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e60e1215"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_1112"
+        android:layout_height="@dimen/dp_464"
+        android:layout_marginLeft="@dimen/dp_84"
+        android:layout_marginTop="@dimen/dp_84"
+        android:background="@drawable/bg_take_out_skuinfo_layout"
+        android:orientation="horizontal">
+        <!--左侧商品信息-->
+        <LinearLayout
+            android:layout_width="@dimen/dp_352"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_take_out_skuinfo_goods"
+            android:orientation="vertical">
+
+            <com.yunos.tvtaobao.takeoutbundle.view.roundedimageview.RoundedImageView
+                android:id="@+id/sku_goods_image"
+                android:layout_width="@dimen/dp_352"
+                android:layout_height="@dimen/dp_352"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_top_left="@dimen/dp_12"
+                android:background="@drawable/bg_take_out_skuinfo_goods_image" />
+
+            <TextView
+                android:id="@+id/sku_goods_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_30"
+                tools:text="1111111111"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <TextView
+                tools:text="111111"
+                android:id="@+id/sku_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp_f2"
+                android:textSize="@dimen/sp_36" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false">
+
+            <LinearLayout
+                android:id="@+id/activity_sku_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_24">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_focus_background"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_26"
+        android:layout_width="@dimen/dp_544"
+        android:layout_height="@dimen/dp_68">
+
+        <Button
+            android:id="@+id/activity_sku_info_ok"
+            android:layout_width="@dimen/dp_540"
+            android:layout_height="@dimen/dp_64"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_sku_ok_selected_btn"
+            android:text="加入购物车"
+            android:gravity="center"
+            android:textColor="@drawable/color_sku_ok_btn_textcolor"
+            android:textSize="@dimen/sp_32" />
+
+    </FrameLayout>
+
+</LinearLayout>

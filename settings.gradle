@@ -1,0 +1,6 @@
+if (!FastBuild.equals("true")) {
+    include ':app', ':menubundle', ':goodlistbundle', ':takeoutbundle', ':yunos-core', ':dmode-core', ':dmode-extra', ':dmode-account', ':dmode-childlock', ':resbundle', ':payment', ':ijkmediaplayer', ':answerbundle', ':newcartbundle', ':livebundle', ':tvtaolog', 'juhuasuanbundle', ':tvtaobao-core', ':homebundle', ':splashscreen', ':activitygroupcompat', ':tv-sdk', ':business-view', ':business-account', ':business-request', ':tv_imageloader', ':commonbundle', ':mytaobaobundle', ':searchbundle', ':cartbagbundle', ':tvshoppingbundle', ':voicebundle', ':voice-sdk', ':detailbundle', ':tradelinkbundle', ':updatebundle', ':zhuantibundle', ':flashsalebundle'
+} else {
+    //自己测试用的时候使用
+    include ':app', ':homebundle', ':payment', ':tvtaobao-core', ':splashscreen', ':tv-sdk', ':business-view', ':business-account', ':business-request', ':tv_imageloader', ':voicebundle', ':voice-sdk', ':updatebundle', ':newcartbundle', ':detailbundle', ':mytaobaobundle'
+}

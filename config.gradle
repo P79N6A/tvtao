@@ -1,0 +1,315 @@
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 15,
+            targetSdkVersion : 25,
+            dtargetSdkVersion: 22,     //dmode这里是22 不要改成更高版本！！！！！！！！！！！
+
+            dversionCode     : 2110500507,
+            dversionName     : "5.5.7",
+
+            versionCode      : 2110500506,
+            versionName      : "5.5.6",
+            buildNo          : "YUNY",
+            IsMonkey         : "false",//isMonkey为true的时候：1 屏蔽猜你喜欢确认按钮  2 点击home键退出电淘会离开重启电淘 3登录二维码页面定时关闭
+            DeviceFake       : "real" // real：真实设备信息、fake_low：冒充低端设备、fake_medium：冒充终端设备、fake_high：冒充高端设备
+    ]
+
+    //11，目前热更新没问题， 36；解决海尔问题，热修复未验证 38：热修复有问题
+    dependencies = [
+            butterknife         : 'com.jakewharton:butterknife:8.5.1',
+            butterknifeApt      : 'com.jakewharton:butterknife-compiler:8.5.1',
+            constraintLayout    : 'com.android.support.constraint:constraint-layout:1.1.3',
+            zxing         : 'com.google.zxing:core:3.3.1',
+            eventbus      : 'org.greenrobot:eventbus:3.1.1',
+            cardviewV7    : 'com.android.support:cardview-v7:25.3.1',
+            mtop          : 'com.taobao.android:mtopsdk_allinone:3.0.4.7',
+            appcompatV7   : 'com.android.support:appcompat-v7:25.3.1',
+            recyclerviewV7: 'com.android.support:recyclerview-v7:25.3.1',
+            junit         : 'junit:junit:4.12',
+            atlasupdate   : 'com.taobao.android:atlasupdate:1.1.4.22-rc7',
+//            atlasupdate   : 'com.taobao.android:atlasupdate:1.1.4.14',
+            atlas_core    : 'com.taobao.android:atlas_core:5.1.0.2',
+//            atlas_core    : 'com.taobao.android:atlas_core:5.0.7.54-rc2',
+            atlasplugin   : 'com.taobao.android:atlasplugin:2.3.3.rc70'
+//            atlasplugin   : 'com.taobao.android:atlasplugin:2.3.3.rc41'
+
+//            /**
+//             * 简版update，去掉了rxjava依赖
+//             */
+//            atlasupdate: 'com.taobao.android:atlasupdate:1.1.4.15-li@aar',
+//            atlas_core: 'com.taobao.android:atlas_core:5.0.7.55',
+//            atlasplugin: 'com.taobao.android:atlasplugin:2.3.3.rc41'
+            ////////////////////////////////////////////////////////////
+
+//            atlasupdate: 'com.taobao.android:atlasupdate:1.1.4.14',
+//            atlas_core: 'com.taobao.android:atlas_core:5.0.7.52-rc3',
+//            atlasplugin: 'com.taobao.android:atlasplugin:2.3.3.rc30'
+//            atlas_core: 5.0.7.42
+//            atlas_update: 1.1.4.11
+//            atlasplugin: 2.3.3.rc12
+    ]
+
+
+
+
+    flavors = [
+            dianxinJJC   :                              //电信聚精彩
+                    ["channelId": "2017050920",
+//                     "appid"    : "com.zhiping.tvtaobao",
+                     "name"     : "DXJ"
+                    ],
+            dianxinTYGQ  :                              //电信天翼高清
+                    ["channelId": "2017120517",
+                     "targetSdk": "26",
+                     "name"     : "DXT"
+                    ],
+            fengxing     :                              //风行
+                    ["channelId": "2016060515",
+                     "name"     : "FXN"
+                    ],
+            xiaomi       :
+                    ["channelId": "2016030415",         //小米
+                     "targetSdk": "25",
+                     "name"     : "XMI"
+                    ],
+            yueme        :
+                    ["channelId": "2015082715",
+                     "name"     : "ZDX"                        //中国电信（悦me）
+                    ],
+            letv         :
+                    ["channelId": "2016060415",
+                     "name"     : "LTV"                        //乐视
+                    ],
+            guoangd      :
+                    ["channelId": "2015101411",
+                     "name"     : "GAG"                       //国安广视
+                    ],
+            guizhougd    :
+                    ["channelId": "2015121616",
+                     "name"     : "GZG"                       //贵州广电
+                    ],
+            baofeng      :
+                    ["channelId": "2016010811",
+                     "name"     : "BAO"
+                    ],
+            unicom       :
+                    ["channelId": "2015081713",
+                     "name"     : "UIC"
+                    ],
+            shafa        :
+                    ["channelId": "2016060315",
+                     "name"     : "SFA"        //沙发管家
+                    ],
+            tiantugd     :
+                    ["channelId": "2016112510",
+                     "name"     : "TTG"
+                    ],
+            znds         :
+                    ["channelId": "2016051711",
+                     "name"     : "DBI"        //当贝
+                    ],
+            tvhuan       :
+                    ["channelId": "2016050515",
+                     "name"     : "TVH"        //欢视（TCL，长虹）
+                    ],
+            yunying      :
+                    ["channelId": "2016101301",
+                     "name"     : "YYG"
+                    ],
+            ceshi        :
+                    ["channelId": "142857",
+                     "name"     : "CES"
+                    ],
+            '7po'        :
+                    ["channelId": "2016060615",
+                     "name"     : "7PO"         //奇珀市场
+                    ],
+            kukai        :
+                    ["channelId": "2016070117",
+                     "name"     : "KUK"
+                    ],
+            dongfanggd   :
+                    ["channelId": "2016120517",
+                     "name"     : "DFG"
+                    ],
+            lenovo       :
+                    ["channelId": "2016072819",
+                     "name"     : "LNV"
+                    ],
+            bestv        :
+                    ["channelId": "2016101811",
+                     "name"     : "BST"        //百事通
+                    ],
+            icntv        :
+                    ["channelId": "2016030116",
+                     "name"     : "ICN"
+                    ],
+            hubeigd      :
+                    ["channelId": "2015121719",
+                     "name"     : "HUG"
+                    ],
+            hebeigd      :
+                    ["channelId": "2016052017",
+                     "name"     : "HBG"
+                    ],
+//            coocaa       :
+//                    ["channelId": "2016070117",
+//                     "name"     : "CCA"
+//                    ],
+            jscm         :
+                    ["channelId": "2016051617",
+                     "name"     : "JSC"
+                    ],
+            longjianggd  :
+                    ["channelId": "2016041116",
+                     "name"     : "LJG"
+                    ],
+            jsmobile     :
+                    ["channelId": "2016052610",
+                     "name"     : "JSM"
+                    ],            //江苏移动
+            hisense      :
+                    ["channelId": "2016032917",
+                     "targetSdk": "26",
+                     "name"     : "HIS"
+                    ],            //海信电视
+            guangdongdx  :
+                    ["channelId": "2016010618",
+                     "name"     : "GDD"
+                    ],
+            chongqinggd  :
+                    ["channelId": "2016080117",
+                     "name"     : "CQG"
+                    ],
+            meizu        :
+                    ["channelId": "2016091911",
+                     "name"     : "MEI"
+                    ],
+            konka        :
+                    ["channelId": "2016102417",
+                     "name"     : "KKA"
+                    ],
+//        shandongxmt:{
+//            ["channelId": "2016120615"
+//        }
+            miguvideo    :
+                    ["channelId": "2017030910",
+                     "name"     : "MGV"
+                    ],
+
+            beevideo     :
+                    ["channelId": "2017031010",
+                     "name"     : "BEV"
+                    ],            //蜜蜂视频
+
+            southernmedia:
+                    ["channelId": "2017031110",
+                     "name"     : "SMA"
+                    ],
+
+            fjmobile     :
+                    ["channelId": "2017031210",
+                     "name"     : "FJM"
+                    ],
+
+            whaley       :
+                    ["channelId": "2017031612",
+                     "name"     : "WHA"
+                    ],
+
+            mojing       :
+                    ["channelId": "2017080209",
+                     "name"     : "MOJ"
+                    ],
+
+            guowangTVOS  :
+                    ["channelId": "2017050510",
+                     "name"     : "GWT"
+                    ],
+            tcl          :
+                    ["channelId": "2017101616",
+                     "name"     : "TCL"
+                    ],
+            zhixiang     :
+                    ["channelId": "2017101915",
+                     "name"     : "ZXG"
+                    ],            //智象商店
+            aishang      :
+                    ["channelId": "2017101916",
+                     "name"     : "ASG"
+                    ],
+            aishi        :
+                    ["channelId": "2017101917",
+                     "name"     : "ASI"
+                    ],            //爱视市场
+            cantvos      :
+                    ["channelId": "2017101916",
+                     "name"     : "CAN"
+                    ],            //爱尚电视
+            panasonic    :
+                    ["channelId": "2017110111",
+                     "appid"    : "rca.panasonic.tvtaobao",
+                     "targetSdk": "25",
+                     "name"     : "PSC"
+
+                    ],   // packageName = 'rca.panasonic.tvtaobao' 松下渠道包名比较特殊，打包时需注意
+
+            shiyun       : ["channelId": "2017121212",
+                            "name"     : "SYN"
+            ],//视云
+
+            beifangyx    : ["channelId": "2018010216",
+                            "name"     : "BFY"
+            ],//北方有线
+
+            daliantt     : ["channelId": "2018010217",
+                            "appid"    : "com.dltt.app1",
+                            "name"     : "DLT"
+            ],//大连天途
+            taiyuangd    : ["channelId": "2018030613",
+                            "name"     : "TYG"
+            ],//太原广电
+
+            beifanggd    : ["channelId": "2018032710",
+                            "name"     : "BFG"
+            ],
+            tansuoottllq : ["channelId": "2018071313",
+                            "name"     : "TSCM"
+            ],
+
+            pengboshi    : ["channelId": "2018072711",  //鹏博士
+                            "name"     : "PBS"
+            ],
+            xstv         : ["channelId": "2018072712",  //新视家
+                            "name"     : "XTV"
+            ],
+            xianshangcs  : ["channelId": "2018050714",
+                            "name"     : "DCS"   //线上测试安卓团队
+            ],
+            sdmobile     : ["channelId": "2018103011",
+                            "name"     : "SDM"   //山东移动
+            ],
+            hljmobile    : ["channelId": "2018112309",
+                            "name"     : "HLJ"   //黑龙江移动
+            ],
+            ocn          : ["channelId": "2018112310",
+                            "name"     : "OCN"   //东方有线
+            ],
+            huashuhudong : ["channelId": "2019010801",
+                            "name"     : "HAS"   //华数
+            ],
+            hnmobilemg : ["channelId": "2019011601",
+                            "name"     : "HMG"   //湖南移动-芒果
+            ],
+            hnmobile : ["channelId": "2019011602",
+                            "name"     : "HNM"   //湖南移动
+            ],
+            huawei : ["channelId": "2019021401",
+                        "name"     : "HUA"   //华为
+            ],
+
+    ]
+}
+

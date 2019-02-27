@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autotext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_450"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_voice_card_mark"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:id="@+id/voice_card_qrcode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_364"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_128"
+            android:layout_marginBottom="@dimen/dp_112"
+            android:src="@drawable/item_zhifubao"/>
+
+        <TextView
+            android:id="@+id/voice_card_qrcode_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_32"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_228"
+            android:layout_marginBottom="@dimen/dp_136"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="0sp"
+            android:text="亲，请打开【支付宝】扫码付款"/>
+
+        <ImageView
+            android:id="@+id/voice_card_qrcode"
+            android:layout_width="@dimen/dp_332"
+            android:layout_height="@dimen/dp_332"
+            android:padding="@dimen/dp_14"
+            android:background="@drawable/bg_qrcode"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_176"
+            android:layout_marginBottom="@dimen/dp_32"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/voice_card_order_reply_layout"
+        android:layout_width="1160dp"
+        android:layout_height="@dimen/dp_56"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="218dp"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_56"
+            android:src="@drawable/head_tao" />
+
+        <com.tvtaobao.voicesdk.view.AutoTextView
+            android:id="@+id/voice_card_order_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            autotext:lines="1"
+            autotext:textSize="@dimen/sp_22"
+            autotext:textcolor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voice_card_order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="60dp"
+        android:visibility="gone">
+
+        <com.tvtaobao.voicesdk.view.RoundImageView
+            android:id="@+id/voice_card_order_image"
+            android:layout_width="170dp"
+            android:layout_height="170dp" />
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="170dp"
+            android:background="@drawable/bg_create_order_product"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品信息"
+                android:textColor="#a8bfd4"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/voice_card_order_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="0sp"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/voice_card_order_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="0sp"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/voice_card_order_postage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="0sp"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="实付："
+                    android:gravity="bottom"
+                    android:textColor="#ff4400"
+                    android:textSize="@dimen/sp_20" />
+
+                <TextView
+                    tools:text="¥43.8"
+                    android:id="@+id/voice_card_order_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff4400"
+                    android:textSize="@dimen/sp_36" />
+                <ImageView
+                    android:id="@+id/img_rebate_tag"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/tag_fanli"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_16" />
+                <TextView
+                    android:id="@+id/txt_rebate"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginBottom="@dimen/dp_9"
+                    tools:text="预估 ¥100.11"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="#ff4400"
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/voice_card_order_address_layout"
+            android:layout_width="442dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="28dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认收货地址"
+                android:textColor="#a8bfd4"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/voice_card_order_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="8sp"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voice_card_error_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="180dp"
+            android:background="@drawable/icon_bill_other_problem" />
+    </LinearLayout>
+</RelativeLayout>

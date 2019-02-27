@@ -1,0 +1,364 @@
+//group = 'com.yunos.tvtaobao.atlas'
+def dMode = getEnvValue("dmode", "false")
+def today = new Date().format('yyyyMMdd');
+def mode = getEnvValue("mode", "release")
+def patchMode = getEnvValue("apVersion", "")
+def merge = getEnvValue("merge", "false")
+println 'dmode:' + dMode + (dMode == "false")
+def channel = getEnvValue("channel", "")
+if (channel != "")
+    dMode = "true"
+println 'channel:' + channel
+if ("" != channel)
+    println 'appkey:' + rootProject.flavors.get(channel).channelId
+
+rootProject.flavors.get(channel).each {
+    key, value ->
+        println key + ":" + value;
+}
+//println "appid:" + rootProject.flavors.get(channel).keys
+def packageName = ""
+def vName = ""
+def vCode = ""
+if (dMode == "true") {
+    packageName = 'rca.rc.tvtaobao'
+    vName = rootProject.ext.android.dversionName
+    vCode = rootProject.ext.android.dversionCode
+    //packageName = 'rca.panasonic.tvtaobao' 松下渠道包名比较特殊
+} else {
+    packageName = 'com.yunos.tvtaobao'
+    vName = rootProject.ext.android.versionName
+    vCode = rootProject.ext.android.versionCode
+}
+
+if ("" != channel && rootProject.flavors.get(channel).appid && "" != rootProject.flavors.get(channel).appid)
+    packageName = rootProject.flavors.get(channel).appid
+
+def targetSdk = ""
+if (dMode == "true") {
+    targetSdk = rootProject.ext.android.dtargetSdkVersion + ""
+} else {
+    targetSdk = rootProject.ext.android.targetSdkVersion + ""
+}
+if ("" != channel && rootProject.flavors.get(channel).targetSdk && "" != rootProject.flavors.get(channel).targetSdk)
+    targetSdk = rootProject.flavors.get(channel).targetSdk
+
+def channelName = ""
+def todaymmdd = new Date().format('MMdd');
+if ("" != channel && rootProject.flavors.get(channel).name && "" != rootProject.flavors.get(channel).name)
+    channelName = rootProject.flavors.get(channel).name
+
+println 'package :' + packageName
+println 'targetSdk:' + targetSdk
+group = "${packageName}.atlas.${channel}"
+version = getEnvValue("versionName", vName);
+def apVersion = getEnvValue("apVersion", "");
+apply plugin: 'com.android.application'
+apply plugin: 'com.taobao.atlas'
+
+atlas.tBuildConfig.classInject = false
+
+repositories {
+    mavenLocal()
+    jcenter()
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    android.enforceUniquePackageName = false
+
+    defaultConfig {
+//        applicationId "com.yunos.tvtaobao"
+        applicationId packageName
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion targetSdk
+        versionCode vCode
+        versionName version
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            abiFilters "armeabi"
+        }
+        multiDexEnabled true
+        resConfigs "zh"
+    }
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'multidex'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "6g"
+    }
+    sourceSets {
+        main {
+            if ("coocaa" == channel) {
+                manifest.srcFile 'flavors/coocaa/AndroidManifest.xml'
+                res.srcDirs = ['src/main/res', 'flavors/coocaa/res']
+            }
+            if ("xiaomi" == channel) {
+                manifest.srcFile 'flavors/xiaomi/AndroidManifest.xml'
+                res.srcDirs = ['src/main/res', 'flavors/xiaomi/res']
+            }
+            if ("kukai" == channel) {
+                manifest.srcFile 'flavors/kukai/AndroidManifest.xml'
+                res.srcDirs = ['src/main/res', 'flavors/kukai/res']
+            }
+        }
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('./tools/platform.keystore')
+            storePassword 'android'
+
+        }
+        release {
+            keyAlias 'tv_taobao_keystore'
+            keyPassword 'TvTaobao,NB'
+            storeFile file('./tools/tv_taobao.keystore')
+            storePassword 'TvTaobao,NB'
+
+        }
+
+        drelease {
+            keyAlias 'androidreleasekey'
+            keyPassword 'chen88jie'
+            storeFile file('./tools/tvtaobao.tvtaobao')
+            storePassword 'chen88jie'
+        }
+    }
+    buildTypes {
+        debug {
+            resValue "bool", "isDebug", "true"
+            resValue "string", "channel", channel
+            if (dMode == "true") {
+                signingConfig signingConfigs.drelease
+                rootProject.flavors.get(channel).each {
+                    key, value ->
+                        println key + ":" + value;
+                        if ("true" == value || "false" == value) {
+                            resValue "bool", key, value
+                        } else {
+                            resValue "string", key, value
+                        }
+                }
+            } else
+                signingConfig signingConfigs.release
+        }
+        release {
+            resValue "bool", "isDebug", "false"
+            resValue "string", "channel", channel
+            minifyEnabled false
+            if (dMode == "true") {
+                signingConfig signingConfigs.drelease
+                rootProject.flavors.get(channel).each {
+                    key, value ->
+                        println key + ":" + value;
+                        if ("true" == value || "false" == value) {
+                            resValue "bool", key, value
+                        } else {
+                            resValue "string", key, value
+                        }
+                }
+            } else
+                signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        mode = variant.buildType.name
+        variant.outputs.each { output ->
+            def file = output.outputFile
+            if ("" == patchMode)
+                output.outputFile = new File("./buildApks/" + version + "/", "TVTao" + "_" + defaultConfig.versionName + "_" + (dMode == "true" ? "DMode_" : "Yunos_") + today + "_" + (channel == "" ? "" : channel+"_")  + mode + ".apk")
+        }
+    }
+
+}
+
+atlas {
+
+    atlasEnabled true
+    tBuildConfig {
+        autoStartBundles = []
+        //自启动bundle配置
+        outOfApkBundles = ['remotebundle']
+        preLaunch = 'com.yunos.tvtaobao.TvtaobaoPreLaunch'
+        atlasMultiDex = true
+        mergeAwbJavaRes = false
+        autoPackageId = true
+    }
+
+    manifestOptions {
+        addAtlasProxyComponents true
+    }
+
+
+    patchConfigs {
+        debug {
+            createTPatch true
+        }
+        debug {
+            createTPatch true
+        }
+    }
+
+
+    buildTypes {
+        debug {
+            if (apVersion) {
+                baseApDependency "${group}:AP-debug:${apVersion}@ap"
+                patchConfig patchConfigs.debug
+            }
+        }
+
+        release {
+            if (apVersion) {
+                baseApDependency "${group}:AP-release:${apVersion}@ap"
+                patchConfig patchConfigs.debug
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    if (!FastBuild.equals("true")) {
+        compile project(':activitygroupcompat')
+        bundleCompile project(':detailbundle')
+        bundleCompile project(':commonbundle')
+        bundleCompile project(':mytaobaobundle')
+        bundleCompile project(':searchbundle')
+        bundleCompile project(':cartbagbundle')
+        bundleCompile project(':newcartbundle')
+        bundleCompile project(':tvshoppingbundle')
+        bundleCompile project(':tradelinkbundle')
+        bundleCompile project(':zhuantibundle')
+        bundleCompile project(':flashsalebundle')
+        bundleCompile project(':juhuasuanbundle')
+        bundleCompile project(':menubundle')
+        bundleCompile project(':goodlistbundle')
+        bundleCompile project(':answerbundle')
+        bundleCompile project(':takeoutbundle')
+        bundleCompile project(':livebundle')
+        bundleCompile project(':voicebundle')
+    }
+
+//////////////////////////////////////////////////////
+    if (merge == "true")
+        compile project(':resbundle')
+    compile project(':splashscreen')
+    compile project(':ijkmediaplayer')
+    compile project(':business-view')
+    compile project(':homebundle')
+    compile project(':payment')
+    bundleCompile project(':detailbundle')
+    bundleCompile project(':newcartbundle')
+    bundleCompile project(':mytaobaobundle')
+
+///////////////////////////////////////////////////
+
+
+    compile 'com.android.support:multidex:1.0.0'
+
+    testCompile rootProject.ext.dependencies.junit
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile project(':tvlivebundle')
+    //    compile rootProject.ext.dependencies.appcompatV7
+}
+
+
+
+tasks.whenTaskAdded { task ->
+    if (task.name.contains("Test")) {
+        task.setEnabled(false)
+    }
+
+    if (task.name.equals("CreateTPatchDebug") || task.name.equals("CreateTPatchRelease") || task.name.equals("CreateDebugTPatch") || task.name.equals("CreateReleaseTPatch")) {
+        task.doLast {
+            println "dolast:" + task.name
+            if (task.name.contains("Release"))
+                mode = "release"
+            else
+                mode = "debug"
+            def files = null;
+            println "mode:" + mode
+            def file = new File(task.project.getBuildDir(), "outputs");
+            if (file.exists() && new File(file, "tpatch-${mode}").exists()) {
+                files = new File(file, "tpatch-${mode}").listFiles();
+            }
+            def cn = dMode == "true" ? $ { channel } : "yunos";
+            if (files != null) {
+                for (File file1 : files) {
+                    if (file1.getName().endsWith(".json") || file1.getName().endsWith(".tpatch")) {
+
+                        if (!new File(task.project.getRootDir(), "hisTpatch").exists()) {
+                            new File(task.project.getRootDir(), "hisTpatch").mkdirs();
+                        }
+                        if (!new File(task.project.getRootDir(), "hisTpatch/${cn}").exists()) {
+                            new File(task.project.getRootDir(), "hisTpatch/${cn}").mkdirs();
+                        }
+                        if (!new File(task.project.getRootDir(), "hisTpatch/${cn}/${today}").exists()) {
+                            new File(task.project.getRootDir(), "hisTpatch/${cn}/${today}").mkdirs();
+                        }
+                        if (!new File(task.project.getRootDir(), "hisTpatch/${cn}/${today}/${mode}").exists()) {
+                            new File(task.project.getRootDir(), "hisTpatch/${cn}/${today}/${mode}").mkdirs();
+                        }
+                        org.apache.commons.io.FileUtils.copyFileToDirectory(file1, new File(task.project.getRootDir(), "hisTpatch/${cn}/${today}/${mode}"));
+                    }
+                }
+            }
+        }
+    }
+
+    if (task.name.equals("publishMavenPublicationToMavenLocalRepository")) {
+        //TODO 添加debug|release 判断
+    }
+
+}
+
+
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+publishing {
+    repositories {
+        mavenLocal()
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            //fixme 此处mode无法从assembleRelease|Debug处获取，获取的是初始值，只能从输入变量中设置，后续改进
+            def path = "../buildApks/" + version + "/" + "TVTao" + "_" + version + "_" + (dMode == "true" ? "DMode_" : "Yunos_") + today + "_" + channel + "_" + mode + ".ap"
+//            artifact "${project.buildDir}/outputs/apk/${project.name}-debug.ap"
+            artifact path
+            artifactId "AP-${mode}"
+        }
+    }
+}
+
+

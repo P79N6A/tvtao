@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?><!--购物车商品信息-->
+<com.yunos.tvtaobao.newcart.itemview.NewGoodsItemInfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_480"
+    android:layout_height="@dimen/dp_240"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_error_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_106"
+        android:ellipsize="end"
+        android:lineSpacingExtra="0sp"
+        android:maxLines="1"
+        android:text="请重新选择商品规格"
+        android:textColor="#202020"
+        android:textSize="@dimen/sp_24"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--商品名-->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_31"
+            android:layout_marginTop="@dimen/dp_7"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="0sp"
+            android:maxLines="1"
+            android:text="春季新款休闲舒适印花短袖开扣女款衬衫衬衫衬衫衬衫"
+            android:textColor="#202020"
+            android:textSize="@dimen/dp_24" />
+        <!--购物车商品sku-->
+        <TextView
+            android:id="@+id/tv_sku"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_3"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="0sp"
+            android:maxLines="1"
+            android:text="L码中号, 白色, 印花线条款"
+            android:textColor="#838ea4"
+            android:textSize="@dimen/sp_18" />
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!--价格&数量&重量-->
+            <com.yunos.tvtaobao.newcart.itemview.NewPriceNumWeightView
+                android:id="@+id/rl_price_num_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:visibility="visible" />
+
+            <!--电视淘宝营销表达：返现标签+文案-->
+            <com.yunos.tvtaobao.newcart.itemview.NewShopCartLabelView
+                android:id="@+id/label_tag_tv_tb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <!--电视淘宝营销表达：买就返标签-->
+            <com.yunos.tvtaobao.newcart.itemview.TextViewBorder
+                android:id="@+id/label_buy_rebate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_24"
+                android:padding="@dimen/dp_3"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <!--大促营销表达：购物津贴（图标+文字）-->
+            <com.yunos.tvtaobao.newcart.itemview.NewShopCartLabelView
+                android:id="@+id/label_subsidy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <!--行业营销表达：品类券（图标+文字）如：国际直营券-->
+            <com.yunos.tvtaobao.newcart.itemview.NewShopCartLabelView
+                android:id="@+id/label_international_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:focusable="false"
+                android:visibility="gone" />
+
+
+            <!--限时提醒类信息：预售>限购提示>库存紧张-->
+            <com.yunos.tvtaobao.newcart.itemview.NewShopCartLabelView
+                android:id="@+id/label_jhs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_last_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_3"
+                android:orientation="horizontal">
+
+                <!--决策类信息：降价提醒>限购提示>库存紧张-->
+                <TextView
+                    android:id="@+id/tv_depreciate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="0sp"
+                    android:text="比加入时降￥22"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/sp_18"
+                    android:visibility="gone" />
+
+                <!--区域相关信息：预计关税>仅售区域-->
+                <TextView
+                    android:id="@+id/tv_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="0sp"
+                    android:text=""
+                    android:textColor="#202020"
+                    android:textSize="@dimen/sp_18"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.yunos.tvtaobao.newcart.itemview.NewGoodsItemInfoView>
+

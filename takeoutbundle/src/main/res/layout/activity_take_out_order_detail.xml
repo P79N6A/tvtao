@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.takeoutbundle.view.TOOrderDetailPositionManager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/to_order_detail_focus_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ol_gradient_shape_background"
+    android:focusable="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.yunos.tvtaobao.takeoutbundle.view.TOFocusNoDeepRelativeLayout
+            android:id="@+id/order_detail_host_full"
+            android:layout_width="@dimen/dp_380"
+            android:layout_height="@dimen/dp_500"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:background="@drawable/corner_shape_full_detail_bg"
+            android:focusable="true" >
+
+            <ScrollView
+                android:id="@+id/shop_item_detail_host_scroller"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/dp_56"
+                android:layout_height="@dimen/dp_446">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20" >
+
+                    <!-- 店铺 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_48"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:orientation="horizontal">
+
+                        <com.yunos.tv.app.widget.round.RoundCornerImageView
+                            android:id="@+id/take_out_order_detail_store_logo"
+                            android:layout_width="@dimen/dp_48"
+                            android:layout_height="@dimen/dp_48"
+                            android:layout_marginLeft="@dimen/dp_0"
+                            app:corner_radius="@dimen/dp_8" />
+
+                        <TextView
+                            android:id="@+id/take_out_order_detail_store_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_48"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|left"
+                            android:singleLine="true"
+                            android:textColor="@color/ytm_white"
+                            android:textSize="@dimen/sp_32" />
+
+                    </LinearLayout>
+
+                    <!--订单状态-->
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:id="@+id/shop_item_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textColor="@color/to_highlight_color"
+                        android:textSize="@dimen/sp_24" />
+
+                    <!--商品数量-->
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:id="@+id/shop_item_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/ytm_white"
+                        android:textSize="@dimen/sp_24" />
+
+                    <!-- 价格 Part 1 -->
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/dp_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/shop_item_total_price_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/ytm_white"
+                            android:includeFontPadding="false"
+                            android:textSize="@dimen/sp_20"
+                            android:text="商品总价" />
+
+                        <TextView
+                            android:id="@+id/shop_item_total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignBaseline="@id/shop_item_total_price_desc"
+                            android:textColor="@color/ytm_white"
+                            android:textSize="@dimen/to_od_detail_left_size_20"
+                            tools:text="99.99" />
+
+                        <!-- 价格 Part 2 详情信息. -->
+                        <RelativeLayout
+                            android:layout_below="@id/shop_item_total_price_desc"
+                            android:id="@+id/shop_item_extra_fee_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_below="@id/shop_item_extra_fee_detail"
+                            android:id="@+id/shop_item_price_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/dp_3"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="合计:"
+                            android:textColor="@color/to_highlight_color"
+                            android:textSize="@dimen/sp_24" />
+
+                        <TextView
+                            android:id="@+id/shop_item_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:layout_alignBaseline="@id/shop_item_price_desc"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/to_highlight_color"
+                            android:textSize="@dimen/sp_24"
+                            tools:text="99.99" />
+
+                    </RelativeLayout>
+
+                    <!--地址-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_0"
+                        android:layout_marginRight="@dimen/dp_0"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/color_a2aaba"
+                        android:text="收货地址"
+                        android:textSize="@dimen/to_od_detail_left_size_20" />
+                    <TextView
+                        android:id="@+id/take_out_order_detail_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_0"
+                        android:includeFontPadding="false"
+                        android:layout_marginRight="@dimen/dp_0"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:lineSpacingExtra="@dimen/dp_4"
+                        android:textColor="@color/color_a2aaba"
+                        android:textSize="@dimen/to_od_detail_left_size_20" />
+
+                    <!--订单信息-->
+                    <!-- 店铺电话 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_0"
+                        android:layout_marginRight="@dimen/dp_0"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:textColor="@color/color_a2aaba"
+                        android:text="订单信息"
+                        android:textSize="@dimen/to_od_detail_left_size_20" />
+                    <TextView
+                        android:id="@+id/take_out_order_detail_store_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_0"
+                        android:layout_marginRight="@dimen/dp_0"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/color_a2aaba"
+                        android:textSize="@dimen/dp_20" />
+                    <TextView
+                        android:id="@+id/take_out_order_detail_order_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_0"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:includeFontPadding="false"
+                        android:layout_marginRight="@dimen/dp_0"
+                        android:textColor="@color/color_a2aaba"
+                        android:textSize="@dimen/to_od_detail_left_size_20" />
+
+                    <TextView
+                        android:id="@+id/take_out_order_detail_order_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_0"
+                        android:layout_marginRight="@dimen/dp_0"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/color_a2aaba"
+                        android:textSize="@dimen/to_od_detail_left_size_20" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/take_out_order_detail_order_again"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_56"
+                android:background="@drawable/ol_corner_shape_only_bottom_highlight"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="@string/order_action_again"
+                android:textColor="@color/ytm_white"
+                android:textSize="@dimen/sp_24" />
+
+        </com.yunos.tvtaobao.takeoutbundle.view.TOFocusNoDeepRelativeLayout>
+
+        <!--  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/dp_408">
+
+            <com.yunos.tvtaobao.takeoutbundle.view.TOFocusHorizontalListView
+                android:id="@+id/take_out_order_detail_list_view"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp_60"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_24"
+                android:paddingBottom="@dimen/dp_40"
+                android:paddingTop="@dimen/dp_40" />
+
+            <ImageView
+                android:id="@+id/food_item_scroll_cover"
+                android:layout_width="@dimen/dp_40"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:src="@drawable/foreground_cover"
+                android:layout_height="@dimen/dp_328" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="@dimen/dp_46"
+        android:shadowColor="@color/ytm_black"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="订单详情"
+        android:textColor="@color/ytm_white"
+        android:textSize="@dimen/sp_42" />
+
+</com.yunos.tvtaobao.takeoutbundle.view.TOOrderDetailPositionManager>

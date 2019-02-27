@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 20%黑 -->
+    <color name="bs_up_update_black_20">#33000000</color>
+    <!-- 40%黑 -->
+    <color name="bs_up_update_black_40">#66000000</color>
+    <!-- 50%黑 -->
+    <color name="bs_up_update_black_50">#80000000</color>
+    <!-- 70%黑 -->
+    <color name="bs_up_update_black_70">#B3000000</color>
+    <!-- 80%黑 -->
+    <color name="bs_up_update_black_80">#CC000000</color>
+    <!-- 100%黑 -->
+    <color name="bs_up_update_black">#FF000000</color>
+    <!-- 100%白 -->
+    <color name="bs_up_update_white">#FFffffff</color>
+    <!-- 50%白 -->
+    <color name="bs_up_update_white_50">#80ffffff</color>
+    <!-- 透明 -->
+    <color name="bs_up_update_transparent">#00000000</color>
+
+    <color name="bs_up_update_button_focus">#FFff8201</color>
+    <color name="bs_up_update_button_normal">#80ff8201</color>
+    <color name="bs_up_update_info_color">#ceccca</color>
+    <color name="bs_up_error_text_color">#ff0000</color>
+
+    <!-- no blur -->
+    <color name="bs_up_no_blur_update_layout_bg">#d2d2d2</color>
+    <color name="bs_up_no_blur_button_focus">#ff7e04</color>
+    <color name="bs_up_no_blur_button_text_focus_shadow">#66681d00</color>
+
+    <color name="bs_up_sales_promotion">#ff6600</color>
+
+    <color name="new_detail_line"> #99bbdd</color>
+    <color name="new_detail_bg">#282b2e</color>
+    <color name="new_detail_tag_text_bg">#fd113f</color>
+    <color name="color_990e1215">#990e1215</color>
+
+
+
+</resources>

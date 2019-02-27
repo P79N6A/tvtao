@@ -1,0 +1,116 @@
+<manifest package="com.yunos.tv.core"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup"
+        >
+
+        <!-- 埋点数据上传服务 -->
+        <service
+            android:name="com.taobao.statistic.module.data.Yolanda"
+            android:process=":utremote"/>
+
+        <service
+            android:name="anetwork.channel.aidl.NetworkService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="anetwork.channel.aidl.IRemoteNetworkGetter"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="mtopsdk.xstate.XStateService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="mtopsdk.xstate.aidl.IXState"/>
+            </intent-filter>
+        </service>
+
+        <!--ut打点service-->
+        <service android:exported="false"
+            android:name="com.alibaba.analytics.AnalyticsService"
+            android:process=":channel">
+        </service>
+
+        <!--&lt;!&ndash; accs start &ndash;&gt;-->
+        <!--<service-->
+            <!--android:name="com.taobao.accs.ChannelService"-->
+            <!--android:exported="false"-->
+            <!--android:process=":channel">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.accs.intent.action.SERVICE" />-->
+            <!--</intent-filter>-->
+
+            <!--&lt;!&ndash; 这个是默认action,  如果是阿里云或其他开放平台版本需要设置成对应action &ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.accs.intent.action.ELECTION" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <!--<service-->
+            <!--android:name="com.taobao.accs.ChannelService$KernelService"-->
+            <!--android:exported="false"-->
+            <!--android:process=":channel" />-->
+        <!--<service-->
+            <!--android:name="com.taobao.accs.data.MsgDistributeService"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.accs.intent.action.RECEIVE" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <!--配合系统内存的优化，取消accs进程的开机自启动-->
+        <!--<receiver-->
+        <!--android:name="com.taobao.accs.EventReceiver"-->
+        <!--android:process=":channel">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+
+        <!--<data android:scheme="package" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.USER_PRESENT" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver-->
+            <!--android:name="com.taobao.accs.ServiceReceiver"-->
+            <!--android:process=":channel">-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+            <!--&lt;!&ndash;<action android:name="com.taobao.accs.intent.action.COMMAND" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service-->
+            <!--android:name="com.taobao.orange.service.OrangeApiService"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.taobao.orange.service.OrangeApiService" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tv.app.widget.focus.FocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detainment_focusmanager" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/dp_96"
+        android:focusable="false"
+        android:includeFontPadding="false"
+        android:shadowColor="@color/ytbv_afad7a00"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/ytsdk_detainment_title"
+        android:textColor="@color/ytm_white"
+        android:textSize="@dimen/sp_34"
+        android:textStyle="bold" />
+
+    <com.yunos.tvtaobao.homebundle.detainment.DetainMentListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_430"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:paddingBottom="@dimen/dp_60"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_56"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+    <com.yunos.tvtaobao.homebundle.detainment.TouchFocusLinearLayout
+        android:id="@+id/button_linearLayout"
+        android:layout_width="@dimen/dp_600"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_102"
+        android:visibility="visible" >
+
+        <com.yunos.tvtaobao.homebundle.detainment.DetainMentTextView
+            android:id="@+id/leave_app"
+            android:layout_width="@dimen/dp_260"
+            android:layout_height="@dimen/dp_60" 
+            android:focusable="true"
+            android:gravity="center"
+            android:shadowColor="#afad7a00"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/ytsdk_detainment_leave_app"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_24" />
+
+        <View
+            android:layout_width="@dimen/dp_27"
+            android:layout_height="@dimen/dp_60"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <com.yunos.tvtaobao.homebundle.detainment.DetainMentTextView
+            android:id="@+id/goshoping"
+            android:layout_width="@dimen/dp_260"
+            android:layout_height="@dimen/dp_60" 
+            android:focusable="true"
+            android:gravity="center"
+            android:shadowColor="#afad7a00"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/ytsdk_detainment_goshoping"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_24" />
+    </com.yunos.tvtaobao.homebundle.detainment.TouchFocusLinearLayout>
+
+</com.yunos.tv.app.widget.focus.FocusPositionManager>

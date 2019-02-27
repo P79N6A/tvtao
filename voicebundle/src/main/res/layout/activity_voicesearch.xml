@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:autotext="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_full_screen_search">
+
+    <LinearLayout
+        android:id="@+id/voice_search_not_result"
+        android:layout_width="@dimen/dp_336"
+        android:layout_height="@dimen/dp_336"
+        android:layout_marginLeft="@dimen/dp_472"
+        android:layout_marginTop="@dimen/dp_212"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_296"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_search_not_result"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:textColor="#ffffff"
+            android:text="没有相关商品"
+            android:textSize="@dimen/sp_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voice_chat_jinnang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_186"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/voice_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_430"
+        android:paddingLeft="@dimen/dp_40"
+        android:layout_below="@id/voice_chat_jinnang" />
+
+    <ImageView
+        android:id="@+id/voice_chat_head"
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="@dimen/dp_74"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:src="@drawable/head_tao" />
+
+    <TextView
+        android:id="@+id/voice_chat_content"
+        android:layout_width="@dimen/dp_650"
+        android:layout_height="@dimen/dp_72"
+        android:layout_toRightOf="@id/voice_chat_head"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_38"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:ellipsize="end"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_24" />
+
+    <LinearLayout
+        android:id="@+id/voice_chat_remind_layout"
+        android:layout_width="@dimen/dp_400"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_42"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/tag_chat_prompt"/>
+
+        <com.yunos.voice.view.AutoTextView
+            android:id="@+id/voice_chat_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            autotext:lines="2"
+            autotext:textcolor="#b2ffffff"
+            autotext:textSize="@dimen/sp_20"/>
+    </LinearLayout>
+
+</RelativeLayout>

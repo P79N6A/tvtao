@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="@dimen/dp_239"
+        android:layout_height="@dimen/dp_345"
+        android:gravity="center_horizontal"
+        android:background="@drawable/ytsdk_ui2_mytaobao_item_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_44"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="@color/ytsdk_black44"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_27" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp_158"
+            android:layout_height="@dimen/dp_158"
+            android:layout_marginTop="@dimen/dp_90"
+            android:layout_gravity="center_horizontal" />
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="@dimen/dp_116"
+            android:layout_height="@dimen/dp_116"
+            android:layout_marginTop="@dimen/dp_116"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/image_flow"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_140"
+            android:layout_marginTop="@dimen/dp_110"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ytsdk_ui2_mytaobao_item_flow"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_20"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:singleLine="true"
+            android:ellipsize="end" />
+    </FrameLayout>
+
+</LinearLayout>

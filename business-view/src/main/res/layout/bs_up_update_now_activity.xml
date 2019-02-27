@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_screen_prompt_bg">
+
+    <TextView
+        android:id="@+id/bs_up_update_text"
+        android:layout_width="@dimen/dp_960"
+        android:layout_height="@dimen/dp_64"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_320"
+        android:textColor="@color/bs_up_update_white"
+        android:gravity="center"
+        android:textSize="@dimen/sp_36"
+        android:text="@string/bs_up_prompt_content"/>
+    
+    <LinearLayout
+        android:id="@+id/bs_up_update_btn_layout"
+        android:layout_width="@dimen/dp_480"
+        android:layout_height="@dimen/dp_96"
+        android:layout_marginTop="@dimen/dp_400"
+        android:layout_marginLeft="@dimen/dp_400"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bs_up_update_btn_leave"
+            android:layout_width="@dimen/dp_240"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_22"
+            android:gravity="center"
+            android:textColor="@color/bs_up_update_white"
+            android:background="@drawable/full_screen_prompt_btn_bg"
+            android:text="@string/bs_up_leave"/>
+
+        <Button
+            android:id="@+id/bs_up_update_btn_now"
+            android:layout_width="@dimen/dp_240"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_22"
+            android:gravity="center"
+            android:textColor="@color/bs_up_update_white"
+            android:background="@drawable/full_screen_prompt_btn_bg"
+            android:text="@string/bs_up_update"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/bs_up_update_progress"
+        android:layout_width="@dimen/dp_472"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_404"
+        android:layout_marginTop="@dimen/dp_440"
+        style="@style/StyleProgressBarMini"
+        android:background="@drawable/shape_progressbar_bg"
+        android:max="100"
+        android:visibility="gone"/>
+</RelativeLayout>

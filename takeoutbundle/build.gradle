@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.taobao.atlas'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.neenbedankt.android-apt'
+
+atlas {
+    bundleConfig {
+        awbBundle true
+    }
+    buildTypes {
+        debug {
+            baseApFile project.rootProject.file('app/build/outputs/apk/app-debug.ap')
+        }
+    }
+}
+group = 'com.yunos.tvtaobao.atlas'
+version = "1.0.0";
+def merge = getEnvValue("merge", "false")
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { if (merge == "true") res.srcDirs = ["../mockbundle/res"] } }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+//    compile project(path: ':commonbundle')
+    if (merge == "true") providedCompile project(":resbundle")
+    compile rootProject.ext.dependencies.butterknife
+    apt rootProject.ext.dependencies.butterknifeApt
+    compile rootProject.ext.dependencies.constraintLayout
+    provided rootProject.ext.dependencies.eventbus
+
+    provided rootProject.ext.dependencies.mtop
+
+
+    providedCompile project(':business-view')
+    providedCompile project(':tv-sdk')
+
+    testCompile rootProject.ext.dependencies.junit
+    //    compile 'com.github.powyin:scroll:3.3.0'
+    //    compile 'com.github.powyin:switch:3.1.5'
+}

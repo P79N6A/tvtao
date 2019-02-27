@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_shop_cart_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_60">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="0sp"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_36" />
+
+        <ImageView
+            android:focusable="true"
+            android:id="@+id/shop_cart_icon_empty"
+            android:layout_width="@dimen/dp_660"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/shop_cart_title"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_42"
+        android:gravity="center_horizontal"
+        android:text="购物车竟然是空的"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_36" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:gravity="center_horizontal"
+        android:text="“ 再忙，也要记得买点东西犒赏自己～”"
+        android:textColor="#9b9b9b"
+        android:textSize="@dimen/sp_24" />
+
+    <LinearLayout
+        android:id="@+id/layout_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_72"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_1_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:layout_marginRight="@dimen/dp_24"
+            android:background="@color/ytsdk_detail_scroll_divider_color" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@drawable/like" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="你可能还喜欢"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_32" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_1_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@color/ytsdk_detail_scroll_divider_color" />
+    </LinearLayout>
+
+    <com.yunos.tvtaobao.biz.widget.TvRecyclerView
+        android:id="@+id/recyclerview_guesslike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"></com.yunos.tvtaobao.biz.widget.TvRecyclerView>
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.goodlist.view.GoodListItemFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_0"
+    android:paddingLeft="@dimen/dp_0"
+    android:paddingRight="@dimen/dp_0"
+    android:paddingTop="@dimen/dp_0">
+
+
+    <!-- 背景图片 -->
+    <ImageView
+        android:id="@+id/goodlist_grid_backgroud_imageview"
+        android:layout_width="@dimen/dp_226"
+        android:layout_height="@dimen/dp_306"
+        android:layout_marginLeft="@dimen/dp_0"
+        android:adjustViewBounds="false"
+        android:background="@drawable/ytsdk_ui2_goodlist_item_default"
+        android:padding="@dimen/dp_0" />
+
+    <!-- 商品图片 -->
+
+    <ImageView
+        android:id="@+id/goodlist_grid_goods_imageview"
+        android:layout_width="@dimen/dp_226"
+        android:layout_height="@dimen/dp_226"
+        android:layout_marginLeft="@dimen/dp_0"
+        android:layout_marginRight="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_0"
+        android:adjustViewBounds="false"
+        android:paddingLeft="@dimen/dp_0"
+        android:paddingRight="@dimen/dp_0"
+        android:paddingTop="@dimen/dp_0" />
+
+    <!-- 免运费的图片 -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dp_0"
+        android:adjustViewBounds="false"
+        android:paddingRight="@dimen/dp_0"
+        android:src="@drawable/ytsdk_ui2_goodlist_free_postage"
+        android:visibility="gone" />
+
+    <!-- 信息的图片 -->
+
+    <ImageView
+    android:id="@+id/goodlist_grid_item_imageview"
+    android:layout_width="@dimen/dp_226"
+    android:layout_height="@dimen/dp_114"
+    android:layout_marginTop="@dimen/dp_190"
+    android:background="@color/ytbv_white" />
+
+    <!-- 标题 -->
+    <ImageView
+        android:id="@+id/ztcIcon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignRight="@+id/layout_info"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dp_170"
+        android:background="@color/transparent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="@dimen/dp_226"
+        android:layout_height="@dimen/dp_114"
+        android:layout_marginTop="@dimen/dp_190"
+        android:background="@color/ytm_white"
+        android:paddingBottom="@dimen/dp_8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/goodlist_grid_item_text"
+            android:layout_width="@dimen/dp_226"
+            android:layout_height="@dimen/dp_29"
+            android:background="#ffffffff"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/dp_0"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_6"
+            android:text="这里是商品名称商品.."
+            android:textColor="#000000"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/goodlist_grid_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="0sp"
+            android:text="￥2499.0"
+            android:includeFontPadding="false"
+            android:textColor="#ff3333"
+            android:textSize="@dimen/sp_24" />
+
+        <RelativeLayout
+            android:id="@+id/layout_rebate"
+            android:layout_width="@dimen/dp_226"
+            android:layout_height="@dimen/dp_23"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:background="@color/ytbv_white"
+            android:paddingLeft="@dimen/dp_12"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/goodlist_grid_item_rebate_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_23"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/dp_20" />
+
+            <TextView
+                android:id="@+id/goodlist_grid_item_rebate_money"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_23"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/goodlist_grid_item_rebate_icon"
+                android:lineSpacingExtra="0sp"
+                android:paddingLeft="@dimen/dp_3"
+                android:text="预估 ¥ 1.99"
+                android:textColor="#ff3333"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/dp_3"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="@dimen/dp_226"
+            android:layout_height="wrap_content"
+            android:background="@color/ytbv_white"
+            android:paddingLeft="@dimen/dp_12">
+
+            <ImageView
+                android:id="@+id/goodlist_grid_item_presell"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_23"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:paddingRight="@dimen/dp_5"
+                android:src="@drawable/pre_sell"/>
+
+            <ImageView
+                android:id="@+id/goodlist_grid_item_return_red_packet"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/goodlist_grid_item_presell"
+                android:adjustViewBounds="true"
+                android:src="@drawable/rebate_coupon_list"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_23"
+                android:lineSpacingExtra="0sp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/d11tag"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_20"
+        android:layout_gravity="right|top"
+        android:scaleType="fitXY"
+        android:src="@drawable/goodlist_d11_tag" />
+
+    <ImageView
+        android:id="@+id/d11pretag"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_48"
+        android:layout_gravity="bottom|right"
+        android:scaleType="fitXY" />
+
+</com.yunos.tvtaobao.goodlist.view.GoodListItemFrameLayout>

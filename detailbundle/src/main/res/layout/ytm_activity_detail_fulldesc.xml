@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_fulldesc_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/detail_shop_cart_bg"
+    android:focusable="true"
+    android:gravity="center_horizontal" >
+
+    <!-- SurfaceView通过java动态添加 -->     
+    <com.yunos.tv.blitz.view.BlitzBridgeSurfaceView 
+        android:id="@+id/detail_fulldesc_webview_blitz"
+        android:visibility="gone" 
+        android:layout_width="@dimen/dp_790"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <RelativeLayout
+        android:id="@+id/detail_fulldesc_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ytbv_common_focus"
+        android:layout_gravity="center_horizontal|bottom" >
+
+        <!-- 文案 -->
+
+        <TextView
+            android:id="@+id/detail_richtext_buy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_80"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+        	android:background="@color/ytsdk_detail_buy_background_color"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="@dimen/dp_400"
+            android:minWidth="@dimen/dp_260"
+            android:singleLine="true"
+            android:text="@string/ytsdk_option_desc_immediately"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_40" />
+    </RelativeLayout>
+
+</FrameLayout>

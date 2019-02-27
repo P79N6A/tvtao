@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunos.tvtaobao.tradelink">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".activity.AddressEditActivity" />
+        <activity
+            android:name=".activity.BuildOrderActivity"
+            android:theme="@style/ytm_style_buildorder" />
+        <activity
+            android:name=".activity.SkuActivity"
+            android:theme="@style/ytm_sku_theme" />
+        <activity android:name=".activity.CreateOrderActivity" />
+    </application>
+
+</manifest>

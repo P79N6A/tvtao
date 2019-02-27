@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_cart_e60e1215">
+
+    <RelativeLayout
+        android:id="@+id/layout_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_61"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_toLeftOf="@+id/tv_shop_name"
+            android:background="@color/ytsdk_detail_not_buysupport_price_color" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_32" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_60"
+            android:layout_toRightOf="@+id/tv_shop_name"
+            android:background="@color/ytsdk_detail_not_buysupport_price_color" />
+    </RelativeLayout>
+
+
+    <com.yunos.tvtaobao.biz.widget.TvRecyclerView
+        android:id="@+id/rv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_shop_name"
+        android:layout_marginTop="@dimen/dp_62"
+        android:descendantFocusability="afterDescendants"></com.yunos.tvtaobao.biz.widget.TvRecyclerView>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="店家还未发布优惠券哦～"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

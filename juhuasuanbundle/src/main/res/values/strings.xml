@@ -1,0 +1,68 @@
+<resources>
+
+    <string name="jhs_quanbu">全部</string>
+    <string name="jhs_start_sold">开抢</string>
+    <string name="jhs_no_data">亲，已经没有数据啦</string>
+    <string name="jhs_invalid_parameter">无效的参数值！</string>
+    <string name="jhs_detail_sold_desc">已售</string>
+    <string name="jhs_original_price">原价&#165;</string>
+    <string name="jhs_discount_unit">折</string>
+    <string name="jhs_dollar_sign">&#165;</string><!-- ￥ -->
+
+    <!-- HomeCategoryActivity -->
+
+    <!-- PreloadActivity -->
+
+    <!-- 共用 -->
+    <string name="jhs_setting">设置</string>
+    <string name="jhs_confirm">确定</string>
+
+    <!-- 下单步骤文字内容 -->
+
+    <!-- 网络请求 -->
+    <string name="jhs_network_error_goto_set">网络连接错误，设置网络连接</string>
+
+    <!-- order_submit_activity -->
+
+    <!-- Pay -->
+
+    <!-- detail activity -->
+    <string name="jhs_confirm_not_start">团购未开始,不能购买！</string>
+    <string name="jhs_confirm_is_over">团购已结束,不能购买！</string>
+    <string name="jhs_confirm_no_stock">商品卖完了,不能购买！</string>
+
+    <!-- join group -->
+
+    <string name="jhs_no_address">您还没有设置收货地址，请先到淘宝网设置收货地址！</string>
+    <string name="jhs_server_error">对不起，服务暂时无响应，请稍后重试！</string>
+
+    <!-- login -->
+
+    <!-- MyOrder -->
+
+    <!-- MyOrderActivity -->
+
+    <!-- TV播放器相关 -->
+
+    <!-- 品牌团 -->
+    <string name="jhs_data_error">数据错误</string>
+    <string name="jhs_jump_error">URL错误</string>
+    <string name="jhs_brand_list_null">亲，目前还没有商品，我们会尽快更新~</string>
+    <string name="jhs_pinpai_num">个品牌</string>
+    <string name="jhs_page_fuhao">/</string>
+    <string name="jhs_sold_unit">人已买</string>
+    <string name="jhs_num_1">1</string>
+
+    
+    
+    
+    <!-- 聚划算 视频 -->
+    <!-- jhs_4th -->
+
+    <!-- api -->
+
+    <!-- 网络请求相关 -->
+
+    <string name="jhs_open_setting_activity_error">打开设置页面失败，请手动进入设置页面</string>
+    
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <!-- detail activity -->
+    <string name="ytsdk_option_desc_immediately">立即购买</string>
+    <string name="ytsdk_confirm_cannot_buy">暂不支持购买</string>
+    <string name="ytsdk_no_rates">亲，暂无评价！</string>
+
+    <string name="ytsdk_detail_sold_desc">月销:</string>
+    <string name="ytsdk_detail_evaluate_name">评价</string>
+    <string name="ytsdk_detail_resolve_err">数据解析错误</string>
+
+    <!-- comment -->
+    <string name="ytsdk_all_comment">全部</string>
+    <string name="ytsdk_good_comment">好评</string>
+    <string name="ytsdk_normal_comment">中评</string>
+    <string name="ytsdk_bad_comment">差评</string>
+    <string name="ytsdk_haspic_comment">有图</string>
+
+    <string name="detail_max_remind_begin">您最多只能设置</string>
+    <string name="detail_max_remind_end">个关注。</string>
+    <string name="new_detail_taobao_point">电视淘宝积分</string>
+    <string name="new_detail_taobao_coupon_num">张券可领</string>
+    <string name="new_detail_taobao_coupon_num_null">店家还未发布优惠券</string>
+    <string name="new_detail_taobao_collection">收藏宝贝</string>
+
+</resources>

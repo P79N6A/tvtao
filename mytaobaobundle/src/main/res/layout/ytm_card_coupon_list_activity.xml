@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tv.app.widget.focus.FocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/focus_position_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ytm_my_taobao_bg" >
+
+    <com.yunos.tv.app.widget.focus.FocusListView
+        android:id="@+id/focus_listview_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_90"
+        android:paddingBottom="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_45"
+        android:paddingRight="@dimen/dp_45">
+    </com.yunos.tv.app.widget.focus.FocusListView>
+
+    <ImageView
+        android:id="@+id/ytm_card_coupon_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_530"
+        android:layout_marginTop="@dimen/dp_258"
+        android:src="@drawable/ytm_card_coupon_no_data"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mask_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ytm_card_coupon_mask_top"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mask_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_670"
+        android:background="@drawable/ytm_card_coupon_mask_bottom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_32"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="卡券包"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_44" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_88"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/coupon_subtitle"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18" />
+
+</com.yunos.tv.app.widget.focus.FocusPositionManager>

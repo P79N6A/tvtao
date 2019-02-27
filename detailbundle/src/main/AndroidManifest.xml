@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunos.tvtaobao.detailbundle">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".activity.DetailEvaluateActivity"
+            android:theme="@style/ytbv_CustomDialog" />
+        <activity
+            android:name=".activity.DetailFullDescActivity"
+            android:theme="@style/ytbv_CustomDialog" />
+        <activity
+            android:name=".activity.SeckKillDetailFullDescActivity"
+            android:theme="@style/ytbv_CustomDialog" />
+        <activity android:name=".activity.NewDetailActivity" />
+        <activity
+            android:name=".evaluate.EvaluationActivity"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".evaluate.CouponActivity"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity android:name=".evaluate.ShareActivity"
+            android:theme="@style/MyDialogStyleBottom"></activity>
+        <activity android:name=".evaluate.HaierShareActivity"
+            android:theme="@style/MyDialogStyleBottom"></activity>
+    </application>
+
+</manifest>

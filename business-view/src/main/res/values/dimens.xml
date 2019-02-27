@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <dimen name="bs_up_update_layout_width">560dp</dimen><!-- 465 -->
+    <dimen name="bs_up_update_layout_padding_bottom">38dp</dimen>
+    
+    <!-- title -->
+    <dimen name="bs_up_update_text_font">40sp</dimen>
+    <dimen name="bs_up_update_text_margin_top">38dp</dimen>
+    <dimen name="bs_up_update_text_margin_left">5dp</dimen>
+    <dimen name="bs_up_update_text_margin_right">0dp</dimen>
+    <dimen name="bs_up_update_text_shadow_y">2dp</dimen>
+    <dimen name="bs_up_update_text_shadow_r">1dp</dimen>
+    <!-- info -->
+    <dimen name="bs_up_update_info_font">20sp</dimen>
+    <dimen name="bs_up_update_info_margin_top">16dp</dimen>
+    <dimen name="bs_up_update_info_margin_left">50dp</dimen>
+    <dimen name="bs_up_update_info_margin_right">50dp</dimen>
+    <dimen name="bs_up_update_info_margin_bottom">36dp</dimen>
+    <dimen name="bs_up_update_no_blur_info_margin_bottom">24dp</dimen>
+    <dimen name="bs_up_update_info_divider">8dp</dimen>
+    <dimen name="bs_up_update_info_shadow_y">3dp</dimen>
+    <dimen name="bs_up_update_info_shadow_r">1dp</dimen>
+    <!-- progress bar -->
+    <dimen name="bs_up_pb_width">400dp</dimen>
+    <dimen name="bs_up_pb_margin_top">6dp</dimen>
+    <dimen name="bs_up_pb_margin_bottom">20dp</dimen>
+    <dimen name="bs_up_no_blur_pb_margin_bottom">36dp</dimen>
+    <!-- error text -->
+    <dimen name="bs_up_error_text_size">24sp</dimen>
+    <dimen name="bs_up_no_blur_error_text_size">20sp</dimen>
+    <dimen name="bs_up_error_text_margin_bottom">14dp</dimen>
+    <dimen name="bs_up_no_blur_error_text_margin_bottom">36dp</dimen>
+    <dimen name="bs_up_no_blur_error_text_margin_top">-10dp</dimen>
+    <!-- fail title -->
+    <dimen name="bs_up_fail_text_size">40sp</dimen>
+    <dimen name="bs_up_fail_text_margin_bottom">24dp</dimen>
+    <dimen name="bs_up_no_blur_fail_text_margin_bottom">41dp</dimen>
+    <dimen name="bs_up_fail_text_margin_top">28dp</dimen>
+    <dimen name="bs_up_no_blur_fail_text_margin_top">38dp</dimen>
+    <dimen name="bs_up_fail_text_shadow_y">2dp</dimen>
+    <dimen name="bs_up_fail_text_shadow_r">1dp</dimen>
+    <!-- focus -->
+    <dimen name="bs_up_focus_width">430dp</dimen>
+    <dimen name="bs_up_focus_height">116dp</dimen>
+    <!-- button bg -->
+    <dimen name="bs_up_button_width">400dp</dimen>
+    <dimen name="bs_up_button_height">80dp</dimen>
+    <dimen name="bs_up_no_blur_button_width">560dp</dimen>
+    <dimen name="bs_up_no_blur_button_height">80dp</dimen>
+    <dimen name="bs_up_button_margin_bottom">14dp</dimen>
+    <dimen name="bs_up_button_divider">-15dp</dimen>
+    <dimen name="bs_up_button_bg_margin_bottom">6.5dp</dimen>
+    <!-- button text -->
+    <dimen name="bs_up_button_text_font">24sp</dimen>
+    <dimen name="bs_up_no_blur_button_text_font">26sp</dimen>
+    <dimen name="bs_up_button_text_margin_bottom">6.5dp</dimen>
+    <dimen name="bs_up_no_blur_button_text_shadow_y">1dp</dimen>
+    <dimen name="bs_up_no_blur_button_text_shadow_r">1dp</dimen>
+
+    <dimen name="dp_472">472dp</dimen>
+    
+</resources>

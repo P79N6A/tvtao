@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tv.app.widget.focus.FocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fs_home_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/recommend_bg" >
+
+        <TextView
+            android:id="@+id/recommend_tip_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_300"
+            android:layout_marginTop="@dimen/dp_145"
+            android:text="@string/str_recommend_tip"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/sp_24"
+            android:focusable="false" />
+
+        <include 
+            android:id="@+id/sale_out_id"
+            layout="@layout/fs_saleout_goods"
+            />
+
+        <com.yunos.tv.app.widget.focus.FocusHListView
+            android:id="@+id/recommend_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sale_out_id"
+            android:layout_below="@id/recommend_tip_id"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_toRightOf="@id/sale_out_id" />
+    </RelativeLayout>
+
+</com.yunos.tv.app.widget.focus.FocusPositionManager>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    tools:context="com.yunos.tvtaobao.payment.logout.LogoutActivity">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_524"
+        android:layout_height="@dimen/dp_260"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_logout_bg"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_190"
+            android:focusable="false"
+            android:gravity="center"
+            android:lineSpacingExtra="22sp"
+            android:text="是否登出当前账号？"
+            android:textColor="#202020"
+            android:textSize="@dimen/dp_34" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_190"
+            android:background="#a0a0a0"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_alignParentBottom="true"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_logout_focusd"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="确认登出"
+                android:textColor="#606060"
+                android:textSize="@dimen/dp_30"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_not_logout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_not_logout_focusd"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="暂不登出"
+                android:textColor="#606060"
+                android:textSize="@dimen/dp_30"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

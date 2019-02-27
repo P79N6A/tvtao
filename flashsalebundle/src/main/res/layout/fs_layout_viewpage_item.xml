@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.yunos.tvtaobao.flashsale.view.ArrowBarView
+        android:id="@+id/action_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <com.yunos.tvtaobao.flashsale.view.TitlebarView
+            android:id="@+id/titlebar" 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100" />
+
+        <com.yunos.tvtaobao.flashsale.view.ContentContainerView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_weight="1" >
+            
+        </com.yunos.tvtaobao.flashsale.view.ContentContainerView>
+    </LinearLayout>
+
+    <com.yunos.tvtaobao.flashsale.view.ArrowBarView
+        android:id="@+id/action_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:visibility="invisible" />
+
+</FrameLayout>

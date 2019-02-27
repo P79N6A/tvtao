@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+def dMode = getEnvValue("dmode", "false")
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        buildConfigField 'Boolean', 'IsMonkey', rootProject.ext.android.IsMonkey
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            if (dMode == "true") {
+                buildConfigField "boolean", "DMODE", "true"
+            } else {
+                buildConfigField "boolean", "DMODE", "false"
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile rootProject.ext.dependencies.appcompatV7
+    compile('com.ali.auth.sdk:alibabauth_offline:1.6.1.5')
+    compile('com.ali.auth.sdk:alibabauth_core:1.6.1.5')
+    compile('com.ali.auth.sdk:alibabauth_ext:1.6.1.5')
+
+    compile rootProject.ext.dependencies.constraintLayout
+    provided rootProject.ext.dependencies.mtop
+
+    provided 'com.taobao.android:remote_business:1.1.6.2@jar'
+    provided rootProject.ext.dependencies.zxing
+
+    provided 'com.taobao.android:securityguard:4.1.45'
+    provided 'com.taobao.android:securityguard-so:4.1.45@solib'
+
+    provided('com.taobao.android:ut-analytics:6.3.2.7') {
+        exclude module: 'jutrack-android'
+    }
+//    compile project(':tvtaobao-core')
+
+//    provided files('libs/uuid.jar')
+
+    testCompile 'junit:junit:4.12'
+
+}

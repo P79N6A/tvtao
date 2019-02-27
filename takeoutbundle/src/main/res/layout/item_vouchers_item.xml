@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_160"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_500"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_vouchers">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_342"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/tv_storeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_10"
+                android:includeFontPadding="false"
+                android:text="铁人特色美食（阿里巴巴）13224334"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/sp_24"
+                android:ellipsize="end"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/tv_deductAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/sp_68" />
+
+            <TextView
+                android:id="@+id/tv_deductThreshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_108"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tv_endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_132"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_160"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="已领取"
+            android:textColor="@color/color_ff7c1d"
+            android:textSize="@dimen/sp_32" />
+    </RelativeLayout>
+
+</LinearLayout>

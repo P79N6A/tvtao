@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunos.tvtaobao.newcart">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".ui.activity.GuessLikeActivity"></activity>
+        <activity android:name=".ui.activity.NewShopCartListActivity" />
+
+        <!--找相似-->
+        <activity
+            android:name=".ui.activity.FindSameActivity"
+            android:theme="@style/MyDialogStyleGuesslike" />
+        <activity
+            android:name="com.yunos.tvtaobao.payresult.PayResultBuyRebateActivity"
+            android:theme="@style/MyDialogStyleBuyRebate">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="buy_rebate" android:host="yunos_tvtaobao_buy_rebate"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.CouponActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.yunos.tvtaobao.payment.logout.LogoutActivity"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity android:name="com.yunos.tvtaobao.payresult.PayResultActivity"></activity>
+
+        <activity android:name="com.yunos.tvtaobao.newsku.TvTaoSkuActivity"
+            android:exported="true"
+            android:theme="@style/translucent"/>
+    </application>
+
+</manifest>

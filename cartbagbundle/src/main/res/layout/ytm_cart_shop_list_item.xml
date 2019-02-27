@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?><!--里面的布局太多东西有效率问题，后续考虑优化-->
+<com.yunos.tvtaobao.cartbag.view.ShopCartItemFocusLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/ytm_shop_cart_item_card_width"
+        android:layout_height="@dimen/ytm_shop_cart_item_card_height"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/ytm_shop_cart_item_padding_right">
+        <!--店铺信息-->
+        <TextView
+            android:id="@+id/shop_item_seller_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:shadowColor="@color/ytm_black"
+            android:shadowDy="1"
+            android:singleLine="true"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/ytm_shop_cart_item_seller_name_text_size"
+            android:visibility="invisible" />
+        <!--卡片位信息-->
+        <FrameLayout
+            android:id="@+id/shop_item_info_layout"
+            android:layout_width="@dimen/ytm_shop_cart_item_infor_card_width"
+            android:layout_height="@dimen/ytm_shop_cart_item_infor_card_height"
+            android:background="@color/ytm_white">
+            <!--商品图片 商品图片为正方形所以宽度跟高度一样-->
+            <ImageView
+                android:id="@+id/shop_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ytm_shop_cart_item_infor_card_width"
+                android:contentDescription="@null" />
+            <!--选中的标识图片-->
+            <ImageView
+                android:id="@+id/shop_item_check_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/ytm_shop_cart_item_infor_selected_icon_padding"
+                android:layout_marginTop="@dimen/ytm_shop_cart_item_infor_selected_icon_padding"
+                android:contentDescription="@null"
+                android:src="@drawable/ytm_shop_cart_item_selected_hint"
+                android:visibility="gone" />
+            <!--详细信息-->
+            <FrameLayout
+                android:id="@+id/shop_item_detail_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/ytm_white"
+                android:paddingLeft="@dimen/dp_12">
+                <!--商品状态 库存紧张-->
+                <TextView
+                    android:id="@+id/shop_item_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/ytm_shop_cart_item_state_bg"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/ytm_white"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:minHeight="@dimen/ytm_shop_cart_item_infor_detail_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--商品名称-->
+                    <TextView
+                        android:id="@+id/shop_item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textColor="@color/ytm_black"
+                        android:textSize="@dimen/ytm_shop_cart_item_infor_detail_name_size" />
+                    <!--sku的信息-->
+                    <TextView
+                        android:id="@+id/shop_item_sku_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_f5"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textColor="@color/ytm_shop_cart_infor_sku_text_color"
+                        android:textSize="@dimen/ytm_shop_cart_item_infor_detail_extra_size" />
+
+                    <TextView
+                        android:id="@+id/shop_exa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:gravity="left"
+                        android:maxLines="2"
+                        android:textColor="@color/ytm_shop_cart_infor_price_text_color"
+                        android:textSize="@dimen/ytm_shop_cart_item_infor_detail_extra_size"
+                        android:visibility="gone" />
+                    <!--价格-->
+                    <TextView
+                        tools:text="预售价"
+                        android:id="@+id/shop_item_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left|bottom"
+                        android:singleLine="true"
+                        android:textColor="@color/ytm_shop_cart_infor_price_text_color"
+                        android:textSize="@dimen/ytm_shop_cart_empty_text_size_1" />
+
+                </LinearLayout>
+            </FrameLayout>
+            <!--操作按钮布局-->
+            <LinearLayout
+                android:id="@+id/shop_item_controller"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ytm_shop_cart_item_controller_height"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.yunos.tvtaobao.cartbag.view.ShopCartItemControllerLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ytm_shop_cart_item_controller_sub_height"
+                    android:orientation="horizontal">
+                    <!--编辑-->
+                    <TextView
+                        android:id="@+id/shop_item_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/ytm_shop_cart_item_edit"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:textColor="@color/ytm_white"
+                        android:textSize="@dimen/sp_24" />
+                    <!--详情-->
+                    <TextView
+                        android:id="@+id/shop_item_detail"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/ytm_shop_cart_item_detail"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:textColor="@color/ytm_white"
+                        android:textSize="@dimen/sp_24" />
+                    <!--删除-->
+                    <TextView
+                        android:id="@+id/shop_item_delete"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/ytm_shop_cart_item_delete"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:textColor="@color/ytm_white"
+                        android:textSize="@dimen/sp_24" />
+                </com.yunos.tvtaobao.cartbag.view.ShopCartItemControllerLayout>
+                <!--选择-->
+                <TextView
+                    android:id="@+id/shop_item_checked"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ytm_shop_cart_item_controller_checked_btn_height"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:nextFocusUp="@id/shop_item_edit"
+                    android:textColor="@color/ytm_shop_cart_item_controller_btn_color"
+                    android:textSize="@dimen/sp_24" />
+            </LinearLayout>
+            <!--失效商品-->
+            <FrameLayout
+                android:id="@+id/shop_item_invalid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ytm_shop_cart_item_invalid_mark"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ytm_shop_cart_item_invalid_icon" />
+            </FrameLayout>
+            <!--失效操作按钮-->
+            <LinearLayout
+                android:id="@+id/shop_item_invalid_controll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/shop_item_invalid_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ytm_shop_cart_item_controller_checked_btn_height"
+                    android:background="@color/ytm_white"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:textColor="@color/ytm_shop_cart_item_controller_btn_color"
+                    android:textSize="@dimen/sp_18" />
+
+                <TextView
+                    android:id="@+id/shop_item_invalid_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ytm_shop_cart_item_controller_checked_btn_height"
+                    android:background="@color/ytm_white"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:textColor="@color/ytm_shop_cart_item_controller_btn_color"
+                    android:textSize="@dimen/sp_18" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.yunos.tvtaobao.cartbag.view.ShopCartItemFocusLayout>

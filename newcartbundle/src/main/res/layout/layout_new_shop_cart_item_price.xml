@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:paddingBottom="@dimen/dp_8">
+
+
+    <LinearLayout
+        android:id="@+id/layout_price"
+        android:layout_width="@dimen/dp_220"
+        android:layout_height="wrap_content">
+    <!--价格&数量-->
+    <!--价格-->
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:lineSpacingExtra="0sp"
+        android:layout_weight="1"
+        android:text="￥18000000"
+        android:textColor="@color/new_shop_cart_txt_price"
+        android:textSize="@dimen/sp_28"
+        android:visibility="visible"/>
+    <!--加购数量-->
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_price"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_price"
+        android:focusable="false"
+        android:gravity="end"
+        android:lineSpacingExtra="-2sp"
+        android:text="x1"
+        android:textColor="#202020"
+        android:textSize="@dimen/sp_18"
+        android:visibility="visible"/>
+    </LinearLayout>
+    <!--重量-->
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_108"
+        android:layout_alignBottom="@+id/layout_price"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/layout_price"
+        android:focusable="false"
+        android:gravity="right"
+        android:lineSpacingExtra="-2sp"
+        android:text="5kg"
+        android:textColor="#202020"
+        android:textSize="@dimen/sp_18"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/line_num"
+        android:layout_width="@dimen/dp_220"
+        android:layout_height="@dimen/dp_0_7"
+        android:layout_below="@+id/layout_price"
+        android:background="@color/new_shop_cart_txt_price_line"
+        android:focusable="false"
+        android:visibility="visible"/>
+    <View
+        android:id="@+id/line_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_0_7"
+        android:layout_alignRight="@+id/tv_weight"
+        android:layout_below="@+id/layout_price"
+        android:background="@color/new_shop_cart_txt_price_line"
+        android:focusable="false"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<resources>
+    <!-- sku -->
+    <string name="ytm_sku_kucun_text">库存 %1$s件</string>
+    <string name="ytm_sku_limit_count_text">(限购 %1$s件)</string>
+    <string name="ytm_sku_unit_buy_text">X %1$s件</string>
+    <string name="ytm_sku_buy_num_text">数量</string>
+    <string name="ytm_sku_jiesuan_text">促销价&#160;&#160;&#165;</string>
+    <string name="ytm_sku_presale">定金&#160;&#160;&#165;</string>
+    <string name="ytm_sku_zero_cucun">该库存为空，请重新选择</string>
+    <string name="ytm_sku_no_select">&#160;没有选择</string>
+    <string name="ytm_sku_cart_full_buy">进入购物车结算</string>
+
+    <!-- 确认下单页 -->
+    <!--<string name="ytm_buildorder_total_unit">合计:     &#165;</string>-->
+    <string name="ytm_buildorder_total_unit">合计:</string>
+
+    <string name="ytm_buildorder_ok">确认并付款</string>
+    <string name="ytm_buildorder_address_edit_ok">按ok键添加或编辑地址信息</string>
+    <string name="ytm_buildorder_address_edit_addr">添加或编辑地址</string>
+    <string name="ytm_buildorder_quantity">数量</string>
+    <string name="ytm_buildorder_shopdiscount">店铺优惠</string>
+    <string name="ytm_buildorder_discount">优惠</string>
+    <string name="ytm_buildorder_invalid">本店铺中有失效宝贝:</string>
+    <string name="ytm_buildorder_price">单价</string>
+    <string name="ytm_buildorder_unit_yuan">元</string>
+    <string name="ytm_buildorder_unit_jian">件</string>
+    <string name="ytm_buildorder_pay_initfail">支付初始化失败</string>
+    <string name="ytm_buildorder_youhui">元</string>
+    <string name="ytm_buildorder_peisongfangshi">配送方式</string>
+    <string name="ytm_buildorder_yunfei">运费</string>
+    <string name="ytm_buildorder_tianmaojifen">天猫积分</string>
+    <string name="ytm_buildorder_jifenshiyong">%1$.2f元(使用%2$d点)</string>
+    <string name="ytm_buildorder_select_address">请选择收货地址</string>
+    <string name="ytm_buildorder_no_order">不能下单</string>
+    <string name="ytm_buildorder_taojinbi">淘金币</string>
+    <string name="ytm_buildorder_taojinbishiyong">%1$.2f元(使用%2$d个)</string>
+    <string name="ytm_buildorder_success">订单已提交,我们会尽快安排发货</string>
+    <string name="ytm_buildorder_tmall_coupon">天猫购物券</string>
+
+    <!-- 主題市場 -->
+    <string name="ytsdk_themeMarket_not_open">暂时无内容,请稍后重试</string>
+
+    <!-- 地址编辑页 -->
+    <string name="ytsdk_address_edit_text_edit">您可以在电脑上登录天猫和淘宝，\n或使用无线客户端自由编辑收货地址。</string>
+    <string name="ytsdk_address_edit_text_saomiao">使用手机扫描二维码\n即可在手机上轻松编辑扫描地址。</string>
+    <string name="ytsdk_address_edit_title">收货地址管理</string>
+
+    <!-- join group -->
+
+    <string name="ytsdk_no_address">您还没有设置收货地址，请先到淘宝网设置收货地址！</string>
+    <string name="ytsdk_exceed_purchase">对不起，您输入的数量超过了可购买的最大数量！</string>
+    <string name="ytsdk_can_not_buy">对不起，该商品暂时不能购买！</string>
+    <string name="ytsdk_can_not_buy_for_chang_address">对不起，当前收货地址暂时不能购买！</string>
+    <string name="ytsdk_no_pay">对不起，该商品您还有未付款的订单，请不要重复购买！</string>
+    <string name="ytsdk_server_error">对不起，服务暂时无响应，请稍后重试！</string>
+    <string name="ytsdk_promotions">促销价</string>
+    <string name="ytsdk_buy_num">数量</string>
+    <string name="ytsdk_limit_num">1</string>
+    <string name="ytsdk_default_price">&#165; 99.00</string>
+    <string name="ytsdk_purchase">限购</string>
+    <string name="ytsdk_unit">件</string>
+    <string name="ytsdk_please_select_sku">请选择</string>
+    <string name="ytsdk_join_timeout">参团超时了，请返回重新参团！</string>
+    <string name="ytsdk_order_more">您的未付款订单过多,请先到淘宝网关闭一些订单!</string>
+    <string name="ytsdk_can_not_buy_for_user_change">您已切换账号,请重新购买！</string>
+
+</resources>

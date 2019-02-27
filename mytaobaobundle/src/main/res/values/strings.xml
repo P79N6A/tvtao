@@ -1,0 +1,36 @@
+<resources>
+    <string name="ytsdk_my_taobao">我的淘宝</string>
+    <string name="ytsdk_mytaobao_cart">购物车</string>
+    <string name="ytsdk_mytaobao_add_fav">收藏</string>
+    <string name="ytsdk_mytaobao_order">订单</string>
+    <string name="ytsdk_mytaobao_point">电视淘宝积分</string>
+    <string name="ytsdk_mytaobao_address_title">收货地址</string>
+    <string name="ytsdk_mytaobao_coupon_title">卡券包</string>
+    <string name="ytsdk_mytaobao_account">账号</string>
+    <string name="ytsdk_account_error">对不起，您的账号还未登录，请您先去登录！</string>
+    <string name="ytsdk_set_default_address">设为默认地址</string>
+    <string name="ytsdk_all_taobao_point">共有 %1$s 个积分</string>
+    <string name="ytsdk_all_order">共有 %1$s 笔订单</string>
+    <string name="ytsdk_all_collect">共有 %1$s 件商品</string>
+    <string name="ytsdk_all_address">共有 %1$s 个地址</string>
+    <string name="ytsdk_all_coupon">共有 %1$s 个优惠</string>
+
+    <!-- 收藏界面 -->
+    <string name="ytsdk_collects_title">收藏</string>
+    <string name="ytsdk_collects_price">&#165;%s</string>
+    <string name="ytsdk_collects_collect_num">人气：%s</string>
+    <string name="ytsdk_collects_no_data_tip">亲！您还没有收藏哦~</string>
+
+    <!-- address -->
+    <string name="ytsdk_address_title">收货地址</string>
+    <string name="ytsdk_set_defalut_faile">默认地址修改失败</string>
+    <string name="ytsdk_set_defalut_success">默认地址修改成功</string>
+
+    <!-- 优惠券 -->
+    <string name="ytm_hongbao_title">支付宝红包</string>
+    <string name="ytm_hongbao_expire_text">有效期</string>
+    <string name="ytm_coupon_title">优惠券</string>
+    <string name="ytm_coupon_use_area">全店通用</string>
+    <string name="coupon_subtitle">淘宝红包请在首页下方点击【红包明细】查看</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--- 未选中，聚焦     !-->
+    <item  android:minLevel="1" android:maxLevel="1"
+        android:state_selected="false"
+        android:drawable="@drawable/icon_unselected_focus"
+        >
+    </item>
+    <!--- 选中，聚焦     !-->
+    <item
+        android:minLevel="2" android:maxLevel="2"
+        android:state_selected="true"
+        android:drawable="@drawable/icon_selected_focus"
+        >
+    </item>
+    <!--- 未聚焦,未选中     !-->
+    <item
+        android:minLevel="3" android:maxLevel="3"
+        android:state_selected="false" android:state_focused="false"
+        android:drawable="@drawable/icon_unselected_unfocus"
+        >
+    </item>
+    <!--- 未聚焦，选中     !-->
+    <item
+        android:minLevel="4" android:maxLevel="4"
+        android:state_selected="true" android:state_focused="false"
+        android:drawable="@drawable/icon_selected_unfocus"
+        >
+    </item>
+</level-list>

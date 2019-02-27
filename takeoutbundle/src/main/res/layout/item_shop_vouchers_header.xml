@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_53"
+    android:paddingTop="@dimen/dp_43"
+    android:paddingBottom="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_53">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_1"
+        android:layout_weight="1"
+        android:background="#4cffffff" />
+
+    <ImageView
+        android:id="@+id/img_left"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="@dimen/dp_10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_23"
+        android:layout_marginRight="@dimen/dp_23"
+        android:text="店铺专享红包"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_32" />
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="@dimen/dp_10" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:layout_weight="1"
+        android:background="#4cffffff" />
+</LinearLayout>

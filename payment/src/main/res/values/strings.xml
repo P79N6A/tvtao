@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">payment</string>
+    <string name="ytsdk_account_error">对不起，您的账号还未登录，请您先去登录！</string>
+
+</resources>

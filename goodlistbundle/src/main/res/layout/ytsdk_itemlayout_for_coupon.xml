@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.goodlist.view.ItemLayoutForCoupon xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="@dimen/dp_240"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:paddingBottom="@dimen/dp_0"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_0" >
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:includeFontPadding="false"
+                android:paddingBottom="@dimen/dp_0"
+                android:paddingTop="@dimen/dp_0"
+                android:singleLine="true"
+                android:textColor="@color/ytm_white"
+                android:textSize="@dimen/dp_46"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/discount"
+                android:layout_toRightOf="@id/discount"
+                android:includeFontPadding="false"
+                android:paddingBottom="@dimen/dp_0"
+                android:paddingTop="@dimen/dp_0"
+                android:singleLine="true"
+                android:text="@string/ytsdk_coupon_title"
+                android:textColor="@color/ytm_white"
+                android:textSize="@dimen/dp_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@id/discount"
+                android:includeFontPadding="false"
+                android:paddingBottom="@dimen/dp_0"
+                android:paddingTop="@dimen/dp_0"
+                android:singleLine="true"
+                android:text="@string/ytsdk_coupon_unit"
+                android:textColor="@color/ytm_white"
+                android:textSize="@dimen/dp_16" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_0"
+            android:singleLine="true"
+            android:text="@string/ytsdk_coupon_indate"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:id="@+id/indate"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_0"
+            android:singleLine="true"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_0"
+            android:singleLine="true"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:id="@+id/supplier"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_0"
+            android:singleLine="true"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/dp_14" />
+
+        <ImageView
+            android:id="@+id/description_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_4"
+            android:src="@drawable/ytsdk_ui2_coupon_unlimt_icn" />
+
+        <TextView
+            android:id="@+id/use_coupon"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="@dimen/dp_60"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/ytsdk_coupon_use"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/dp_16"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applied"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="@dimen/dp_240"
+        android:background="#a0000000"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/ytsdk_ui2_coupon_applied" />
+    </LinearLayout>
+
+</com.yunos.tvtaobao.goodlist.view.ItemLayoutForCoupon>

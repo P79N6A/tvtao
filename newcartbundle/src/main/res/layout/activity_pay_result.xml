@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunos.tvtaobao.payresult.PayResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_73"
+        android:focusable="false"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_pay_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="0sp"
+            tools:text="成功支付"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_52" />
+
+        <TextView
+            android:id="@+id/tv_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="0sp"
+            tools:text="￥99.99"
+            android:textColor="#ff5500"
+            android:textSize="@dimen/sp_52"
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_pay_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:focusable="false"
+        android:lineSpacingExtra="@dimen/sp_20"
+        tools:text="使用账号（limi***@163.com）"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_32" />
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/layout_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_100"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_1_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_weight="1"
+            android:background="@color/ytsdk_detail_scroll_divider_color" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@drawable/like" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="你可能还喜欢"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_32" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_1_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_60"
+            android:layout_weight="1"
+            android:background="@color/ytsdk_detail_scroll_divider_color" />
+    </LinearLayout>
+
+    <com.yunos.tvtaobao.biz.widget.TvRecyclerView
+        android:id="@+id/recyclerview_guesslike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"></com.yunos.tvtaobao.biz.widget.TvRecyclerView>
+
+
+</LinearLayout>

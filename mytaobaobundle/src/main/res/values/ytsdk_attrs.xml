@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ytsdk">
+        <attr name="mtTitle" format="string" />
+        <attr name="mtDetail" format="string" />
+        <attr name="mtImage" format="reference" />
+        <attr name="mtIsFirstHasFocus" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FadeLinearLayout">
+        <attr name="shadeColor" format="color" />
+        <attr name="shadeTopHeight" format="dimension" />
+        <attr name="shadeBottomHeight" format="dimension" />
+    </declare-styleable>
+</resources>

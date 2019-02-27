@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_24"
+    android:gravity="center_vertical"
+    android:focusable="false">
+
+    <ImageView
+        android:id="@+id/iv_tag_tv_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:maxHeight="@dimen/dp_24"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_vertical"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tv_tag_tv_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingExtra="-0.7sp"
+        android:layout_toRightOf="@+id/iv_tag_tv_tb"
+        android:paddingLeft="@dimen/dp_2"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/new_shop_cart_label_txt"
+        android:textSize="@dimen/sp_18" />
+
+
+</RelativeLayout>

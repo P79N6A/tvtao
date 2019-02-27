@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#e0202020"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_440">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/corner_shape_full_white"
+                android:layout_width="@dimen/dp_720"
+                android:layout_height="@dimen/dp_440" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_100">
+
+                    <ImageView
+                        android:src="@drawable/icon_delivery"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="查看物流"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:textColor="@color/ytm_black"
+                        android:textSize="36sp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#A2AABA"
+                    android:layout_height="0.5dp" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_720"
+                    android:layout_height="@dimen/dp_340">
+
+                    <ImageView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/order_delivery_guy"
+                        android:src="@drawable/order_delivery_guy"
+                        android:layout_width="@dimen/dp_340"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_height="@dimen/dp_340" />
+
+                    <LinearLayout
+                        android:id="@+id/order_delivery_right_info"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@id/order_delivery_guy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_340">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/dp_68"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:textColor="@color/ytm_black"
+                            android:text="商家配送" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:textColor="@color/ytm_black"
+                            android:text="暂无物流信息，请耐心等待" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_40"
+                            android:textSize="24sp"
+                            android:textColor="@color/ytm_black"
+                            android:text="您可以拨打商家电话" />
+
+                        <TextView
+                            android:textSize="24sp"
+                            android:textColor="@color/ytm_black"
+                            android:id="@+id/order_delivery_right_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_delivery_right_details"
+                        android:visibility="invisible"
+                        android:layout_toRightOf="@id/order_delivery_guy"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_340">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/dp_38"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_24"
+                            android:textColor="@color/ytm_gray"
+                            android:text="骑手信息" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_24"
+                            android:id="@+id/take_out_delivery_name"
+                            android:textColor="@color/ytm_black"
+                            android:text="姓名: " />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_24"
+                            android:id="@+id/take_out_delivery_mobile"
+                            android:textColor="@color/ytm_black"
+                            android:lineSpacingExtra="12sp"
+                            android:text="电话: " />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_24"
+                            android:textColor="@color/ytm_black"
+                            android:layout_marginTop="@dimen/dp_30"
+                            android:text="骑手距您还有" />
+
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/take_out_delivery_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp_76"
+                                android:textColor="@color/to_highlight_color"
+                                android:layout_marginTop="@dimen/dp_f17"
+                                android:text="？？？" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_toRightOf="@id/take_out_delivery_distance"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_alignBaseline="@+id/take_out_delivery_distance"
+                                android:textColor="@color/ytm_black"
+                                android:textSize="@dimen/sp_24"
+                                android:text="米"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

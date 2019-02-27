@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="@dimen/dp_6"></corners>
+            <solid android:color="@color/color_ff6000"> </solid>
+        </shape>
+    </item>
+    <item android:state_focused="false" >
+        <shape>
+            <solid android:color="@color/transparent"> </solid>
+        </shape>
+    </item>
+</selector>

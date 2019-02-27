@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.homebundle.detainment.DetainMentItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_232"
+    android:layout_height="@dimen/dp_312">
+
+    <ImageView
+        android:id="@+id/detainment_item_img"
+        android:layout_width="@dimen/dp_232"
+        android:layout_height="@dimen/dp_232"
+        android:layout_gravity="top"
+        android:contentDescription="@string/ytm_main_app_name"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/detainment_item_price"
+        android:layout_width="@dimen/dp_232"
+        android:layout_height="@dimen/dp_65"
+        android:layout_gravity="bottom"
+        android:paddingBottom="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_15"
+        android:background="@color/ytm_white"
+        android:gravity="bottom"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="0.8"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_16"
+        android:singleLine="true"
+        android:textColor="#fc4c28"
+        android:textSize="@dimen/dp_27" />
+
+    <!-- 描述（标题） -->
+
+    <TextView
+        android:id="@+id/detainment_item_title"
+        android:layout_width="@dimen/dp_232"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_222"
+        android:background="@color/ytm_white"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="@dimen/dp_10"
+        android:lineSpacingMultiplier="1.0"
+        android:maxLines="2"
+        android:minHeight="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_12"
+        android:textColor="@color/ytm_black"
+        android:textSize="@dimen/dp_20" />
+
+</com.yunos.tvtaobao.homebundle.detainment.DetainMentItemLayout>

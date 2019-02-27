@@ -1,0 +1,106 @@
+<resources  xmlns:TvAlertDialog="http://schemas.android.com/apk/res/com.yunos.tv.aliTvSdk">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="keyboardViewStyle">@style/Widget.KeyboardView</item>
+    </style>
+    
+    <style name="Theme.Ali.TV.Dialog.Alert" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Ali.TV.AlertDialog</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="layout">@layout/tui_alert_dialog</item>
+    </style>
+    
+        
+    <style name="Theme.Ali.TV.Dialog.Alert.BackHint" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Ali.TV.AlertDialog</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="layout">@layout/tui_alert_dialog</item>
+    </style>
+    
+    <style name="Theme.Ali.TV.Dialog.Alert.SetNetwork" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Ali.TV.AlertDialog</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="layout">@layout/tui_alert_dialog_sys_set</item>
+    </style>
+   
+    <style name="Theme.Ali.TV.Dialog.Alert.SysUpdate" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Ali.TV.AlertDialog</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="layout">@layout/tui_alert_dialog_sys_set</item>
+    </style>
+
+    <style name="Theme.Ali.TV.Dialog.Alert.Warning" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Ali.TV.AlertDialog</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="layout">@layout/tui_alert_dialog_warning</item>
+    </style>
+    
+    <style name="Animation"></style>
+
+    <style name="Animation.Ali"></style>
+
+    <style name="Animation.Ali.TV"></style>
+
+    <style name="Animation.Ali.TV.AlertDialog">
+        <item name="android:windowEnterAnimation">@anim/tui_alert_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/tui_alert_dialog_exit</item>
+    </style>
+    
+        
+    <style name="DialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/tui_dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/tui_dialog_exit_anim</item>
+    </style>
+    
+    <style name="AlertDialogButton">
+        <item name="android:layout_width">@dimen/alert_dialog_btn_width</item>
+        <item name="android:layout_height">@dimen/alert_dialog_btn_height</item>
+        <item name="android:textSize">@dimen/alert_dialog_msg_btn_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:focusable">true</item>
+    </style>    
+    
+    <style name="Widget.KeyboardView" parent="android:Widget">
+        <item name="android:background">#00000000</item>
+        <item name="android:keyBackground">@null</item>
+        <item name="android:keyTextSize">22sp</item>
+        <item name="android:keyTextColor">#FFFFFFFF</item>
+        <item name="android:keyPreviewOffset">-12dip</item>
+        <item name="android:keyPreviewHeight">80dip</item>
+        <item name="android:labelTextSize">14sp</item>
+        <item name="android:verticalCorrection">0dip</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowRadius">2.75</item>
+    </style>
+</resources>

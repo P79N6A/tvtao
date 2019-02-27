@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.takeoutbundle.view.TOOrderListItemFocusLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_24"
+    android:paddingRight="@dimen/dp_0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/shop_item_info_layout"
+        android:layout_width="@dimen/dp_280"
+        android:background="@drawable/ol_bg_corner_shape_full_white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ol_bg_corner_tl_tr_shape_full_white">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@drawable/invalid_name_corner_v2"
+                android:paddingBottom="@dimen/dp_17"
+                android:layout_height="wrap_content">
+
+                <!--店铺信息-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:background="@color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44" >
+
+                    <com.yunos.tv.app.widget.round.RoundCornerImageView
+                        android:id="@+id/shop_store_logo_image"
+                        android:layout_width="@dimen/dp_44"
+                        android:layout_height="@dimen/dp_44"
+                        app:corner_radius="@dimen/dp_22"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:id="@+id/shop_store_name"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/color_202020"
+                        android:textSize="@dimen/sp_24"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/dp_8" />
+
+                <!--商品基本信息-->
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:background="@color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_84">
+
+                    <com.yunos.tv.app.widget.round.RoundCornerImageView
+                        android:id="@+id/shop_item_image"
+                        app:corner_radius="8dp"
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_80"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:contentDescription="@null"/>
+
+                    <!--商品信息-->
+                    <TextView
+                        android:id="@+id/shop_item_name"
+                        android:layout_toRightOf="@id/shop_item_image"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:lineSpacingExtra="1sp"
+                        android:text=""
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="@color/color_606060"
+                        android:textSize="@dimen/sp_20"/>
+
+                    <!--商品Count-->
+                    <TextView
+                        android:id="@+id/shop_item_count"
+                        android:layout_toRightOf="@id/shop_item_image"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/dp_17"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/color_8c94a3"
+                        android:textSize="@dimen/sp_20"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--价格-->
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textSize="@dimen/to_ol_shop_cart_item_infor_detail_name_size"
+                    android:text="合计: "
+                    android:textColor="@color/color_606060"/>
+
+                <TextView
+                    android:id="@+id/shop_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:singleLine="true"
+                    android:textSize="@dimen/to_ol_shop_cart_item_infor_detail_name_size"
+                    android:text=""
+                    android:textColor="@color/to_highlight_color"/>
+
+            </LinearLayout>
+
+            <!--下单时间-->
+            <TextView
+                android:id="@+id/shop_item_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:text=""
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/dp_f3"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/color_8c94a3"/>
+
+            <!--订单状态-->
+            <TextView
+                android:id="@+id/shop_item_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text=""
+                android:singleLine="true"
+                android:textSize="@dimen/to_ol_shop_cart_item_infor_detail_name_size"
+                android:textColor="@color/to_highlight_color"/>
+            <Space
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_12" />
+
+        </LinearLayout>
+
+        <!--操作按钮布局-->
+        <TextView
+            android:id="@+id/shop_item_first"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:minHeight="@dimen/dp_48"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:lines="1"
+            android:singleLine="true"
+            android:focusable="true"
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:background="@color/to_ol_normal_background"
+            android:textColor="@color/ytm_white"/>
+
+        <View
+            android:background="#2e323b"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <TextView
+            android:id="@+id/shop_item_second"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="center"
+            android:background="@color/to_ol_normal_background"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/shop_item_second_splitter"
+            android:background="#2e323b"
+            android:layout_height="0.5dp" />
+
+        <TextView
+            android:id="@+id/shop_item_third"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="@dimen/dp_48"
+            android:focusable="true"
+            android:textSize="@dimen/sp_20"
+            android:background="@color/to_ol_normal_background"
+            android:textColor="@color/ytm_white" />
+
+    </LinearLayout>
+
+</com.yunos.tvtaobao.takeoutbundle.view.TOOrderListItemFocusLayout>

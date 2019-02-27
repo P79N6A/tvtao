@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.biz.dialog.DialogFocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/super_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" 
+        android:gravity="center">
+
+        <com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepLinearLayout
+            android:id="@+id/dialog_layout"
+            android:layout_width="@dimen/dp_560"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/ytbv_dialog_layout_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_48"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_40" />
+
+            <LinearLayout
+                android:id="@+id/foot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/dp_48"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/positiveButton"
+                    style="@style/ytbv_alert_dialog_button"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/negativeButton"
+                    style="@style/ytbv_alert_dialog_button"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </LinearLayout>
+        </com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepLinearLayout>
+    </RelativeLayout>
+
+</com.yunos.tvtaobao.biz.dialog.DialogFocusPositionManager>

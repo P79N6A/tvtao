@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunos.tvtaobao.takeoutbundle.activity.TakeOutShopSearchActivity">
+
+    <com.yunos.tv.app.widget.focus.FocusPositionManager
+        android:id="@+id/focus_manager_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/take_out_shop_main_bac">
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_weight="10">
+
+                <com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout
+                    android:id="@+id/shop_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:minHeight="@dimen/dp_150">
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_24"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.yunos.tvtaobao.takeoutbundle.widget.CardView
+                            android:id="@+id/card_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            app:backgroundColor="#232d39"
+                            app:cv_radius="@dimen/dp_10">
+
+                            <ImageView
+                                android:id="@+id/shop_icon_pic"
+                                android:layout_width="@dimen/dp_112"
+                                android:layout_height="@dimen/dp_112" />
+                        </com.yunos.tvtaobao.takeoutbundle.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_24"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/shop_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:lineSpacingExtra="12sp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/gray_a2aaba"
+                                android:textSize="@dimen/sp_27" />
+
+                            <TextView
+                                android:id="@+id/tv_search_word"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="店铺内搜索词：卤肉饭"
+                                android:textColor="@color/white_e7f3ff"
+                                android:textSize="@dimen/sp_36" />
+                        </LinearLayout>
+
+                        <!--</LinearLayout>-->
+                    </LinearLayout>
+                </com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout>
+
+                <com.yunos.tvtaobao.takeoutbundle.widget.SelectFocusListView
+                    android:id="@+id/good_all_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout
+                    android:id="@+id/shop_loading_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <TextView
+                            android:id="@+id/shop_loading_notice_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/dp_72"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="没有更多商品啦"
+                            android:textColor="#7e8da0"
+                            android:textSize="@dimen/sp_26"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                </com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/shop_empty_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_200"
+                        android:layout_height="@dimen/dp_200"
+                        android:layout_gravity="center"
+                        android:src="@drawable/shop_search_empty" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout
+                android:id="@+id/collection_focus_search"
+                android:layout_width="@dimen/dp_308"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_36"
+                android:layout_marginLeft="@dimen/dp_0"
+                android:layout_marginRight="@dimen/dp_f88"
+                android:layout_marginTop="@dimen/dp_160"
+                android:background="@drawable/good_collection_bac_normal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_2">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/good_collection_empty_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/shop_bag_notice_empty" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/good_collection_recycle_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/dp_10" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100">
+
+
+                        <TextView
+                            android:id="@+id/collection_status_1_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/good_collection_pay_bac_sta_click_no"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:text="￥20起送"
+                            android:textColor="#a2aaba"
+                            android:textSize="@dimen/sp_32"
+                            android:visibility="gone" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/collection_status_2_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/good_collection_pay_bac_sta_click_no"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/collection_status_2_bac_search"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/dp_1"
+                                android:background="@drawable/good_collection_pay_bac_sta_click_yes"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/collection_pay_search"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:layout_marginTop="@dimen/dp_14"
+                                android:textColor="@color/red_ff6000"
+                                android:textSize="@dimen/sp_32" />
+
+
+                            <TextView
+                                android:id="@+id/collection_pay_ori_search"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                android:layout_marginTop="@dimen/dp_27"
+                                android:layout_toRightOf="@+id/collection_pay_search"
+                                android:lineSpacingExtra="20sp"
+                                android:textColor="#ffc7a5"
+                                android:textSize="20sp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/collection_pay_dlive_amount_search"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="@dimen/dp_14"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:textColor="#ffe8da"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/collection_status_0_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/good_collection_pay_bac_sta_rest"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:text="休息中～"
+                            android:textColor="#a2aaba"
+                            android:textSize="@dimen/sp_32"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/good_collection_need_more_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="-113dp"
+                        android:background="@drawable/bg_bag_pay_need_more"
+                        android:gravity="center"
+                        android:minHeight="@dimen/dp_26"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_16"
+                        android:visibility="gone"
+                        tools:text="差￥18起送" />
+
+
+                </LinearLayout>
+            </com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_176"
+                android:layout_height="match_parent"
+                android:layout_gravity="end">
+
+                <View
+                    android:layout_width="@dimen/dp_44"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_search_tools"
+                    android:focusable="false" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+                    <com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout
+                        android:id="@+id/fl_takeout_shophome"
+                        android:layout_width="@dimen/dp_176"
+                        android:layout_height="@dimen/dp_130"
+                        android:layout_marginTop="@dimen/dp_150"
+                        android:clickable="true"
+                        android:nextFocusDown="@+id/fl_detail_search">
+
+                        <ImageView
+                            android:id="@+id/iv_takeout_shophome_focus_search"
+                            android:layout_width="@dimen/dp_56"
+                            android:layout_height="@dimen/dp_130"
+                            android:layout_gravity="right" />
+
+                        <TextView
+                            android:id="@+id/tv_takeout_shophome_pop_search"
+                            android:layout_width="@dimen/dp_116"
+                            android:layout_height="@dimen/dp_44"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/dp_60"
+                            android:background="@drawable/icon_four_words"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="店铺首页"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/sp_17"
+                            android:visibility="invisible" />
+
+                    </com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout>
+
+                    <com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout
+                        android:id="@+id/fl_detail_search"
+                        android:layout_width="@dimen/dp_176"
+                        android:layout_height="@dimen/dp_101"
+                        android:clickable="true"
+                        android:nextFocusDown="@+id/fl_orders_search"
+                        android:nextFocusUp="@+id/fl_takeout_shophome">
+
+                        <ImageView
+                            android:id="@+id/iv_detail_focus_search"
+                            android:layout_width="@dimen/dp_56"
+                            android:layout_height="@dimen/dp_101"
+                            android:layout_gravity="right" />
+
+                        <TextView
+                            android:id="@+id/tv_detail_pop_search"
+                            android:layout_width="@dimen/dp_81"
+                            android:layout_height="@dimen/dp_44"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/dp_60"
+                            android:background="@drawable/icon_two_words"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="详情"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/sp_17"
+                            android:visibility="invisible" />
+
+                    </com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout>
+
+                    <com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout
+                        android:id="@+id/fl_orders_search"
+                        android:layout_width="@dimen/dp_176"
+                        android:layout_height="@dimen/dp_101"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:nextFocusDown="@+id/fl_users_search"
+                        android:nextFocusUp="@+id/fl_detail_search">
+
+                        <ImageView
+                            android:id="@+id/iv_orders_focus_search"
+                            android:layout_width="@dimen/dp_56"
+                            android:layout_height="@dimen/dp_101"
+                            android:layout_gravity="right" />
+
+                        <TextView
+                            android:id="@+id/tv_orders_pop_search"
+                            android:layout_width="@dimen/dp_116"
+                            android:layout_height="@dimen/dp_44"
+                            android:layout_gravity="left|center_vertical"
+                            android:background="@drawable/icon_two_words"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="外卖订单"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/sp_17"
+                            android:visibility="invisible"
+
+                            />
+
+                    </com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout>
+
+                    <com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout
+                        android:id="@+id/fl_users_search"
+                        android:layout_width="@dimen/dp_176"
+                        android:layout_height="@dimen/dp_101"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:nextFocusDown="@+id/fl_first_search"
+                        android:nextFocusUp="@+id/fl_orders_search">
+
+                        <ImageView
+                            android:id="@+id/iv_users_focus_search"
+                            android:layout_width="@dimen/dp_56"
+                            android:layout_height="@dimen/dp_101"
+                            android:layout_gravity="right" />
+
+                        <TextView
+                            android:id="@+id/tv_users_pop_search"
+                            android:layout_width="@dimen/dp_116"
+                            android:layout_height="@dimen/dp_44"
+                            android:layout_gravity="left|center_vertical"
+                            android:background="@drawable/icon_two_words"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="我的外卖"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/sp_17"
+                            android:visibility="invisible" />
+
+                    </com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout>
+
+                    <com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout
+                        android:id="@+id/fl_first_search"
+                        android:layout_width="@dimen/dp_176"
+                        android:layout_height="@dimen/dp_57"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/fl_users">
+
+                        <ImageView
+                            android:id="@+id/iv_first_focus_search"
+                            android:layout_width="@dimen/dp_56"
+                            android:layout_height="@dimen/dp_57"
+                            android:layout_gravity="right" />
+
+                        <TextView
+                            android:id="@+id/tv_first_pop_search"
+                            android:layout_width="@dimen/dp_116"
+                            android:layout_height="@dimen/dp_44"
+                            android:layout_gravity="left|center_vertical"
+                            android:background="@drawable/icon_two_words"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="返回首页"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/sp_17"
+                            android:visibility="invisible" />
+
+                    </com.yunos.tvtaobao.takeoutbundle.widget.FocusFrameLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.yunos.tv.app.widget.focus.FocusPositionManager>
+
+
+</FrameLayout>

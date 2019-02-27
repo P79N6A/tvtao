@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/layout_new_shop_cart_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_new_shop_cart">
+    <include layout="@layout/layout_new_shop_cart_empty" />
+
+    <com.yunos.tvtaobao.newcart.view.ShopCartListPositionManager
+        android:id="@+id/position_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yunos.tvtaobao.biz.widget.InnerFocusGroupListView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_submit"
+            android:layout_width="@dimen/dp_264"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_38"
+            android:layout_marginBottom="@dimen/dp_84"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_22"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:layout_toLeftOf="@+id/tv_goods_count"
+                    android:background="#cc4f667f" />
+
+                <TextView
+                    android:id="@+id/tv_goods_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="选中0件宝贝"
+                    android:textColor="@color/ytm_white"
+                    android:textSize="@dimen/dp_22" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_22"
+                    android:layout_toRightOf="@+id/tv_goods_count"
+                    android:background="#cc4f667f" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_benefit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_22"
+                android:layout_marginRight="@dimen/dp_22"
+                android:layout_marginTop="@dimen/dp_8"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_22"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:layout_toLeftOf="@+id/tv_total_price"
+                    android:background="#cc4f667f" />
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="合计"
+                    android:textColor="@color/ytm_white"
+                    android:textSize="@dimen/dp_22" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_22"
+                    android:layout_toRightOf="@+id/tv_total_price"
+                    android:background="#cc4f667f" />
+            </RelativeLayout>
+
+            <TextView
+                tools:text="11111"
+                android:id="@+id/tv_goods_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:textColor="#ff6000"
+                android:textSize="@dimen/dp_26" />
+
+            <TextView
+                android:id="@+id/tv_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不含运费"
+                android:layout_marginTop="@dimen/dp_f3"
+                android:textColor="#98badf"
+                android:textSize="@dimen/dp_18" />
+
+            <com.yunos.tvtaobao.newcart.view.NoScaleFocusFrameLayout
+                android:id="@+id/account_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_26"
+                android:background="@drawable/bg_submit"
+                android:nextFocusLeft="@+id/recyclerview">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_220"
+                    android:layout_height="@dimen/dp_74_7"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_submit"
+                        android:text="去结算"
+                        android:textColor="#99bbdd"
+                        android:textSize="@dimen/dp_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/txt_choose_rebate"
+                        tools:text="预估可返¥22"
+                        android:textColor="#99bbdd"
+                        android:textSize="@dimen/dp_18"
+                        android:layout_marginBottom="@dimen/dp_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </com.yunos.tvtaobao.newcart.view.NoScaleFocusFrameLayout>
+
+        </LinearLayout>
+    </com.yunos.tvtaobao.newcart.view.ShopCartListPositionManager>
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_select"
+    android:layout_width="@dimen/dp_80"
+    android:layout_height="@dimen/dp_52"
+    android:focusable="false">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:minHeight="@dimen/dp_24"
+        android:minWidth="@dimen/dp_24" />
+
+
+</RelativeLayout>

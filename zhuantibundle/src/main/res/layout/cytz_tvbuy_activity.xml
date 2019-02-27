@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <com.yunos.tv.tvsdk.media.view.VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#19000000"/>
+
+    <LinearLayout
+        android:id="@+id/loading_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.yunos.tvtaobao.biz.widget.TvTaoBaoProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="出错啦"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/tvbuy_bottom_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_4"
+        android:layout_alignParentBottom="true"
+        android:progressDrawable="@drawable/bottom_progress_bg"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_stopEnterToPlay"
+        android:layout_width="@dimen/dp_144"
+        android:layout_height="@dimen/dp_144"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_568"
+        android:layout_marginTop="@dimen/dp_288"
+        android:src="@drawable/home_play"
+        android:visibility="invisible"/>
+
+    <com.yunos.tvtaobao.zhuanti.view.MyProgressbarRelativeLayout
+        android:id="@+id/myProgressbarRelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:visibility="invisible"/>
+
+
+    <ImageView
+        android:id="@+id/iv_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/video_error"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

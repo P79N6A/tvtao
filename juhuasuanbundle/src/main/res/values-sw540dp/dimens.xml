@@ -1,0 +1,242 @@
+<resources>
+
+    <dimen name="tui_text_size_2">13.5sp</dimen>
+
+    <!-- 一般Page页面的商品 -->
+    <dimen name="jhs_page_goods_text_normal_size">15.0sp</dimen>
+    <dimen name="jhs_page_goods_text_big_size">22.5sp</dimen>
+    <dimen name="jhs_page_goods_text_middle_size">19.5sp</dimen>
+    <dimen name="jhs_page_hint_padding">22.5dip</dimen>
+    <dimen name="jhs_page_goods_text_infor_big_size">22.5sp</dimen>
+    <dimen name="jhs_page_goods_text_infor_normal_size">15.0sp</dimen>
+    <dimen name="jhs_page_item_bg_padding">15.0dip</dimen>
+    <dimen name="jhs_page_item_width">896.25dip</dimen>
+    <dimen name="jhs_page_item_height">491.25dip</dimen>
+    <dimen name="jhs_category_item_below_height">175.5dp</dimen>
+    <!-- 共用  下单步骤 -->
+    <!-- 下单步骤字体大小 -->
+    <!-- 下单步骤字体大小 -->
+    <!-- 下单步骤与屏幕顶部的距离 -->
+    <!-- 当前下单步骤文字与下划线之间的距离 -->
+    <!-- 当前下单步骤下划线粗细 -->
+
+
+    <!-- 共用  下单整体布局 -->
+    <!-- 订单主体部分与左右边距的巨鹿 -->
+    <!-- 带阴影的订单主体部分与左右边距的巨鹿 -->
+    <!-- 订单主体阴影宽度 -->
+    <!-- 带阴影的订单主体部分与订单步骤之间的间距， 算法：order_step_current_line_height - order_content_shadow_width = 3-10=-7 -->
+    <!-- 下一步按钮左边距 -->
+
+
+    <!-- order_submit_activity -->
+    <!-- 商品信息各个字段离左右边的距离 -->
+    <!-- 订单提交页面内部每项信息与主体阴影框的左右边距 -->
+    <!-- 地址栏高 -->
+    <dimen name="jhs_address_font_size">15.0sp</dimen>
+    <!-- 地址栏内一般地址信息字体大小 -->
+    <!-- 商品信息表格标题和内容的间距 -->
+    <!-- 地址栏内一般地址信息字体大小 -->
+    <!-- 单价数量等高度 -->
+
+    <!-- sure_join -->
+
+    <!-- detail activity -->
+    <!-- 左侧内容宽度 -->
+    <!-- 左侧内容带实际宽度：阴影部分 -->
+    <!-- 右侧内阴影部分阴影横向左右宽度 -->
+    <!-- 右侧内容实际宽度 -->
+    <!-- 右侧内容带实际宽度 ：箭头部分 -->
+    <!-- 评论内容的字体大小 -->
+    <!-- 评论其他信息的字体大小 -->
+
+    <!-- ju_home -->
+    <!-- dialog -->
+    <!-- brand -->
+    <dimen name="jhs_brand_detail_list_layout_width">321dp</dimen>
+    <dimen name="jhs_brand_detail_list_image_height">160.5dp</dimen>
+    <dimen name="jhs_brand_detail_list_layout_botton_height">24.75dp</dimen>
+
+    <!-- about -->
+
+    <!-- MyOrder -->
+
+    <!-- tvgou_fragment -->
+    <!-- xml 适配 -->
+    <dimen name="jhs_category_goods_normal_item_info_discount_tv_marginTop">-3.75dp</dimen>
+    <dimen name="jhs_category_goods_normal_item_info_discount_tv_paddingBottom">3.0dp</dimen>
+    <dimen name="jhs_category_goods_normal_item_info_discount_tv_paddingTop">3.75dp</dimen>
+    <dimen name="jhs_category_goods_normal_item_info_LinearLayout_paddingH">10.5dp</dimen>
+    <dimen name="jhs_category_goods_normal_item_info_LinearLayout_paddingBottom">7.5dp</dimen>
+    <dimen name="jhs_category_goods_normal_item_info_discount_info_marginBottom">-4.5dp</dimen>
+    <dimen name="jhs_category_goods_normal_item_info_discount_tv_parent_marginBottom">4.5dp</dimen>
+    <dimen name="jhs_category_goods_normal_item_info_discount_tv_parent_marginLeft">10.5dp</dimen>
+
+    <!--<dimen name="dp_f550">-412.5dp</dimen>-->
+    <!--<dimen name="dp_f70">-52.5dp</dimen>-->
+    <!--<dimen name="dp_f42">-31.5dp</dimen>-->
+    <!--<dimen name="dp_f30">-22.5dp</dimen>-->
+    <!--<dimen name="dp_f22">-16.5dp</dimen>-->
+    <!--<dimen name="dp_f20">-15.0dp</dimen>-->
+    <!--<dimen name="dp_f15">-11.25dp</dimen>-->
+    <!--<dimen name="dp_f10">-7.5dp</dimen>-->
+    <!--<dimen name="dp_f1">-0.75dp</dimen>-->
+    <!--<dimen name="dp_0">0.0dp</dimen>-->
+    <!--<dimen name="dp_1">0.75dp</dimen>-->
+    <!--<dimen name="dp_2">1.5dp</dimen>-->
+    <!--<dimen name="dp_3">2.25dp</dimen>-->
+    <!--<dimen name="dp_4">3.0dp</dimen>-->
+    <!--<dimen name="dp_5">3.75dp</dimen>-->
+    <!--<dimen name="dp_6">4.5dp</dimen>-->
+    <!--<dimen name="dp_7">5.25dp</dimen>-->
+    <!--<dimen name="dp_8">6.0dp</dimen>-->
+    <!--<dimen name="dp_f8">-6dp</dimen>-->
+    <!--<dimen name="dp_10">7.5dp</dimen>-->
+    <!--<dimen name="dp_12">9.0dp</dimen>-->
+    <!--<dimen name="dp_13">9.75dp</dimen>-->
+    <!--<dimen name="dp_14">10.5dp</dimen>-->
+    <!--<dimen name="dp_15">11.25dp</dimen>-->
+    <!--<dimen name="dp_16">12.0dp</dimen>-->
+    <!--<dimen name="dp_18">13.5dp</dimen>-->
+    <!--<dimen name="dp_20">15.0dp</dimen>-->
+    <!--<dimen name="dp_21">15.75dp</dimen>-->
+    <!--<dimen name="dp_22">16.5dp</dimen>-->
+    <!--<dimen name="dp_23">17.25dp</dimen>-->
+    <!--<dimen name="dp_24">18.0dp</dimen>-->
+    <!--<dimen name="dp_25">18.75dp</dimen>-->
+    <!--<dimen name="dp_26">19.5dp</dimen>-->
+    <!--<dimen name="dp_28">21.0dp</dimen>-->
+    <!--<dimen name="dp_30">22.5dp</dimen>-->
+    <!--<dimen name="dp_32">24.0dp</dimen>-->
+    <!--<dimen name="dp_34">25.5dp</dimen>-->
+    <!--<dimen name="dp_35">26.25dp</dimen>-->
+    <!--<dimen name="dp_36">27.0dp</dimen>-->
+    <!--<dimen name="dp_37">27.75dp</dimen>-->
+    <!--<dimen name="dp_40">30.0dp</dimen>-->
+    <!--<dimen name="dp_42">31.5dp</dimen>-->
+    <!--<dimen name="dp_45">33.75dp</dimen>-->
+    <!--<dimen name="dp_46">34.5dp</dimen>-->
+    <!--<dimen name="dp_50">37.5dp</dimen>-->
+    <!--<dimen name="dp_54">40.5dp</dimen>-->
+    <!--<dimen name="dp_55">41.25dp</dimen>-->
+    <!--<dimen name="dp_56">42.0dp</dimen>-->
+    <!--<dimen name="dp_59">44.25dp</dimen>-->
+    <!--<dimen name="dp_60">45.0dp</dimen>-->
+    <!--<dimen name="dp_62">46.5dp</dimen>-->
+    <!--<dimen name="dp_63">47.25dp</dimen>-->
+    <!--<dimen name="dp_64">48.0dp</dimen>-->
+    <!--<dimen name="dp_70">52.5dp</dimen>-->
+    <!--<dimen name="dp_73">54.75dp</dimen>-->
+    <!--<dimen name="dp_75">56.25dp</dimen>-->
+    <!--<dimen name="dp_80">60.0dp</dimen>-->
+    <!--<dimen name="dp_86">64.5dp</dimen>-->
+    <!--<dimen name="dp_87">65.25dp</dimen>-->
+    <!--<dimen name="dp_90">67.5dp</dimen>-->
+    <!--<dimen name="dp_96">72.0dp</dimen>-->
+    <!--<dimen name="dp_99">74.25dp</dimen>-->
+    <!--<dimen name="dp_100">75.0dp</dimen>-->
+    <!--<dimen name="dp_104">78.0dp</dimen>-->
+    <!--<dimen name="dp_105">78.75dp</dimen>-->
+    <!--<dimen name="dp_106">79.5dp</dimen>-->
+    <!--<dimen name="dp_107">80.25dp</dimen>-->
+    <!--<dimen name="dp_110">82.5dp</dimen>-->
+    <!--<dimen name="dp_120">90.0dp</dimen>-->
+    <!--<dimen name="dp_126">94.5dp</dimen>-->
+    <!--<dimen name="dp_130">97.5dp</dimen>-->
+    <!--<dimen name="dp_134">100.5dp</dimen>-->
+    <!--<dimen name="dp_140">105.0dp</dimen>-->
+    <!--<dimen name="dp_148">111.0dp</dimen>-->
+    <!--<dimen name="dp_150">112.5dp</dimen>-->
+    <!--<dimen name="dp_152">114dp</dimen>-->
+    <!--<dimen name="dp_162">121.5dp</dimen>-->
+    <!--<dimen name="dp_164">123.0dp</dimen>-->
+    <!--<dimen name="dp_166">124.5dp</dimen>-->
+    <!--<dimen name="dp_177">132.75dp</dimen>-->
+    <!--<dimen name="dp_180">135.0dp</dimen>-->
+    <!--<dimen name="dp_188">141.0dp</dimen>-->
+    <!--<dimen name="dp_200">150.0dp</dimen>-->
+    <!--<dimen name="dp_204">153.0dp</dimen>-->
+    <!--<dimen name="dp_216">162.0dp</dimen>-->
+    <!--<dimen name="dp_220">165.0dp</dimen>-->
+    <!--<dimen name="dp_230">172.5dp</dimen>-->
+    <!--<dimen name="dp_232">174.0dp</dimen>-->
+    <!--<dimen name="dp_234">175.5dp</dimen>-->
+    <!--<dimen name="dp_236">177.0dp</dimen>-->
+    <!--<dimen name="dp_246">184.5dp</dimen>-->
+    <!--<dimen name="dp_248">186.0dp</dimen>-->
+    <!--<dimen name="dp_250">187.5dp</dimen>-->
+    <!--<dimen name="dp_251">188.25dp</dimen>-->
+    <!--<dimen name="dp_260">195.0dp</dimen>-->
+    <!--<dimen name="dp_268">201.0dp</dimen>-->
+    <!--<dimen name="dp_270">202.5dp</dimen>-->
+    <!--<dimen name="dp_285">213.75dp</dimen>-->
+    <!--<dimen name="dp_286">214.5dp</dimen>-->
+    <!--<dimen name="dp_290">217.5dp</dimen>-->
+    <!--<dimen name="dp_295">221.25dp</dimen>-->
+    <!--<dimen name="dp_298">223.5dp</dimen>-->
+    <!--<dimen name="dp_300">225.0dp</dimen>-->
+    <!--<dimen name="dp_305">228.75dp</dimen>-->
+    <!--<dimen name="dp_310">232.5dp</dimen>-->
+    <!--<dimen name="dp_320">240.0dp</dimen>-->
+    <!--<dimen name="dp_327">245.25dp</dimen>-->
+    <!--<dimen name="dp_334">250.5dp</dimen>-->
+    <!--<dimen name="dp_338">253.5dp</dimen>-->
+    <!--<dimen name="dp_350">262.5dp</dimen>-->
+    <!--<dimen name="dp_352">264.0dp</dimen>-->
+    <!--<dimen name="dp_360">270.0dp</dimen>-->
+    <!--<dimen name="dp_376">282.0dp</dimen>-->
+    <!--<dimen name="dp_380">285.0dp</dimen>-->
+    <!--<dimen name="dp_392">294.0dp</dimen>-->
+    <!--<dimen name="dp_396">297.0dp</dimen>-->
+    <!--<dimen name="dp_400">300.0dp</dimen>-->
+    <!--<dimen name="dp_430">322.5dp</dimen>-->
+    <!--<dimen name="dp_442">331.5dp</dimen>-->
+    <!--<dimen name="dp_470">352.5dp</dimen>-->
+    <!--<dimen name="dp_490">367.5dp</dimen>-->
+    <!--<dimen name="dp_496">372.0dp</dimen>-->
+    <!--<dimen name="dp_500">375.0dp</dimen>-->
+    <!--<dimen name="dp_507">380.25dp</dimen>-->
+    <!--<dimen name="dp_520">390.0dp</dimen>-->
+    <!--<dimen name="dp_530">397.5dp</dimen>-->
+    <!--<dimen name="dp_534">400.5dp</dimen>-->
+    <!--<dimen name="dp_547">410.25dp</dimen>-->
+    <!--<dimen name="dp_548">411dp</dimen>-->
+    <!--<dimen name="dp_560">410dp</dimen>-->
+    <!--<dimen name="dp_564">423.0dp</dimen>-->
+    <!--<dimen name="dp_576">432.0dp</dimen>-->
+    <!--<dimen name="dp_580">435.0dp</dimen>-->
+    <!--<dimen name="dp_630">472.5dp</dimen>-->
+    <!--<dimen name="dp_640">480.0dp</dimen>-->
+    <!--<dimen name="dp_660">495.0dp</dimen>-->
+    <!--<dimen name="dp_670">502.5dp</dimen>-->
+    <!--<dimen name="dp_672">504dp</dimen>-->
+    <!--<dimen name="dp_706">529.5dp</dimen>-->
+    <!--<dimen name="dp_752">564.0dp</dimen>-->
+    <!--<dimen name="dp_806">604.5dp</dimen>-->
+    <!--<dimen name="dp_830">622.5dp</dimen>-->
+    <!--<dimen name="dp_850">637.5dp</dimen>-->
+    <!--<dimen name="dp_864">648.0dp</dimen>-->
+    <!--<dimen name="dp_960">720.0dp</dimen>-->
+    <!--<dimen name="dp_1052">789.0dp</dimen>-->
+    <!--<dimen name="dp_1070">802.5dp</dimen>-->
+    <!--<dimen name="dp_1093">819.75dp</dimen>-->
+    <!--<dimen name="dp_1152">864.0dp</dimen>-->
+    <!--<dimen name="dp_1280">960.0dp</dimen>-->
+
+    <!--<dimen name="sp_16">12.0sp</dimen>-->
+    <!--<dimen name="sp_18">13.5sp</dimen>-->
+    <!--<dimen name="sp_20">15.0sp</dimen>-->
+    <!--<dimen name="sp_24">18.0sp</dimen>-->
+    <!--<dimen name="sp_28">21.0sp</dimen>-->
+    <!--<dimen name="sp_30">22.5sp</dimen>-->
+    <!--<dimen name="sp_32">24.0sp</dimen>-->
+    <!--<dimen name="sp_34">25.5sp</dimen>-->
+    <!--<dimen name="sp_36">27.0sp</dimen>-->
+    <!--<dimen name="sp_40">30.0sp</dimen>-->
+    <!--<dimen name="sp_46">34.5sp</dimen>-->
+    <!--<dimen name="sp_48">36.0sp</dimen>-->
+    <!--<dimen name="sp_56">42.0sp</dimen>-->
+
+    <!--<dimen name="px_f15">-15px</dimen>-->
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yunos.tvtaobao.newcart.view.MirrorImageView
+        android:id="@+id/img_guess_like"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_guess_like"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yunos.tvtaobao.biz.widget.TvRecyclerView
+            android:id="@+id/recyclerview_guesslike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_60"
+            android:paddingRight="@dimen/dp_60" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_54"
+        android:layout_marginTop="@dimen/dp_120"
+        android:textSize="24sp"
+        android:textColor="#7898ba"
+        android:lineSpacingExtra="0sp"
+        android:gravity="end"
+        android:text="搜全部商品" />
+
+    <com.yunos.tvtaobao.search.view.TabTextView
+        android:id="@+id/tab_item_1"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_44"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/dp_22"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_34"
+        android:layout_marginTop="@dimen/dp_164"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#ffffff"
+        android:focusable="true"
+        android:text="综合排序"/>
+
+    <com.yunos.tvtaobao.search.view.TabTextView
+        android:id="@+id/tab_item_2"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_44"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/dp_22"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_34"
+        android:layout_marginTop="@dimen/dp_212"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#ffffff"
+        android:focusable="true"
+        android:text="销量优先"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_54"
+        android:layout_marginTop="@dimen/dp_288"
+        android:textSize="24sp"
+        android:textColor="#7798bc"
+        android:lineSpacingExtra="0sp"
+        android:gravity="end"
+        android:text="搜天猫商品" />
+
+    <com.yunos.tvtaobao.search.view.TabTextView
+        android:id="@+id/tab_item_3"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_44"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/dp_22"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_34"
+        android:layout_marginTop="@dimen/dp_332"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#ffffff"
+        android:focusable="true"
+        android:text="综合排序"/>
+
+    <com.yunos.tvtaobao.search.view.TabTextView
+        android:id="@+id/tab_item_4"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_44"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/dp_22"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_34"
+        android:layout_marginTop="@dimen/dp_380"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#ffffff"
+        android:focusable="true"
+        android:text="销量优先"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginLeft="@dimen/dp_102"-->
+        <!--android:layout_marginTop="@dimen/dp_462"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="#7597bd"-->
+        <!--android:lineSpacingExtra="0sp"-->
+        <!--android:gravity="end"-->
+        <!--android:text="搜店铺" />-->
+
+    <!--<com.yunos.tvtaobao.search.view.TabTextView-->
+        <!--android:id="@+id/tab_item_5"-->
+        <!--android:layout_width="@dimen/dp_160"-->
+        <!--android:layout_height="@dimen/dp_44"-->
+        <!--android:gravity="center_vertical|right"-->
+        <!--android:paddingRight="@dimen/dp_22"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginLeft="@dimen/dp_34"-->
+        <!--android:layout_marginTop="@dimen/dp_500"-->
+        <!--android:textSize="@dimen/sp_20"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:focusable="true"-->
+        <!--android:text="综合排序"/>-->
+
+    <!--<com.yunos.tvtaobao.search.view.TabTextView-->
+        <!--android:id="@+id/tab_item_6"-->
+        <!--android:layout_width="@dimen/dp_160"-->
+        <!--android:layout_height="@dimen/dp_44"-->
+        <!--android:gravity="center_vertical|right"-->
+        <!--android:paddingRight="@dimen/dp_22"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginLeft="@dimen/dp_34"-->
+        <!--android:layout_marginTop="@dimen/dp_548"-->
+        <!--android:textSize="@dimen/sp_20"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:focusable="true"-->
+        <!--android:text="销量优先"/>-->
+
+    <!--<com.yunos.tvtaobao.search.view.TabTextView-->
+        <!--android:id="@+id/tab_item_7"-->
+        <!--android:layout_width="@dimen/dp_160"-->
+        <!--android:layout_height="@dimen/dp_44"-->
+        <!--android:gravity="center_vertical|right"-->
+        <!--android:paddingRight="@dimen/dp_22"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginLeft="@dimen/dp_34"-->
+        <!--android:layout_marginTop="@dimen/dp_595"-->
+        <!--android:textSize="@dimen/sp_20"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:focusable="true"-->
+        <!--android:text="信用优先"/>-->
+</merge>

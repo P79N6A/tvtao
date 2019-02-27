@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- 文字颜色 -->
+	
+	<color name="transparent">#00000000</color>
+	<color name="text_color_white">#ffffffff</color>
+	<color name="tui_text_color_grey">#FF999999</color> <!-- normal文字（有投影） -->
+	<color name="tui_text_color_white">#FFffffff</color> <!-- focus文字（有投影） -->
+	<color name="tui_text_color_grey_2">#d6d6d6</color> <!-- 输入框内提示文字 -->
+	<color name="tui_text_color_orange">#FFe75000</color> <!-- 错误提示／收藏（有投影） -->
+	
+	<color name="tui_color_search_gray">#ff8d8d8d</color>   <!-- 搜索右侧按钮的颜色 -->
+	<color name="tui_color_search_selected">#ffc5c5c5</color>   <!-- 搜索右侧按钮选中的颜色 -->
+	<color name="tui_color_search_shadow">#ff0099ff</color>   <!-- 搜索右侧按钮选中的颜色 -->
+	<color name="tui_text_color_black">#C0000000</color>
+	<color name="tui_text_shadow_color_blue">#ff0099ff</color>
+	
+	<color name="meida_loading_shadow_color">#80000000</color> 
+	<color name="media_adremin_small_bg_color">#66000000</color>
+	
+	<!-- 常规色 -->
+	<color name="tui_color_divider_listview">#A1ffffff</color> <!-- listview分割线  -->
+	<color name="tui_color_progressbar">#FF2ba3ff</color> <!-- progress bar  -->
+	<color name="tui_color_dialog_mask">#9A000000</color> <!-- mask  -->
+	<drawable name="drawable_transparent">#00000000</drawable>
+
+	<!-- Alert button part -->
+	<color name="tui_alert_dialog_btn_text_color">#FFFFFF</color>
+	<color name="tui_text_color_white_2">#AAFFFFFF</color>
+	<color name="tui_text_color_white_50_alpha">#88FFFFFF</color>
+	    <!-- alert dialog -->
+	<color name="dialog_list_bg_color">#4ccacac9</color>
+    <drawable name="drawable_color_transparent">#00000000</drawable>
+    <drawable name="dialog_btn_bg">#4ccacac9</drawable>
+    <drawable name="dialog_btn_bg_select">#ff3f76d1</drawable>
+    
+    <drawable name="dialog_btn_bg_red">#ffe02727</drawable>
+    <drawable name="drawable_color_dialog_divider">#0fffffff</drawable>
+    <drawable name="dialog_btn_bg_unselect">#ff26477d</drawable>    
+	
+	<color name="color_black_20">#33000000</color> <!-- 20%黑 -->
+    <color name="color_black_40">#66000000</color> <!-- 40%黑 -->
+    <color name="color_black_80">#cd000000</color> <!-- 80%黑 -->
+    <color name="color_transparent">#00000000</color> <!-- 透明 -->
+
+	<color name="color_d80e1215">#d80e1215</color>
+	<color name="color_e7f3ff">#ffe7f3ff</color>
+
+</resources>

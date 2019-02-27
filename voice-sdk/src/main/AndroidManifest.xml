@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tvtaobao.voicesdk">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true">
+
+        <service
+            android:name=".services.YunosASRService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.yunos.tvtaobao.asr.startASRService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.BftvASRService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="intent.action.remotevoice.rca.rc.tvtaobao" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.bftv.fui.authentication.AuthenticationProvider"
+            android:authorities="com.bftv.voice.provider.rca.rc.tvtaobao"
+            android:exported="true" />
+
+        <service
+            android:name=".services.BftvService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="intent.action.user.rca.rc.tvtaobao" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.TVTaoASRService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION.TVTAO.AIDL.VOICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".view.PromptDialog"
+            android:theme="@style/MyDialogActivityStyle" />
+        <activity
+            android:name=".view.OrderDeliveryDialog"
+            android:theme="@style/MyDialogActivityStyle" />
+    </application>
+</manifest>

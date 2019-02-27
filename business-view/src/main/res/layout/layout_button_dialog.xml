@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.yunos.tvtaobao.biz.dialog.DialogFocusLeftRightPositionManager --><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/super_parent"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepRelativeout
+        android:id="@+id/dialog_layout"
+        android:layout_width="@dimen/dp_524"
+        android:layout_height="@dimen/dp_260"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_dialog_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_190"
+            android:layout_above="@+id/view"
+            android:gravity="center"
+            android:textColor="@color/new_cart_black"
+            android:textSize="@dimen/sp_34" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_above="@+id/foot"
+            android:background="@color/aliuser_color_line_gray" />
+
+        <LinearLayout
+            android:id="@+id/foot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/negativeButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusRight="@+id/positiveButton"
+                android:textColor="@color/new_cart_grey"
+                android:textSize="@dimen/sp_30" />
+
+            <TextView
+                android:id="@+id/positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_dialog_right_focus"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@+id/negativeButton"
+                android:textColor="@color/ytm_white"
+                android:textSize="@dimen/sp_30" />
+        </LinearLayout>
+
+    </com.yunos.tvtaobao.biz.dialog.DialogFocusNoDeepRelativeout>
+</RelativeLayout>
+
+    <!--</com.yunos.tvtaobao.biz.dialog.DialogFocusLeftRightPositionManager>-->

@@ -1,0 +1,8 @@
+<resources>
+    <!-- menu -->
+    <string name="ytm_menu_search_text">搜索</string>
+    <string name="ytm_menu_shopping_cart_text">购物车</string>
+    <string name="ytm_menu_collect_text">收藏</string>
+    <string name="ytm_menu_my_taobao_text">我的淘宝</string>
+    <string name="ytm_menu_sort_text">商品分类</string>
+</resources>

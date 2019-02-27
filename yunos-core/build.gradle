@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+def dMode = getEnvValue("dmode", "false")
+def channel = getEnvValue("channel", "")
+if (channel != "")
+    dMode = "true"
+println "dmode:" + dMode + (dMode == "true")
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    compile('com.yunos.blitz:blitzsdk-standalone:2.0.1.201803282027-SNAPSHOT@aar')
+//            {
+//                exclude(group: 'com.taobao.android', module: 'securityguard')
+//                exclude(group: 'com.taobao.android', module: 'securityjni')
+//                exclude(group: 'com.taobao.android', module: 'securityguard-so')
+//                exclude(group: 'com.google.android', module: 'support-v4')
+//                exclude(group: 'com.google.android', module: 'annotations')
+//            }
+    //debugVersion
+//    compile('com.yunos.blitz:blitzsdk-standalone:2.0.1.201706011135-SNAPSHOT@aar')
+//            {
+//                exclude(group: 'com.taobao.android', module: 'securityguard')
+//                exclude(group: 'com.taobao.android', module: 'securityjni')
+//                exclude(group: 'com.taobao.android', module: 'securityguard-so')
+//                exclude(group: 'com.google.android', module: 'support-v4')
+//                exclude(group: 'com.google.android', module: 'annotations')
+//            }
+    compile files('libs/alitvcompliance-1.1.1-2016112901.jar')
+    compile files('libs/uuid.jar')
+    compile files('libs/tyid_sdk.jar')
+    compile 'com.yunos.tvtaobao:alitvsdklib:1.0.6-SNAPSHOT'
+    compile 'com.yunos.tvtaobao:adoplayer_from_service:1.0.0-SNAPSHOT'
+//    compile rootProject.ext.dependencies.zxing
+}

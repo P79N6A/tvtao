@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:focusable="false">
+        <!--背景图-->
+        <RelativeLayout
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:focusable="false">
+            <ImageView
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_304"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/new_detail_toolbar_base"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/iv_new_detail_toolbar_base_top"
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_463"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/new_detail_toolbar_base_top"
+                android:focusable="false" />
+
+        </RelativeLayout>
+
+        <!--返回首页-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:focusable="false">
+
+            <TextView
+                android:id="@+id/tv_pierce_home"
+                android:layout_width="@dimen/dp_116"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/new_detail_home_taobao_jifen_icon"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/ytbv_pierce_back_home"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp_17_3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/fiv_pierce_home_focusd"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_70"
+                android:layout_alignParentRight="true"
+                android:focusable="true"
+                android:nextFocusDown="@+id/fiv_pierce_my_taobao_focusd"
+                android:nextFocusLeft="@+id/new_detail_scan_qrcode"
+                android:src="@drawable/new_detail_home_focusd" />
+        </RelativeLayout>
+        <!--我的淘宝-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_marginTop="@dimen/dp_70"
+            android:focusable="false">
+
+            <TextView
+                android:id="@+id/tv_pierce_my_taobao"
+                android:layout_width="@dimen/dp_116"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/new_detail_home_taobao_jifen_icon"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_13_3"
+                android:singleLine="true"
+                android:text="@string/ytbv_pierce_my_taobao"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp_17_3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/fiv_pierce_my_taobao_focusd"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_56"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ytm_pierce_my_focusd"
+                android:focusable="true"
+                android:nextFocusDown="@+id/fiv_pierce_cart_focusd"
+                android:nextFocusLeft="@+id/new_detail_scan_qrcode"
+                android:nextFocusUp="@+id/fiv_pierce_home_focusd"
+                android:src="@drawable/new_detail_my_taobao_focusd" />
+        </RelativeLayout>
+
+        <!--购物车-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_marginTop="@dimen/dp_126"
+            android:focusable="false">
+
+
+            <TextView
+                android:id="@+id/tv_pierce_cart"
+                android:layout_width="@dimen/dp_118"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/ytm_bubble_264"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/ytbv_pierce_cart_buy"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp_17_3"
+                android:visibility="invisible" />
+
+            <com.yunos.tv.app.widget.focus.FocusImageView
+                android:id="@+id/fiv_pierce_cart_focusd"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_56"
+                android:layout_alignParentRight="true"
+                android:focusable="true"
+                android:nextFocusDown="@+id/fiv_pierce_jifen_focusd"
+                android:nextFocusLeft="@+id/new_detail_scan_qrcode"
+                android:nextFocusUp="@+id/fiv_pierce_my_taobao_focusd"
+                android:src="@drawable/new_detail_cart_focusd" />
+        </RelativeLayout>
+        <!--我的积分-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_marginTop="@dimen/dp_182"
+            android:focusable="false">
+
+            <RelativeLayout
+                android:id="@+id/rl_pierce_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/new_detail_home_taobao_jifen_icon"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:visibility="invisible">
+
+
+                <TextView
+                    android:id="@+id/tv_pierce_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical"
+                    android:text="@string/ytbv_pierce_my_jifen"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp_17_3" />
+
+                <TextView
+                    android:id="@+id/tv_pierce_jifen_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_44"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/tv_pierce_jifen"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#ff4400"
+                    android:textSize="@dimen/dp_17_3" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/fiv_pierce_jifen_focusd"
+                android:layout_width="@dimen/dp_54_6"
+                android:layout_height="@dimen/dp_57_3"
+                android:layout_alignParentRight="true"
+                android:focusable="true"
+                android:nextFocusDown="@+id/fiv_pierce_share_focusd"
+                android:nextFocusLeft="@+id/new_detail_scan_qrcode"
+                android:nextFocusUp="@+id/fiv_pierce_cart_focusd"
+                android:src="@drawable/new_detail_jifen_focusd" />
+        </RelativeLayout>
+
+        <!--分享-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_100"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_206"
+            android:focusable="false">
+            <ImageView
+                android:id="@+id/tv_pierce_share_11"
+                android:layout_width="@dimen/dp_140"
+                android:layout_height="@dimen/dp_100"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:focusable="false"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+               />
+
+            <TextView
+                android:id="@+id/tv_pierce_share"
+                android:layout_width="@dimen/dp_156"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/ytm_bubble_264"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text="越分享 越快乐"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp_17_3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/fiv_pierce_share_focusd"
+                android:layout_width="@dimen/dp_54_6"
+                android:layout_height="@dimen/dp_136_7"
+                android:layout_alignParentRight="true"
+                android:focusable="true"
+                android:nextFocusDown="@+id/fiv_pierce_red_packet_focusd"
+                android:nextFocusLeft="@+id/new_detail_scan_qrcode"
+                android:nextFocusUp="@+id/fiv_pierce_jifen_focusd"
+                android:src="@drawable/new_detail_share_focusd" />
+        </RelativeLayout>
+
+        <!--优惠券-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_79"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_127"
+            android:focusable="false">
+
+            <TextView
+                android:id="@+id/tv_pierce_coupon"
+                android:layout_width="@dimen/dp_136"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/ytm_bubble_264"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp_17_3"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tv_pierce_no_coupon"
+                android:layout_width="@dimen/dp_193"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/ytm_bubble_264"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text="@string/new_detail_taobao_coupon_num_null"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp_17_3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/fiv_pierce_red_packet_focusd"
+                android:layout_width="@dimen/dp_54_6"
+                android:layout_height="@dimen/dp_136_7"
+                android:layout_alignParentRight="true"
+                android:focusable="true"
+                android:nextFocusDown="@+id/fiv_pierce_evaluation_focusd"
+                android:nextFocusLeft="@+id/new_detail_scan_qrcode"
+                android:nextFocusUp="@+id/fiv_pierce_share_focusd"
+                android:src="@drawable/new_detail_coupon_focusd" />
+        </RelativeLayout>
+
+        <!--宝贝评价-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_61"
+            android:focusable="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_66_7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:id="@+id/rl_pierce_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/ytm_bubble_264"
+                android:focusable="false"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tv_pierce_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_44"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:text="累计评价"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp_17_3" />
+
+                <TextView
+                    android:id="@+id/tv_pierce_evaluation_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_toRightOf="@+id/tv_pierce_evaluation"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:text="0"
+                    android:textColor="#ff4400"
+                    android:textSize="@dimen/dp_17_3" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/fiv_pierce_evaluation_focusd"
+                android:layout_width="@dimen/dp_54_6"
+                android:layout_height="@dimen/dp_61"
+                android:layout_alignParentRight="true"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/new_detail_scan_qrcode"
+                android:nextFocusUp="@+id/fiv_pierce_red_packet_focusd"
+                android:nextFocusDown="@+id/fiv_pierce_collection_focusd"
+                android:src="@drawable/new_detail_evaluation_focusd" />
+        </RelativeLayout>
+
+
+        <!--收藏-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_61"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:focusable="false">
+
+            <TextView
+                android:id="@+id/tv_pierce_collection_info"
+                android:layout_width="@dimen/dp_116"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@drawable/new_detail_home_taobao_jifen_icon"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text="@string/new_detail_taobao_collection"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp_17_3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/fiv_pierce_collection_focusd"
+                android:layout_width="@dimen/dp_54_6"
+                android:layout_height="@dimen/dp_136_7"
+                android:layout_alignParentRight="true"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/new_detail_scan_qrcode"
+                android:nextFocusUp="@+id/fiv_pierce_evaluation_focusd"
+                android:src="@drawable/new_detail_collection_focusd" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_660"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <com.yunos.tvtaobao.takeoutbundle.view.MaxNestedScrollView
+        android:id="@+id/scroll_maxNested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sku_dailog"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sku_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                >
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_202020"
+                    android:textSize="@dimen/sp_32"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="榴莲香雪新鲜榴莲生日蛋糕"
+                    />
+                <TextView
+                    android:id="@+id/tv_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_ff6000"
+                    android:textSize="@dimen/sp_32"
+                    android:maxLines="1"
+                    android:text="¥43.0"
+                    android:paddingLeft="@dimen/dp_17"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                ></LinearLayout>
+
+            <com.yunos.tvtaobao.takeoutbundle.view.SkuNumLinearLayout
+                android:id="@+id/ll_sku_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_72"
+                android:focusable="false"
+                android:visibility="visible"></com.yunos.tvtaobao.takeoutbundle.view.SkuNumLinearLayout>
+        </LinearLayout>
+    </com.yunos.tvtaobao.takeoutbundle.view.MaxNestedScrollView>
+
+    <Button
+        android:id="@+id/btn_selected"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_sku_selected_button"
+        android:focusable="true"
+        android:textSize="20sp"
+        android:visibility="visible" />
+</LinearLayout>

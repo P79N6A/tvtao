@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_300"
+    android:background="@color/transparent"
+    tools:context="com.yunos.tvtaobao.detailbundle.evaluate.EvaluationActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60_7"
+        android:src="@drawable/new_detail_goods_evaluation_top" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_type"
+        android:layout_width="@dimen/dp_462"
+        android:layout_height="@dimen/dp_64"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_158_7"
+        android:background="@drawable/new_detail_item_button_unfocus_icon"
+        android:focusable="false">
+
+        <com.yunos.tv.app.widget.focus.FocusButton
+            android:id="@+id/tv_img"
+            android:layout_width="@dimen/dp_230"
+            android:layout_height="match_parent"
+            android:background="@drawable/new_detail_img_evaluation_focusd_xml"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="有图评价"
+            android:textColor="@color/new_detail_line"
+            android:textSize="@dimen/sp_24" />
+
+        <!--分界线-->
+        <LinearLayout
+            android:id="@+id/iv_line"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_64"
+            android:layout_toRightOf="@+id/tv_img"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_7" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dp_7"
+                android:layout_marginTop="@dimen/dp_7"
+                android:layout_weight="1"
+                android:background="@color/new_detail_line" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_6" />
+
+        </LinearLayout>
+
+        <com.yunos.tv.app.widget.focus.FocusButton
+            android:id="@+id/tv_all"
+            android:layout_width="@dimen/dp_230"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_line"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="全部评价"
+            android:background="@drawable/new_detail_all_evaluation_focusd_xml"
+            android:textColor="@color/new_detail_line"
+            android:textSize="@dimen/sp_24" />
+    </RelativeLayout>
+
+
+    <!--数据为空-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_empty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="@dimen/dp_334"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/new_detail_no_evaluation_ico" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/dp_12_7"-->
+            <!--android:text="竟然一条评价都没有~"-->
+            <!--android:textSize="@dimen/sp_34" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

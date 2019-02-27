@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tv.app.widget.focus.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingTop="@dimen/dp_10" >
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:id="@+id/item1"
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:nextFocusDown="@+id/item4"
+        android:nextFocusRight="@+id/item2"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector1"
+        android:tag="1" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:id="@+id/item2"
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_alignTop="@id/item1"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_toRightOf="@id/item1"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector2"
+        android:tag="2" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_alignTop="@id/item2"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_toRightOf="@id/item2"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:nextFocusRight="@+id/result_listview"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector3"
+        android:tag="3" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:id="@id/item4"
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_below="@id/item1"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector4"
+        android:tag="4" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:id="@+id/item5"
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_alignTop="@id/item4"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_toRightOf="@id/item4"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector5"
+        android:tag="5" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_alignTop="@id/item5"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_toRightOf="@id/item5"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:nextFocusRight="@+id/result_listview"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector6"
+        android:tag="6" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:id="@+id/item7"
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_below="@id/item4"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector7"
+        android:tag="7" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:id="@+id/item8"
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_alignTop="@id/item7"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_toRightOf="@id/item7"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector8"
+        android:tag="8" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_alignTop="@id/item8"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_toRightOf="@id/item8"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:nextFocusRight="@+id/result_listview"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector9"
+        android:tag="9" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:id="@+id/item10"
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_below="@id/item7"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:onClick="onImeItemClicked"
+        android:paddingBottom="@dimen/dp_10"
+        android:src="@drawable/ytm_ime_focus_selector_clear"
+        android:tag="10" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:id="@+id/item11"
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_alignTop="@id/item10"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_toRightOf="@id/item10"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:onClick="onImeItemClicked"
+        android:src="@drawable/ytm_ime_focus_selector0"
+        android:tag="11" />
+
+    <com.yunos.tv.app.widget.focus.FocusImageView
+        android:layout_width="@dimen/dp_107"
+        android:layout_height="@dimen/dp_127"
+        android:layout_alignTop="@id/item11"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_toRightOf="@id/item11"
+        android:background="@drawable/ytm_search_ime_griditem_selector"
+        android:focusable="true"
+        android:nextFocusRight="@+id/result_listview"
+        android:onClick="onImeItemClicked"
+        android:paddingBottom="@dimen/dp_10"
+        android:src="@drawable/ytm_ime_focus_selector_delete"
+        android:tag="12" />
+
+</com.yunos.tv.app.widget.focus.FocusRelativeLayout>

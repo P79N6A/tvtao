@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_64"
+    android:paddingRight="@dimen/dp_64"
+    android:descendantFocusability="blocksDescendants"  >
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:src="@drawable/evaluation_head_img" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_11"
+            android:layout_toRightOf="@+id/iv_head"
+            android:text="L****8"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_22"/>
+
+        <ImageView
+            android:id="@+id/iv_user_star_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_user_name" />
+
+
+        <TextView
+            android:id="@+id/tv_goods_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginLeft="@dimen/dp_11"
+            android:layout_toRightOf="@+id/iv_head"
+            android:text="2017.08.22 颜色分类：白色格子 尺码：均码"
+            android:textColor="#99bbdd"
+            android:textSize="@dimen/sp_22" />
+
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_head"
+            android:layout_marginTop="@dimen/dp_27"
+            android:src="@drawable/evaluation_quotation_marks" />
+
+        <TextView
+            android:id="@+id/tv_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_goods_info"
+            android:layout_below="@+id/iv_head"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_27"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_22"
+            android:text="快递超快，来的时候外面纸箱有些凹，打开里面保护的很好。买了pill+和solo3激动的哟。打开之后放数据线的那一层又一片不明来历的纸屑，数据线上也有很多黑色印子，擦了几次也还是有很印，耳机头顶那个地方也有一块裂开了，激动的心平静了很多，用手按了一下就回去了，联系客服态度很好叫我退回去，嫌麻烦也怕换回来的还不如这个，听一下音质也没问题就留下来了。" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_448"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_448"
+            android:layout_height="@dimen/dp_448" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_48">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/evaluation_arrow_left_unfocused" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/new_detail_view_pager"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_33_4"
+                android:layout_marginRight="@dimen/dp_33_4"
+                android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/evaluation_arrow_right_unfocused" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

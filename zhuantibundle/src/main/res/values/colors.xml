@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cytz_white">#FFFFFF</color>
+    <!-- UI 3.0 中的橙色 -->
+
+    <color name="cytz_white_text_color">#ffffffff</color>
+    <!-- TvShoppingActivity -->
+    <color name="cytz_play_status">#ff0000</color>
+    <color name="cytz_good_price">#ff5500</color>
+    <!-- tejiaActivity -->
+
+    <color name="default_background">#3d3d3d</color>
+    <color name="cytz_count_text">#b85700</color>
+    <color name="cytz_text">#ffffcc</color>
+    <color name="cytz_text_color">#010000</color>
+    <color name="cytz_arcProgress">#3399ff</color>
+    <color name="cytz_blue_90">#e60099ff</color>
+</resources>

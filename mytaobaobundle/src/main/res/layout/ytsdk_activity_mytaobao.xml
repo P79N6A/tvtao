@@ -1,0 +1,159 @@
+<com.yunos.tv.app.widget.focus.FocusPositionManager
+    android:id="@+id/mytaobao_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_6000"
+    android:layout_height="match_parent"
+    android:background="@color/ytm_my_taobao_bg"
+    android:focusable="true"
+    tools:context=".activity.MyTaoBaoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_564"
+        android:layout_marginTop="@dimen/dp_46"
+        android:focusable="false"
+        android:text="@string/ytsdk_my_taobao"
+        android:textColor="@color/ytm_white"
+        android:textSize="@dimen/sp_44"/>
+
+    <com.yunos.tv.app.widget.focus.FocusScrollerLinearLayout
+        android:id="@+id/mytaobao_scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_162"
+        android:focusable="true">
+
+
+        <com.yunos.tvtaobao.mytaobao.view.ItemLayoutForMyTaoBao
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_18"
+            app:mtImage="@drawable/ytsdk_mytaobao_point"
+            app:mtTitle="@string/ytsdk_mytaobao_point"/>
+
+        <com.yunos.tvtaobao.mytaobao.view.ItemLayoutForMyTaoBao
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_18"
+            app:mtImage="@drawable/ytsdk_ui2_cart_mytaobao"
+            app:mtTitle="@string/ytsdk_mytaobao_cart"/>
+
+        <com.yunos.tvtaobao.mytaobao.view.ItemLayoutForMyTaoBao
+            android:id="@+id/collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_18"
+            app:mtImage="@drawable/ytsdk_ui2_mytaobao_collection"
+            app:mtTitle="@string/ytsdk_mytaobao_add_fav"/>
+
+
+        <com.yunos.tvtaobao.mytaobao.view.ItemLayoutForMyTaoBao
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_18"
+            app:mtImage="@drawable/ytsdk_ui2_mytaobao_order"
+            app:mtTitle="@string/ytsdk_mytaobao_order">
+        </com.yunos.tvtaobao.mytaobao.view.ItemLayoutForMyTaoBao>
+
+
+        <com.yunos.tvtaobao.mytaobao.view.ItemLayoutForMyTaoBao
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:focusable="true"
+            android:paddingBottom="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_18"
+            app:mtImage="@drawable/ytsdk_ui2_address_mytaobao"
+            app:mtTitle="@string/ytsdk_mytaobao_address_title"/>
+
+        <com.yunos.tvtaobao.mytaobao.view.ItemLayoutForMyTaoBao
+            android:id="@+id/coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_28"
+            android:focusable="true"
+            android:paddingBottom="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_18"
+            app:mtImage="@drawable/ytsdk_ui2_mytaobao_coupon"
+            app:mtTitle="@string/ytsdk_mytaobao_coupon_title"/>
+
+        <com.yunos.tvtaobao.mytaobao.view.ItemLayoutForMyTaoBao
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_28"
+            android:focusable="true"
+            android:paddingBottom="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_18"
+            app:mtImage="@drawable/mytaobao_ytsdk_touming"
+            app:mtTitle="@string/ytsdk_mytaobao_account"/>
+    </com.yunos.tv.app.widget.focus.FocusScrollerLinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_23"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_580"
+            android:layout_centerHorizontal="true"
+            android:focusable="false">
+
+                <TextView
+                    android:id="@+id/loading_app_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textColor="@color/color_white_60"/>
+
+
+                <TextView
+                    android:id="@+id/loading_app_buildno"
+                    android:layout_toRightOf="@+id/loading_app_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textColor="@color/color_white_60"/>
+        </RelativeLayout>
+</com.yunos.tv.app.widget.focus.FocusPositionManager>

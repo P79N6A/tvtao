@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/dp_130"
+    android:layout_height="match_parent">
+
+    <com.yunos.tvtaobao.live.view.FocusImageView
+        android:id="@+id/iv_tao_live_list"
+        android:layout_width="@dimen/dp_104"
+        android:layout_height="@dimen/dp_104"
+        android:focusable="true"
+        android:nextFocusDown="@+id/iv_tao_live_list"
+        android:nextFocusRight="@+id/iv_care"
+        android:nextFocusUp="@+id/iv_tao_live_list"
+        android:src="@drawable/ytm_tbao_live_livelist_btn" />
+
+    <com.yunos.tvtaobao.live.view.FocusImageView
+        android:id="@+id/iv_care"
+        android:layout_width="@dimen/dp_104"
+        android:layout_height="@dimen/dp_104"
+        android:layout_marginLeft="@dimen/dp_80"
+        android:focusable="true"
+        android:nextFocusDown="@+id/iv_care"
+        android:nextFocusLeft="@+id/iv_tao_live_list"
+        android:nextFocusRight="@+id/iv_praise"
+        android:nextFocusUp="@+id/iv_care"/>
+
+    <com.yunos.tvtaobao.live.view.FocusImageView
+        android:id="@+id/iv_praise"
+        android:layout_width="@dimen/dp_104"
+        android:layout_height="@dimen/dp_104"
+        android:layout_marginLeft="@dimen/dp_160"
+        android:focusable="true"
+        android:nextFocusDown="@+id/iv_praise"
+        android:nextFocusLeft="@+id/iv_care"
+        android:nextFocusRight="@+id/iv_light"
+        android:nextFocusUp="@+id/iv_praise"
+        android:src="@drawable/ytm_tbao_live_praise_btn_bg"/>
+
+    <com.yunos.tvtaobao.live.view.FocusImageView
+        android:id="@+id/iv_light"
+        android:layout_width="@dimen/dp_104"
+        android:layout_height="@dimen/dp_104"
+        android:layout_alignParentRight="true"
+        android:focusable="true"
+        android:nextFocusDown="@+id/iv_light"
+        android:nextFocusLeft="@+id/iv_praise"
+        android:nextFocusRight="@+id/iv_light"
+        android:nextFocusUp="@+id/iv_light"
+        android:src="@drawable/ytm_light_fouced" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_praise_count"
+        android:layout_width="@dimen/dp_104"
+        android:layout_height="@dimen/dp_32"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_80"
+        android:gravity="center"
+        android:text="0人"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/ytm_battle_background" />
+</RelativeLayout>

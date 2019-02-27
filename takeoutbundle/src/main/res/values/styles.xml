@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="takeout_Dialog_Fullscreen">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_99202020</item>
+    </style>
+
+    <style name="Dialog_vouchers">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_84202020</item>
+        <item name="android:windowAnimationStyle">@style/takeout_dialog_animation</item>
+    </style>
+
+
+    <style name="take_out_apply_conpon_dialog" parent="takeout_Dialog_Fullscreen">
+        <item name="android:windowAnimationStyle">@style/takeout_dialog_animation</item>
+    </style>
+
+    <style name="takeout_dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+</resources>

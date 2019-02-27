@@ -1,0 +1,70 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.taobao.atlas'
+
+def dMode = getEnvValue("dmode", "false")
+def channel = getEnvValue("channel", "")
+def merge = getEnvValue("merge", "false")
+if (channel != "")
+    dMode = "true"
+def channelName = ""
+def todaymmdd = new Date().format('MMdd');
+if ("" != channel && rootProject.flavors.get(channel).name && "" != rootProject.flavors.get(channel).name)
+    channelName = rootProject.flavors.get(channel).name
+
+atlas {
+    bundleConfig {
+        awbBundle true
+    }
+    buildTypes {
+        debug {
+            baseApFile project.rootProject.file('app/build/outputs/apk/app-debug.ap')
+        }
+    }
+}
+group = 'com.yunos.tvtaobao.atlas'
+version = "1.0.2";
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        if (dMode == "true") {
+            buildConfigField 'String', 'BUILD_NO', "\"" + channelName + todaymmdd + "\""
+        } else {
+            buildConfigField 'String', 'BUILD_NO', "\"" + rootProject.ext.android.buildNo + todaymmdd + "\""
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            if (merge == "true")
+                res.srcDirs = ['../mockbundle/res']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    providedCompile project(':business-view')
+    if (merge == "true") providedCompile project(':resbundle')
+
+    testCompile rootProject.ext.dependencies.junit
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+//    compile rootProject.ext.dependencies.appcompatV7
+}

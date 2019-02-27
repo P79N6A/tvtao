@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/recommend_tip_id"
+    android:layout_marginLeft="@dimen/dp_40"
+    android:layout_marginTop="@dimen/dp_18"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fs_fl_stock_image"
+        android:layout_width="@dimen/dp_220"
+        android:layout_height="@dimen/dp_220" >
+
+        <ImageView
+            android:id="@+id/fs_iv_stock_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_default"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/fs_iv_qiangguang"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_88"
+            android:background="@drawable/fs_recommed_robbed"
+            android:layout_gravity="bottom|right" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_220"
+        android:layout_height="@dimen/dp_75"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_5" >
+
+        <TextView
+            android:id="@+id/fs_tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dp_2"
+            android:orientation="horizontal" >
+                        
+            <TextView
+                android:id="@+id/fs_tv_saleprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/sp_16"
+				android:textColor="#ff000000"/>
+
+            <TextView
+                android:id="@+id/fs_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textSize="@dimen/dp_13"
+                android:textColor="#B2000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fs_tv_sale_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginLeft="@dimen/dp_1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/dp_13"
+            android:textColor="#B2000000" />
+    </LinearLayout>
+
+</LinearLayout>

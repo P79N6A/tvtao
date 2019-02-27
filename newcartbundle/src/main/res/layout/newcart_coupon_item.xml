@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_169_3"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/rl_bg_item"
+        android:layout_width="@dimen/dp_489_3"
+        android:layout_height="@dimen/dp_169_3"
+        android:focusable="false"
+        android:layout_centerInParent="true"></ImageView>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:cl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rl_bg"
+        android:layout_width="@dimen/dp_468"
+        android:layout_height="@dimen/dp_148"
+        android:focusable="false"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="wrap_content"
+            cl:layout_constraintLeft_toLeftOf="parent"
+            cl:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:text="¥5"
+            android:focusable="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_70" />
+
+        <TextView
+            android:id="@+id/tv_require_money_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cl:layout_constraintTop_toBottomOf="@+id/tv_money"
+            cl:layout_constraintLeft_toLeftOf="@+id/tv_money"
+            android:paddingRight="@dimen/dp_7"
+            android:text="满50元可使用"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_18" />
+
+        <ImageView
+            android:id="@+id/iv_coupon_fit_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_18"
+            cl:layout_constraintLeft_toRightOf="@+id/tv_require_money_use"
+            cl:layout_constraintTop_toTopOf="@+id/tv_require_money_use"
+            cl:layout_constraintBottom_toBottomOf="@+id/tv_require_money_use"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:id="@+id/tv_require_time_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cl:layout_constraintTop_toBottomOf="@+id/tv_require_money_use"
+            cl:layout_constraintLeft_toLeftOf="@+id/tv_require_money_use"
+            android:text="有效期: 2017.08.22～2017.09.18"
+            android:textColor="#ffffff"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dp_18" />
+
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="wrap_content"
+            cl:layout_constraintRight_toRightOf="parent"
+            cl:layout_constraintTop_toTopOf="parent"
+            cl:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:lineSpacingExtra="8sp"
+            android:text="立即\n领取"
+            android:textColor="#4474c4"
+            android:focusable="false"
+            android:textSize="@dimen/dp_32" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>

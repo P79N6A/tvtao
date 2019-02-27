@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.goodlist.view.GoodListMenuFocusFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_171"
+    android:layout_height="@dimen/dp_53"
+    android:paddingBottom="@dimen/dp_10" >
+
+    <!-- 背景 -->
+
+    <ImageView
+        android:id="@+id/goodlist_menu_backgroud_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_53"
+        android:layout_marginLeft="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_0"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ytsdk_ui2_goodlist_left_select"
+        android:visibility="invisible" />
+
+    <!-- logo -->
+
+    <ImageView
+        android:id="@+id/goodlist_menu_logo_imageview"
+        android:layout_width="@dimen/dp_34"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_12"
+        android:adjustViewBounds="true"
+        android:paddingTop="@dimen/dp_2" />
+
+    <!-- 文字 -->
+
+    <TextView
+        android:id="@+id/goodlist_menu_logo_text"
+        android:layout_width="@dimen/dp_95"
+        android:layout_height="@dimen/dp_42"
+        android:layout_marginLeft="@dimen/dp_76"
+        android:layout_marginTop="@dimen/dp_9"
+        android:paddingBottom="@dimen/dp_3"
+        android:paddingLeft="@dimen/dp_0"
+        android:paddingRight="@dimen/dp_0"
+        android:paddingTop="@dimen/dp_0"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_27" />
+
+</com.yunos.tvtaobao.goodlist.view.GoodListMenuFocusFrameLayout>

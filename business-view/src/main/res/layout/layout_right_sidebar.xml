@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/fiv_pierce_background"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/right_pierce_bg"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_57_3"
+        android:layout_marginTop="@dimen/dp_144"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/tv_pierce_home"
+            android:layout_width="@dimen/dp_116"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ytm_bubble_174"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:text="@string/ytbv_pierce_back_home"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_17_3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/fiv_pierce_home_focusd"
+            android:layout_width="@dimen/dp_54_6"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_alignParentRight="true"
+            android:nextFocusDown="@+id/fiv_pierce_my_focusd"
+            android:src="@drawable/ytm_pierce_home_focusd"
+            android:focusable="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_57_3"
+        android:layout_marginTop="@dimen/dp_201_3"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/tv_pierce_my"
+            android:layout_width="@dimen/dp_116"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ytm_bubble_174"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_13_3"
+            android:singleLine="true"
+            android:text="@string/ytbv_pierce_my_taobao"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_17_3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/fiv_pierce_my_focusd"
+            android:layout_width="@dimen/dp_54_6"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ytm_pierce_my_focusd"
+            android:nextFocusUp="@+id/fiv_pierce_home_focusd"
+            android:nextFocusDown="@+id/fiv_pierce_cart_focusd"
+            android:focusable="true"
+            android:src="@drawable/ytm_pierce_my_focusd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_137_3"
+        android:layout_marginTop="@dimen/dp_258_6"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/iv_pierce_cart_active"
+            android:layout_width="@dimen/dp_141"
+            android:layout_height="@dimen/dp_141"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:focusable="false"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_pierce_cart"
+            android:layout_width="@dimen/dp_177"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ytm_bubble_264"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:text="@string/ytbv_pierce_cart_buy"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_17_3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/fiv_pierce_cart_focusd"
+            android:layout_width="@dimen/dp_54_6"
+            android:layout_height="@dimen/dp_137_3"
+            android:layout_alignParentRight="true"
+            android:nextFocusUp="@+id/fiv_pierce_my_focusd"
+            android:nextFocusDown="@+id/fiv_pierce_red_jifen_focusd"
+            android:focusable="true"
+            android:src="@drawable/ytm_pierce_cart_focusd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_57_3"
+        android:layout_marginTop="@dimen/dp_396"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/tv_pierce_red_jifen"
+            android:layout_width="@dimen/dp_116"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ytm_bubble_264"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:text="@string/ytbv_pierce_my_jifen"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_17_3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/fiv_pierce_red_jifen_focusd"
+            android:layout_width="@dimen/dp_54_6"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_alignParentRight="true"
+            android:focusable="true"
+            android:nextFocusUp="@+id/fiv_pierce_cart_focusd"
+            android:nextFocusDown="@+id/fiv_pierce_block_focusd"
+            android:src="@drawable/ytm_pierce_red_jifen_focusd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_57_3"
+        android:layout_marginTop="@dimen/dp_453_3"
+        android:focusable="false"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_pierce_red_packet"
+            android:layout_width="@dimen/dp_116"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ytm_bubble_264"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:text="@string/ytbv_pierce_red_package"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_17_3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/fiv_pierce_red_packet_focusd"
+            android:layout_width="@dimen/dp_54_6"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_alignParentRight="true"
+            android:nextFocusUp="@+id/fiv_pierce_red_jifen_focusd"
+            android:nextFocusDown="@+id/fiv_pierce_block_focusd"
+            android:focusable="true"
+            android:src="@drawable/ytm_pierce_red_packet_focusd" />
+    </RelativeLayout>
+    <!--android:layout_marginTop="@dimen/dp_510_6"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_57_3"
+        android:layout_marginTop="@dimen/dp_453_3"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/tv_pierce_block"
+            android:layout_width="@dimen/dp_116"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ytm_bubble_264"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:text="@string/ytbv_pierce_block"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_17_3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/fiv_pierce_block_focusd"
+            android:layout_width="@dimen/dp_54_6"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_alignParentRight="true"
+            android:nextFocusUp="@+id/fiv_pierce_red_jifen_focusd"
+            android:nextFocusDown="@+id/fiv_pierce_contact_focusd"
+            android:focusable="true"
+            android:src="@drawable/ytm_pierce_block_focusd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_61_3"
+        android:layout_marginTop="@dimen/dp_591_3"
+        android:focusable="false"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_pierce_come_back"
+            android:layout_width="@dimen/dp_116"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ytm_bubble_264"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:text="@string/ytbv_pierce_come_back"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_17_3"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/fiv_pierce_come_back_focusd"
+            android:layout_width="@dimen/dp_54_6"
+            android:layout_height="@dimen/dp_61_3"
+            android:layout_alignParentRight="true"
+            android:focusable="true"
+            android:src="@drawable/ytm_pierce_come_back_focusd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_61_3"
+        android:layout_marginTop="@dimen/dp_652_6"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/tv_pierce_contact_focusd"
+            android:layout_width="@dimen/dp_224"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ytm_bubble_336"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:text="@string/ytbv_pierce_contact"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_17_3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/fiv_pierce_contact_focusd"
+            android:layout_width="@dimen/dp_54_6"
+            android:layout_height="@dimen/dp_57_3"
+            android:layout_alignParentRight="true"
+            android:nextFocusUp="@+id/fiv_pierce_block_focusd"
+            android:nextFocusDown="@+id/fiv_pierce_contact_focusd"
+            android:focusable="true"
+            android:src="@drawable/ytm_pierce_contact_focusd" />
+    </RelativeLayout>
+
+</merge>

@@ -1,0 +1,43 @@
+<manifest package="com.yunos.tvtaobao.juhuasuan"
+
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup"
+        >
+        <activity
+            android:name=".activity.PreloadActivity"
+            >
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+        <activity
+            android:name=".activity.HomeCategoryActivity"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:hardwareAccelerated="true">
+        </activity>
+        <activity
+            android:name=".activity.BrandHomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            >
+        </activity>
+        <activity
+            android:name=".activity.BrandDetailActivity"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+    </application>
+
+</manifest>

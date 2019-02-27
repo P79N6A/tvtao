@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="new_shop_cart_white">#ffffff</color>
+    <color name="new_shop_cart_unselect">#62656b</color>
+    <color name="new_shop_cart_ispre">#00cc33</color>
+    <color name="new_shop_cart_txt_price">#ff5500</color>
+    <color name="new_shop_cart_txt_price_line">#ccff5500</color>
+
+    <color name="new_shop_cart_label_txt">#202020</color>
+
+    <color name="new_shop_cart_title_valid">#202020</color>
+    <color name="new_shop_cart_title_invalid">#838ea4</color>
+
+    <color name="newcart_infor_sku_text_color">#666666</color>
+    <color name="newcart_infor_shop_count_text_color">#666666</color>
+    <color name="newcart_infor_price_text_color">#ff4b17</color>
+    <color name="newcart_controller_line">#afafaf</color>
+</resources>

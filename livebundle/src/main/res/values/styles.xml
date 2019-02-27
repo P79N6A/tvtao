@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="live_Dialog_Fullscreen">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_enter_anim</item>
+        <!-- 退出时的动画 -->
+    </style>
+</resources>

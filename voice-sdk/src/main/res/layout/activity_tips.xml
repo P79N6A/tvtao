@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autotext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_156"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!---->
+    <!--android:focusable="false" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_156"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/icon_speek_back">
+
+        <TextView
+            android:id="@+id/voice_card_search_tts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_200"
+            android:lineSpacingExtra="8sp"
+            android:textColor="#ffffff"
+            android:textSize="32sp"
+            tools:text="请问您有什么需要帮助的吗？" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:src="@drawable/icon_tips"
+                android:visibility="gone" />
+
+            <com.yunos.voice.view.AutoTextView
+                android:id="@+id/voice_card_search_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                autotext:gravity="5"
+                autotext:lines="1"
+                autotext:textSize="@dimen/sp_20"
+                autotext:textcolor="#b2ffffff"></com.yunos.voice.view.AutoTextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/dp_1160"-->
+    <!--android:layout_height="@dimen/dp_48"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="@dimen/dp_150"-->
+    <!--android:layout_marginLeft="@dimen/dp_60"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/dp_68"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/head_tao" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/voice_card_search_tts"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dp_10"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="@dimen/sp_30" />-->
+    <!--</LinearLayout>-->
+    <!--<TextView-->
+    <!--android:id="@+id/voice_card_search_tips"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dp_70"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="@dimen/dp_80"-->
+    <!--android:paddingLeft="@dimen/dp_20"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:focusable="true"-->
+    <!--android:marqueeRepeatLimit="-1"-->
+    <!--android:ellipsize="marquee"-->
+    <!--android:textSize="@dimen/sp_30" />-->
+
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ytm_black">#000000</color>
+    <color name="ytm_white">#FFFFFF</color>
+    <color name="ytm_blue">#0088CC</color>
+    <color name="ytm_gray">#888888</color>
+    <color name="ytm_red">#ff0000</color>
+    <color name="ytm_orange">#ff7200</color>
+    <color name="ytm_tmall_red">#fc3245</color>
+
+    <!-- UI 3.0 中的橙色 -->
+    <color name="ytm_common_orange_ui30">#ffff8201</color>
+
+    <!-- shop -->
+    <color name="ytm_dialog_second_bg">#7F000000</color>
+
+    <!-- GoodsList -->
+    <color name="ytm_transparent">#00000000</color>
+    <color name="ytm_tui_text_color_grey">#FF999999</color>
+    <!-- normal文字（有投影） -->
+    <color name="ytm_text_shadow_opt40">#66000000</color>
+    <!-- 40% -->
+
+
+    <!-- shop cart -->
+    <color name="ytm_shop_cart_account_count">#666565</color>
+    <color name="ytm_shop_cart_account_price">#666565</color>
+    <color name="ytm_shop_cart_account_express">#797878</color>
+    <color name="ytm_shop_cart_account_shadow">#939393</color>
+    <color name="ytm_sku_fucus_bg">#ff8201</color>
+    <color name="ytm_sku_done_unfocus_text_color">#7fffffff</color>
+    <color name="ytm_sku_text_disable">#68686e</color>
+    <color name="ytm_shop_cart_controller_line">#afafaf</color>
+
+    <!-- buildorder -->
+    <color name="ytm_buildorder_title">#ff272727</color>
+    <color name="ytm_buildorder_sku">#ff848485</color>
+    <color name="ytm_buildorder_invalid">#ff9f9fa1</color>
+    <color name="ytm_buildorder_total">#ffff6c06</color>
+    <color name="ytm_buildorder_ok_color">#7fffffff</color>
+    <color name="ytm_buildorder_ok_shadowcolor">#68848484</color>
+    <color name="ytm_buildorder_address">#80000000</color>
+    <color name="ytm_buildorder_address_ok">#ffc8c6c4</color>
+    <color name="ytm_buildorder_address_addr">#ff7c7c7c</color>
+    <color name="ytm_buildorder_divider">#ff393942</color>
+
+    <color name="ytm_shop_cart_infor_sku_text_color">#666666</color>
+    <color name="ytm_shop_cart_infor_shop_count_text_color">#666666</color>
+    <color name="ytm_shop_cart_infor_price_text_color">#ff4b17</color>
+    <color name="ytm_shop_cart_empty_text_color1">#fefefe</color>
+    <color name="ytm_shop_cart_empty_text_color2">#adafb6</color>
+
+    <color name="ytm_shop_cart_item_controller_btn_color">#afafaf</color>
+
+    <!-- RollNotice -->
+    <color name="ytm_rollnotice">#ff86838e</color>
+
+    <!-- sku -->
+    <color name="ytm_sku_bg">#23222c</color>
+    <color name="ytm_sku_title_bg">#3d3c45</color>
+    <color name="ytm_qr_code_bg">#f023222c</color>
+
+    <color name="ytm_button_normal">#7e4821</color>
+    <color name="ytm_button_focus">#ff8400</color>
+
+    <color name="ytsdk_detail_bg">#363636</color>
+    <!-- 购物流程统一背景色 -->
+    <color name="ytsdk_buy_bg">#393939</color>
+    <color name="ytsdk_text_red">#c6223f</color>
+    <color name="ytsdk_background">#e4e6e5</color>
+    <color name="ytsdk_tui_text_color_grey">#FF999999</color>
+    <color name="ytsdk_tui_text_color_white">#FFFFFFFF</color>
+    <color name="ytsdk_tui_text_color_grey_2">#FF666666</color>
+    <color name="ytsdk_tui_text_color_orange">#FFe75000</color>
+
+    <!-- common color -->
+    <color name="ytsdk_tui_color_divider_listview">#A1FFFFFF</color>
+    <color name="ytsdk_tui_color_progressbar">#FF2ba3ff</color>
+    <color name="ytsdk_tui_color_dialog_mask">#9A000000</color>
+    <color name="ytsdk_active_price_soldover">#666666</color>
+    <color name="ytsdk_active_price_start">#00996c</color>
+
+    <!-- detail -->
+    <color name="ytsdk_detail_font_shadow">#ffffff</color>
+    <color name="ytsdk_comment_content_textsize">#666666</color>
+    <color name="ytsdk_black44">#70000000</color>
+    <color name="ytsdk_detail_center_shadow">#000000</color>
+    <color name="ytsdk_item_score">#c6223f</color>
+    <color name="ytsdk_Body">#666666</color>
+    <color name="ytsdk_detail_module_name">#a3a3a3</color>
+    <color name="ytsdk_detail_status_text">#a7c7b5</color>
+    <color name="ytsdk_detail_activity_price">#a7c7b5</color>
+    <color name="ytsdk_detail_original_price_text">#a7c7b5</color>
+    <color name="ytsdk_detail_original_price_title_text">#a7c7b5</color>
+    <color name="ytsdk_detail_buy_shadow">#681d00</color>
+    <color name="ytsdk_detail_buy_shadow_gray">#484848</color>
+    <color name="ytsdk_detail_select_color">#f55c00</color>
+    <color name="ytsdk_detail_buy_background_color">#ddf55c00</color>
+    <color name="ytsdk_detail_view_backgroud_color">#33cdcad9</color>
+    <color name="ytsdk_detail_select_qiangou_color">#009e04</color>
+    <color name="ytsdk_detail_divider_color">#ffa0a0a0</color>
+    <color name="ytsdk_detail_context_divider_color">#ffd6d6d6</color>
+    <color name="ytsdk_detail_tab_losefocus_color">#33ffffff</color>
+    <color name="ytsdk_detail_tab_gainfocus_color">#ffff8201</color>
+    <color name="ytsdk_detail_tab_notselect_color">#fff55c00</color>
+    <color name="ytsdk_detail_evaluate_mark_color">#FF000000</color>
+    <color name="ytsdk_detail_panel_divider_color">#484848</color>
+    <color name="ytsdk_detail_scroll_divider_color">#33ffffff</color>
+    <color name="ytsdk_detail_not_buysupport_message_color">#66ffffff</color>
+    <color name="ytsdk_detail_not_buysupport_price_color">#4cffffff</color>
+    <color name="ytsdk_detail_evaluate_tab_bg_color">#e5ffffff</color>
+    <color name="ytsdk_detail_evaluate_font_color">#bb000000</color>
+    <color name="ytsdk_detail_evaluate_context_font_color">#cc4a4949</color>
+
+    <!-- 下单步骤 -->
+    <color name="ytsdk_order_step_current">#c6223f</color>
+    <color name="ytsdk_order_step_not_current">#666666</color>
+
+    <!-- order_submit_activity -->
+    <color name="ytsdk_address_username_current">#c6223f</color>
+    <!-- 当前选中收货地址的收货人姓名颜色 -->
+    <color name="ytsdk_address_username">#666666</color>
+    <!-- 未选中收货地址的收货人姓名颜色 -->
+    <color name="ytsdk_address_detail">#666666</color>
+    <!-- 详细地址颜色 -->
+    <color name="ytsdk_address_area">#999999</color>
+    <!-- 省市区字体颜色 -->
+    <color name="ytsdk_item_title_font_color">#999999</color>
+    <!-- 商品信息描述标题字体颜色 -->
+    <color name="ytsdk_item_content_font_color">#666666</color>
+    <!-- 商品信息内容标题字体颜色 -->
+    <color name="ytsdk_item_delivery_checked_font_color">#cc2845</color>
+    <!-- 被选中的配送方式字体颜色 -->
+    <color name="ytsdk_item_replay">#cc2845</color>
+    <!-- 被选中的配送方式字体颜色 -->
+
+
+    <!-- sure_join -->
+    <color name="ytsdk_sure_join_title">#808080</color>
+    <color name="ytsdk_sure_join_price">#FF6B00</color>
+    <color name="ytsdk_sure_join_sku">#666666</color>
+    <color name="ytsdk_sure_join_next">#ffffff</color>
+    <color name="ytsdk_sure_join_disable_sku">#cccccc</color>
+    <color name="ytsdk_navigation_item_text_color">#5a5a5a</color>
+    <color name="ytsdk_myorder_username_selected">#e23d5a</color>
+    <color name="ytsdk_myorder_username">#999999</color>
+    <color name="ytsdk_item_coupon_sure_join_desc_color">#ff666666</color>
+
+    <!-- comment -->
+    <color name="ytsdk_global_background">#FFF5F5F5</color>
+    <color name="ytsdk_K_black_light_6">#FFE5E5E5</color>
+    <color name="ytsdk_transparent">#00000000</color>
+    <color name="ytsdk_workshopbackgroud">#db3419</color>
+    <color name="ytsdk_ui2_detail_bg">#393939</color>
+
+    <!-- collects -->
+    <color name="ytsdk_collects_item_title_bg">#c7ffffff</color>
+    <color name="ytsdk_collects_item_price_txt">#ff4b17</color>
+    <color name="ytsdk_collects_item_org_price_txt">#7F000000</color>
+    <color name="ytsdk_taobao_shop_left_side_bg">#db5800</color>
+    <color name="ytsdk_tmall_shop_left_side_bg">#9a0c0c</color>
+    <color name="ytsdk_txt_b8a6a8">#b8a6a8</color>
+    <color name="ytsdk_taobao_shop_right_side_bg">#b93000</color>
+    <color name="ytsdk_tmall_shop_right_side_bg">#4f1919</color>
+
+    <!-- logistic -->
+    <color name="ytsdk_logistic_item_list_detail">#f1f1f1</color>
+    <color name="ytsdk_logustuc_list_shade">#22ffffff</color>
+
+    <!-- shop -->
+    <color name="ytsdk_shop_txt_shade">#ccffffff</color>
+    <color name="ytsdk_dialog_second_bg">#7F000000</color>
+    <color name="ytsdk_text_un_foucs_color">#B2ffffff</color>
+
+    <!-- address -->
+    <color name="ytsdk_my_address_name">#b2000000</color>
+
+    <!-- GoodsList -->
+    <color name="ytsdk_goodslist_title_shadow">#b2000000</color>
+    <!-- home -->
+    <color name="ytm_home_cagetory_background_color">#cacad9</color>
+    <color name="ytm_home_cagetory_focus_color">#ff8201</color>
+    <!-- my taobao -->
+    <color name="ytm_my_taobao_bg">#2c2f35</color>
+    <color name="ytm_858585">#858585</color>
+
+    <!--商品详情页现价颜色-->
+    <color name="ytm_detail_current_price">#ff4400</color>
+    <!--商品详情页原价颜色-->
+    <color name="ytm_detail_original_price_">#99bbdd</color>
+    <!--购物车聚焦文字颜色-->
+    <color name="new_detail_add_cart_focused">#feffff</color>
+    <!--优惠券超过50文字颜色-->
+    <color name="coupon_more_than_fifty">#f16a1b</color>
+    <!--优惠券超过50文字颜色-->
+    <color name="coupon_less_than_fifty">#4474c4</color>
+
+    <color name="ytm_create_order_rebate_focuse">#392802</color>
+    <color name="ytm_create_order_rebate_unfocuse">#866f16</color>
+
+    <color name="new_cart_black">#202020</color>
+    <color name="new_cart_grey">#606060</color>
+    <color name="new_cart_98badf">#98badf</color>
+    <color name="new_cart_e60e1215">#e60e1215</color>
+
+    <color name="new_detail_payment_time_bg">#e54c2405</color>
+
+
+</resources>

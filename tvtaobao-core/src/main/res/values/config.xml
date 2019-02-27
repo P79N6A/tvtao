@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This ttid is fake, will be replace by  maven plugin. -->
+    <string name="channelId">701229</string>
+    <bool name="isDebug">true</bool>
+    <string name="buildId">localBuild</string>
+    <string name="runMode">PRODUCTION</string> <!--Value is in: PRODUCTION, PREDEPLOY, DAILY -->
+    <string name="mtopApiVersion">default</string>
+    <bool name="agreementPay">true</bool>
+    <string name="channel">mohe</string>
+</resources>
+

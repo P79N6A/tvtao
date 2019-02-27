@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <!-- 上面是图片  下面是折扣和价格 -->
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp">
+        <LinearLayout
+            android:id="@+id/discount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|top"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="14dp">
+	        <TextView
+                android:id="@+id/discount_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:textSize="40sp" 
+                android:textStyle="italic|bold" 
+                android:textColor="@color/jhs_white"
+                android:layout_marginBottom="5dp"/>
+	        <TextView
+                android:id="@+id/discount_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:textSize="26sp" 
+                android:textStyle="italic|bold" 
+                android:textColor="@color/jhs_white"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent" 
+	        android:layout_height="match_parent" 
+	        android:gravity="bottom"
+	        android:orientation="horizontal"
+	        android:paddingLeft="24dp"
+	        android:paddingRight="24dp">
+			<LinearLayout
+                android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="left|top"
+	            android:layout_weight="1">
+	            
+			    <TextView
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content"
+	                android:focusable="false" 
+	                android:singleLine="true"
+	                android:textColor="@color/jhs_white" 
+	                android:textSize="36sp"
+	                android:text="@string/jhs_dollar_sign" />
+			    
+	            <TextView
+	                android:id="@+id/activityPrice_tv"
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content"
+	                android:focusable="false"
+	                android:singleLine="true"
+	                android:textSize="56sp" 
+	                android:textStyle="bold" 
+	                android:textColor="@color/jhs_white" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content"
+	                android:focusable="false"
+	                android:singleLine="true"
+	                android:textColor="@color/jhs_white" 
+	                android:textSize="24sp"
+	                android:text="@string/jhs_original_price"
+	                android:layout_marginLeft="@dimen/dp_24"/>
+	            
+	            <TextView
+	                android:id="@+id/originalPrice_tv"
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content"
+	                android:focusable="false"
+	                android:singleLine="true"
+	                android:textColor="@color/jhs_white" 
+	                android:textSize="24sp"/>
+	        </LinearLayout>
+
+	        <TextView
+	           android:id="@+id/itemCount_tv"
+	           android:layout_width="wrap_content" 
+	           android:layout_height="wrap_content"
+	           android:paddingLeft="@dimen/dp_24"
+	           android:textColor="@color/jhs_white" 
+	           android:layout_marginBottom="@dimen/dp_5"
+	           android:textSize="@dimen/jhs_page_goods_text_big_size"/>
+        </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

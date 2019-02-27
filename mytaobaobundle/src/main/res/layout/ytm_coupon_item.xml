@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.biz.widget.FocusNoDeepLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_12"
+    android:paddingLeft="@dimen/dp_8"
+    android:paddingRight="@dimen/dp_8"
+    android:paddingTop="@dimen/dp_12" >
+
+    <RelativeLayout
+        android:id="@+id/coupon_layout"
+        android:layout_width="@dimen/dp_376"
+        android:layout_height="@dimen/dp_176"
+        android:background="@drawable/ytm_coupon_red_bg" >
+
+        <TextView
+            android:id="@+id/coupon_name"
+            android:layout_width="@dimen/dp_232"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_10"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="#64000000"
+            android:textSize="@dimen/sp_15" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_250"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/coupon_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/coupon_price"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/coupon_use_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/coupon_limited_prompt"
+                        android:layout_width="@dimen/dp_66"
+                        android:layout_height="@dimen/dp_18"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:background="@drawable/ytm_coupon_use_area_bg"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="@string/ytm_coupon_title"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_20" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_124"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/ytm_hongbao_expire_text"
+                    android:textColor="#80000000"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/coupon_expire_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:lines="2"
+                    android:textColor="#80000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.yunos.tvtaobao.biz.widget.FocusNoDeepLinearLayout>

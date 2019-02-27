@@ -1,0 +1,8 @@
+-resource business-view/src/main/res/values/ytbv_dimens.xml
+
+-destPath business-view/src/main/res/values-sw540dp/ytbv_dimens.xml -arg [dp->dp->3/4; sp->sp->3/4; px->px->3/4;]
+-destPath business-view/src/main/res/values-sw720dp/ytbv_dimens.xml -arg []
+
+
+
+

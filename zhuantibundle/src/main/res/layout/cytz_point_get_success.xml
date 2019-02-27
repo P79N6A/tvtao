@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="@dimen/dp_240"
+      android:layout_height="@dimen/dp_133"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="@dimen/dp_170"
+      android:layout_alignParentRight="true"
+      android:background="@drawable/cytz_point_success"
+
+      >
+      <TextView
+          android:id="@+id/tv_point_value"
+          android:layout_width="@dimen/dp_192"
+          android:layout_height="@dimen/dp_48"
+          android:layout_marginLeft="@dimen/dp_32"
+          android:layout_marginTop="@dimen/dp_24"
+          android:text="+18"
+          android:textSize="@dimen/sp_44"
+          android:gravity="center"
+          android:textColor="@color/cytz_text"
+          />
+      <TextView
+          android:id="@+id/tv_point_title"
+          android:layout_width="@dimen/dp_192"
+          android:layout_height="@dimen/dp_32"
+          android:text="电视淘宝积分"
+          android:textColor="@color/cytz_text"
+          android:layout_below="@+id/tv_point_value"
+          android:layout_marginLeft="@dimen/dp_32"
+          android:gravity="center"
+          android:textSize="@dimen/sp_14"
+          />
+
+      <TextView
+          android:id="@+id/tv_point_next"
+          android:layout_width="@dimen/dp_192"
+          android:layout_height="@dimen/dp_28"
+          android:layout_below="@+id/tv_point_title"
+          android:layout_marginLeft="@dimen/dp_32"
+          android:text="亲！30分钟后下一波来袭"
+          android:gravity="center"
+          android:textSize="@dimen/sp_14"
+          android:textColor="@color/cytz_white_text_color"
+
+          />
+
+  </RelativeLayout>
+</RelativeLayout>

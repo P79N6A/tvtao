@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ytsdk_detail_bg">
+
+    <ImageView
+        android:id="@+id/iv_background_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/new_detail_bg" />
+    <!-- SurfaceView通过java动态添加 -->
+    <ImageView
+        android:layout_width="@dimen/dp_800"
+        android:layout_height="360dp"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:src="@color/bs_up_update_button_focus"
+        android:visibility="gone" />
+    <!--&lt;!&ndash;图文界面 &ndash;&gt;-->
+    <com.yunos.tv.blitz.view.BlitzBridgeSurfaceView
+        android:id="@+id/new_detail_fulldesc_webview_blitz"
+        android:layout_width="@dimen/dp_800"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/new_detail_fulldesc"
+        android:layout_width="@dimen/dp_800"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+    <!-- 购买,购物车,扫码按钮 -->
+    <include layout="@layout/new_detail_buy_view_try" />
+
+    <!--详情数据界面 -->
+    <include layout="@layout/new_detail_panel_view" />
+
+</FrameLayout>
+
+

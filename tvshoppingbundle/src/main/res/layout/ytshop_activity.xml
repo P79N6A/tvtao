@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvshop_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/goods_image_layout"
+        android:layout_width="@dimen/dp_282"
+        android:layout_height="@dimen/dp_172"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_14"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/goods_image"
+            android:layout_width="@dimen/dp_278"
+            android:layout_height="@dimen/dp_168"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/contentDescription"
+            android:focusable="true"
+            android:src="@drawable/ytshop_goods_image_default" />
+    </RelativeLayout>
+
+    <com.yunos.tv.app.widget.focus.FocusPositionManager
+        android:id="@+id/tvshopping_detail_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_350"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_930"
+            android:background="#99000000"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/goods_detail_loading_bar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_28"
+                    android:text="@string/ytshop_detail_loading_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_28" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goods_detail_load_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/ytshop_load_failed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_28"
+                    android:text="@string/ytshop_detail_load_failed_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_28" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goods_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:flipInterval="30"
+                    android:focusable="true"
+                    android:persistentDrawingCache="animation"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/goods_detail_image"
+                    android:layout_width="@dimen/dp_302"
+                    android:layout_height="@dimen/dp_302"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_80"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/ytshop_goods_detail_image_default" />
+
+                <TextView
+                    android:id="@+id/goods_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_36"
+                    android:layout_marginRight="@dimen/dp_36"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/dp_8"
+                    android:lines="2"
+                    android:text="@string/ytshop_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_36"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ytshop_tvprice_text"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_20" />
+
+                        <TextView
+                            android:id="@+id/goods_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff7200"
+                            android:textSize="@dimen/sp_32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ytshop_detail_originalprice_desc"
+                            android:textColor="#80ffffff"
+                            android:textSize="@dimen/sp_20" />
+
+                        <TextView
+                            android:id="@+id/goods_origin_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#80ffffff"
+                            android:textSize="@dimen/sp_20" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_302"
+                    android:layout_height="@dimen/dp_64"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:gravity="center" >
+
+                    <com.yunos.tv.app.widget.focus.FocusTextView
+                        android:id="@+id/collect_goods_focus_layout"
+                        android:layout_width="@dimen/dp_302"
+                        android:layout_height="@dimen/dp_64"
+                        android:background="@drawable/ytshop_button_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/collect_goods_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/contentDescription"
+                            android:src="@drawable/ytshop_star_collect" />
+
+                        <TextView
+                            android:id="@+id/collect_goods_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:includeFontPadding="false"
+                            android:text="@string/ytshop_add_collect"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_24" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/collect_goods_status_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/collect_goods_status_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/contentDescription"
+                        android:src="@drawable/ytshop_collect_status_tip" />
+
+                    <TextView
+                        android:id="@+id/collect_goods_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/ytshop_add_collect_failed"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_20" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.yunos.tv.app.widget.focus.FocusPositionManager>
+
+</RelativeLayout>

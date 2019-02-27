@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--&lt;!&ndash; 定义弹框Activity的进入、关闭动画 &ndash;&gt;-->
+    <!--<style name="AnimBottom" parent="@android:style/Animation">-->
+        <!--<item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>-->
+    <!--</style>-->
+
+    <!--<style name="MyDialogStyleBottom" parent="android:style/Theme.Dialog">-->
+        <!--<item name="android:windowAnimationStyle">@style/AnimBottom</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--&lt;!&ndash; 边框 &ndash;&gt;-->
+        <!--<item name="android:windowIsFloating">false</item>-->
+        <!--&lt;!&ndash; 是否浮现在activity之上 &ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--&lt;!&ndash; 半透明 &ndash;&gt;-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--&lt;!&ndash; 无标题 &ndash;&gt;-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--&lt;!&ndash; 背景透明 &ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+        <!--&lt;!&ndash; 模糊 &ndash;&gt;-->
+    <!--</style>-->
+
+
+</resources>

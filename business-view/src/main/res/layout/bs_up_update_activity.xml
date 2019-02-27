@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:update="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bs_up_update_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/bs_up_update_layout_padding_bottom" >
+
+    <TextView
+        android:id="@+id/bs_up_update_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/bs_up_update_text_margin_left"
+        android:layout_marginRight="@dimen/bs_up_update_text_margin_right"
+        android:layout_marginTop="@dimen/bs_up_update_text_margin_top"
+        android:text="@string/bs_up_remind"
+        android:textColor="@color/bs_up_update_white"
+        android:textSize="@dimen/bs_up_update_text_font"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/bs_up_update_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bs_up_update_info_margin_left"
+        android:layout_marginRight="@dimen/bs_up_update_info_margin_right"
+        android:layout_marginTop="@dimen/bs_up_update_info_margin_top"
+        android:layout_marginBottom="@dimen/bs_up_update_info_margin_bottom"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/bs_up_update_info_divider"
+        android:maxLines="3"
+        android:textColor="@color/bs_up_update_info_color"
+        android:textSize="@dimen/bs_up_update_info_font"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/bs_up_fail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bs_up_fail_text_margin_bottom"
+        android:layout_marginTop="@dimen/bs_up_fail_text_margin_top"
+        android:textColor="@color/bs_up_update_white"
+        android:text="@string/bs_up_fail_text"
+        android:textSize="@dimen/bs_up_fail_text_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bs_up_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bs_up_button_margin_bottom"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.yunos.taobaotv.update.widget.UpdateButton
+            android:id="@+id/bs_up_install"
+            style="@style/bs_up_myButton"
+            update:text="@string/bs_up_update" />
+
+        <com.yunos.taobaotv.update.widget.UpdateButton
+            android:id="@+id/bs_up_leave"
+            style="@style/bs_up_myButton"
+            android:layout_marginTop="@dimen/bs_up_button_divider"
+            update:text="@string/bs_up_leave" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/bs_up_pb"
+        style="@style/bs_up_myProgressBar"
+        android:layout_width="@dimen/bs_up_pb_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bs_up_pb_margin_bottom"
+        android:layout_marginTop="@dimen/bs_up_pb_margin_top"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/bs_up_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bs_up_error_text_margin_bottom"
+        android:text="@string/bs_up_network_error"
+        android:textColor="@color/bs_up_error_text_color"
+        android:textSize="@dimen/bs_up_error_text_size"
+        android:visibility="gone" />
+
+    <com.yunos.taobaotv.update.widget.UpdateButton
+        android:id="@+id/bs_up_retry"
+        style="@style/bs_up_myButton"
+        update:text="@string/bs_up_retry"
+        android:visibility="gone" />
+
+    <com.yunos.taobaotv.update.widget.UpdateButton
+        android:id="@+id/bs_up_exit"
+        style="@style/bs_up_myButton"
+        update:text="@string/bs_up_confirm_exit"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunos.tvtaobao.h5.commonbundle">
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".activity.CommonActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.RecommendActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.RelativeRecommendActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.ChaoshiActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.TodayGoodsActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.ChongzhiActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.PointActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.ShopBlizActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.TakeOutWebActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.AddressWebActivity"
+            android:hardwareAccelerated="true" />
+    </application>
+
+</manifest>

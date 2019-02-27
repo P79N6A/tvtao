@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 共用 -->
+    <string name="ytshop_title">标题</string>
+    <string name="contentDescription"></string>
+
+    <!--二维码 -->
+
+    <!--价格 -->
+    <string name="ytshop_detail_originalprice_desc">原价: </string>
+    <string name="ytshop_price_symbol">&#165;</string>
+
+    <!--收藏 -->
+
+    <!-- 网络请求 -->
+
+    <string name="ytshop_tvprice_text">TV专享: </string>
+    <string name="ytshop_add_collect">加入收藏</string>
+    <string name="ytshop_collected_biaozhu">已收藏</string>
+    <string name="ytshop_add_collect_failed">加入收藏失败，请重试</string>
+    <string name="ytshop_del_collect_failed">取消收藏失败，请重试</string>
+    <string name="ytshop_add_collect_success_tips">在我的淘宝查看该商品</string>
+    <string name="ytshop_relative_goods">猜你喜欢</string>
+    <string name="ytshop_my_collected_title">您已收藏了%1$d件宝贝</string>
+    <string name="ytshop_open_my_collect">打开宝贝收藏</string>
+    <string name="ytshop_detail_loading_text">数据加载中&#8230;</string>
+    <string name="ytshop_detail_load_failed_text">数据加载失败</string>
+
+</resources>

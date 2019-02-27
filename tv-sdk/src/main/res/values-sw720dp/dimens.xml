@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- mediaController 顶部和底部基础内容 -->
+    <dimen name="media_top_height">117.3dp</dimen>
+    <!-- <dimen name="media_left_offset">10dp</dimen>
+    <dimen name="media_right_offset">10dp</dimen> -->
+    
+    <dimen name="media_toppause_marginLeft">25dp</dimen>
+    <dimen name="media_toppause_marginTop">25dp</dimen>
+    <dimen name="media_title_width">500dp</dimen>
+    <dimen name="media_title_marginLeft">24dp</dimen>
+    <dimen name="media_title_marginTop">18dp</dimen>
+    <dimen name="media_title_textSize">27sp</dimen>
+    
+    <dimen name="media_definition_marginLeft">5dp</dimen>
+    <dimen name="media_definition_marginTop">10dp</dimen>
+    
+    <dimen name="media_clock_width">70dp</dimen>
+    <dimen name="media_clock_height">20dp</dimen>
+    <dimen name="media_clock_paddingLeft">0dp</dimen>
+    <dimen name="media_clock_paddingTop">19dp</dimen>
+    <dimen name="media_clock_marginTop">13dp</dimen>
+    <dimen name="media_clock_marginRight">15dp</dimen>
+    <dimen name="media_clock_textSize">22sp</dimen>
+    
+    <dimen name="media_wifi_height">26dp</dimen>
+    <dimen name="media_wifi_width">26dp</dimen>
+    <dimen name="media_wifi_marginTop">10dp</dimen>
+    <dimen name="media_wifi_marginRight">13.3dp</dimen>
+    
+    <dimen name="media_dolby_width">216dp</dimen>
+    <dimen name="media_dolby_height">26.6dp</dimen>
+    <dimen name="media_dolby_marginRight">13.3dp</dimen>
+    <dimen name="media_dolby_marginTop">9.3dp</dimen>
+    
+    <dimen name="media_control_height">153.3dp</dimen>
+    
+    <dimen name="media_time_textSize">30sp</dimen>
+    <dimen name="media_time_current_marginLeft">30.7dp</dimen>
+    <dimen name="media_time_total_marginRight">30.7dp</dimen>
+    <dimen name="media_time_seek_width">152dp</dimen>
+    <dimen name="media_time_seek_height">53.3dp</dimen>
+    <dimen name="media_time_seek_paddingBottom">4.5dp</dimen>
+    <dimen name="media_time_seek_marginBottom">7dp</dimen>
+    
+    <dimen name="media_seekbar_height">25.33dp</dimen>
+    <dimen name="media_seekbar_marginLeft">12dp</dimen>
+    <dimen name="media_seekbar_marginRight">12dp</dimen>
+    <dimen name="media_seekbar_marginBottom">5dp</dimen>
+    
+    <!-- mediacontroller暂停和加载中内容 -->
+    <dimen name="media_loading_width">300dp</dimen>
+    <dimen name="media_loading_progress_width">36dp</dimen>
+    <dimen name="media_loading_progress_height">36dp</dimen>
+    <dimen name="media_loading_percent_width">60dp</dimen>
+    <dimen name="media_loading_textSize">28sp</dimen>
+    <dimen name="media_loading_textHeight">35dp</dimen>
+    <dimen name="media_loading_error_textHeight">70dp</dimen>
+    <dimen name="media_loading_speed_textSize">22sp</dimen>
+    <dimen name="media_loading_percent_marginRight">5dp</dimen>
+    <dimen name="media_pause_width">186.7dp</dimen>
+    <dimen name="media_pause_height">186.7dp</dimen>
+    <dimen name="media_pause_small_width">120dp</dimen>
+    <dimen name="media_pause_small_height">120dp</dimen>
+    <dimen name="media_adremain_textSize">22sp</dimen>
+    <dimen name="media_adremain_marginRight">24dp</dimen>
+    <dimen name="media_adremain_height">50dp</dimen>
+    <dimen name="media_adremain_textSize_small">17sp</dimen>
+    <dimen name="media_adremain_small_bg_radius">13dp</dimen>
+    <dimen name="media_adremain_width_small">110dp</dimen>
+    <dimen name="media_adremain_height_small">28dp</dimen>
+    <dimen name="media_adremain_marginTop_small">15dp</dimen>
+    <dimen name="media_adremain_marginRight_small">10dp</dimen>
+    
+    <dimen name="media_error_width">400dp</dimen>
+    <dimen name="home_video_error_small_width">75dp</dimen>
+    <dimen name="home_video_error_small_height">75dp</dimen>
+    <dimen name="home_video_error_small_marginBottom">5dp</dimen>
+    <dimen name="home_video_error_big_width">113.3dp</dimen>
+    <dimen name="home_video_error_big_height">113.3dp</dimen>
+    <dimen name="home_video_error_big_marginBottom">10dp</dimen>
+    
+    <dimen name="default_corner">13.33dp</dimen>
+</resources>

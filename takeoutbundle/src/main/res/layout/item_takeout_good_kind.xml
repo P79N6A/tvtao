@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.yunos.tvtaobao.biz.focus_impl.FocusArea xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_8">
+
+    <TextView
+        android:id="@+id/good_kind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_9"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:singleLine="true"
+        android:textColor="#909ca7"
+        android:textSize="@dimen/sp_24" />
+
+    <TextView
+        android:id="@+id/good_kind_select_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:background="@drawable/good_kind_icon_select_count"
+        android:gravity="center"
+        android:minWidth="@dimen/dp_28"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_6"
+        android:paddingBottom="@dimen/dp_0_7"
+        android:text="22"
+        android:textColor="@color/white_ffffffff"
+        android:textSize="@dimen/sp_20"
+
+        />
+
+
+</com.yunos.tvtaobao.biz.focus_impl.FocusArea>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/HomeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jhs_home_category_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:background="@drawable/jhs_bg_home_category_top"
+        android:layout_height="@dimen/dp_177"
+        android:orientation="horizontal"
+		android:gravity="top|center_horizontal">
+
+        <ImageView
+            android:id="@+id/title_icon"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_70"
+            android:src="@drawable/jhs_logo"
+			android:gravity="center"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 
+        <com.yunos.tvtaobao.juhuasuan.util.PagerContainer
+            android:id="@+id/pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+		 -->
+            <FrameLayout
+            	android:id="@+id/viewpager"
+            	android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+            	android:layout_marginTop="@dimen/dp_100"/>
+
+            <LinearLayout
+                android:id="@+id/load_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <com.yunos.tvtaobao.biz.widget.TvTaoBaoProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            
+            <!-- 
+        </com.yunos.tvtaobao.juhuasuan.util.PagerContainer>
+         -->
+    </FrameLayout>
+    
+    <com.yunos.tvtaobao.juhuasuan.homepage.ShadeFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_flowlayout_item"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_48"
+    android:background="@drawable/bg_search_history_item"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:includeFontPadding="false"
+    android:letterSpacing="0.0"
+    android:paddingLeft="@dimen/dp_32"
+    android:paddingRight="@dimen/dp_32"
+    android:textColor="@color/takeout_color_a2aaba"
+    android:textSize="@dimen/sp_24"
+    android:maxEms="11"
+    android:maxLines="1"
+    android:ellipsize="end"/>

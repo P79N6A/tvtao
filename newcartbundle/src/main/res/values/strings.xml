@@ -1,0 +1,33 @@
+<resources>
+    <string name="newcart_submit_error_no_shop">请选择商品后再结算</string>
+    <string name="newcart_submit_error_goods_too_much">购物车最多只支持%1$d个宝贝一起支付哦</string>
+    <string name="newcart_submit_error_tv_not_support">选中商品仅支持手机扫码购买</string>
+    <!-- 购物车列表页面 -->
+    <string name="newcart_title">购物车（%1$d）</string>
+    <string name="newcart_hint_text_checked_all">店铺</string>
+    <string name="newcart_text_cancel_checked">取消</string>
+    <string name="newcart_text_checked">选择</string>
+    <string name="newcart_delete_all_invalid_shop">是否确定删除全部无效商品？</string>
+    <string name="newcart_delete_shop">是否确定删除商品？</string>
+    <string name="newcart_update_quantity_fail">更新商品数量失败</string>
+    <string name="newcart_only_support">该商品不能和已选商品合并下单</string>
+
+    <string name="new_shop_cart_item_isPreBuy">该商品还未开团</string>
+
+    <string name="new_shop_cart_item_isPreSell">该商品还未开售</string>
+    <!--sku-->
+    <string name="new_shop_change_sku_sucess">完成修改</string>
+    <string name="new_shop_add_cart_sucess">成功加入购物车</string>
+    <string name="new_shop_choose_product_info">请完整选择宝贝信息</string>
+    <string name="new_shop_choose_product_info_again">请重新选择商品规格</string>
+    <string name="new_shop_product_stockout">此选项宝贝缺货</string>
+    <string name="new_shop_sku_num_exceed_kucun">超出库存数量了</string>
+    <string name="new_shop_sku_num_exceed_limit">超出限购数量了</string>
+    <string name="new_shop_sku_num_exceed_minimum">宝贝不能再减少啦</string>
+
+    <!--找相似-->
+    <string name="new_shop_cart_activity_findsame">找相似</string>
+    <string name="new_shop_cart_sku_presale">&#165;&#160;</string>
+    <string name="new_shop_cart_item_price">¥&#160;%s</string>
+
+</resources>

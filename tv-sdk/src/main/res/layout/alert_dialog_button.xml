@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tv.app.widget.Dialog.AlertDialogFocusButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AlertDialogButton">
+</com.yunos.tv.app.widget.Dialog.AlertDialogFocusButton>

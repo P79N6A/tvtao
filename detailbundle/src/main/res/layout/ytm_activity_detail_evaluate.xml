@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.detailbundle.view.DetailFocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_evaluate_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detail_shop_cart_bg"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal" >
+
+    <com.yunos.tvtaobao.detailbundle.view.InnerGroupFocusRelativeLayout
+        android:id="@+id/detail_evaluate_layout"
+        android:layout_width="@dimen/dp_650"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:paddingBottom="@dimen/dp_46"
+        android:paddingLeft="@dimen/dp_52"
+        android:paddingTop="@dimen/dp_50"
+        android:visibility="visible" >
+
+        <!-- 商品评价， 文案“评价” -->
+
+        <com.yunos.tv.app.widget.focus.FocusTextView
+            android:id="@+id/detail_goods_evaluate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/dp_110"
+            android:text="@string/ytsdk_detail_evaluate_name"
+            android:textColor="@color/ytm_white"
+            android:textSize="@dimen/sp_32" />
+
+        <!-- 评价的TAB -->
+
+        <com.yunos.tvtaobao.detailbundle.view.DetailCommentTabView
+            android:id="@+id/evaluate_tab"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/detail_goods_evaluate_title"
+            android:layout_marginTop="@dimen/dp_12"
+            android:focusable="true" >
+
+            <include
+                android:id="@+id/ytm_detail_goods_evalute_tab_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_88"
+                android:layout_alignParentTop="true"
+                layout="@layout/ytm_detail_goods_evalute_tab"
+                android:focusable="true"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/ytm_detail_goods_evalute_tab_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_88"
+                android:layout_below="@id/ytm_detail_goods_evalute_tab_layout1"
+                layout="@layout/ytm_detail_goods_evalute_tab"
+                android:focusable="true"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/ytm_detail_goods_evalute_tab_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_88"
+                android:layout_below="@id/ytm_detail_goods_evalute_tab_layout2"
+                layout="@layout/ytm_detail_goods_evalute_tab"
+                android:focusable="true"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/ytm_detail_goods_evalute_tab_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_88"
+                android:layout_below="@id/ytm_detail_goods_evalute_tab_layout3"
+                layout="@layout/ytm_detail_goods_evalute_tab"
+                android:focusable="true"
+                android:visibility="gone" />
+        </com.yunos.tvtaobao.detailbundle.view.DetailCommentTabView>
+
+        <!-- 评价内容 -->
+
+        <com.yunos.tvtaobao.detailbundle.view.InnerFocusFrameLayout
+            android:id="@+id/evaluate_context_framelayout"
+            android:nextFocusLeft="@+id/evaluate_tab"
+            android:layout_width="@dimen/dp_497"
+            android:layout_height="@dimen/dp_585"
+            android:layout_below="@id/detail_goods_evaluate_title"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_toRightOf="@id/evaluate_tab"
+            android:background="@color/ytm_white"
+            android:focusable="true" >
+        </com.yunos.tvtaobao.detailbundle.view.InnerFocusFrameLayout>
+    </com.yunos.tvtaobao.detailbundle.view.InnerGroupFocusRelativeLayout>
+
+</com.yunos.tvtaobao.detailbundle.view.DetailFocusPositionManager>

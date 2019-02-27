@@ -1,0 +1,48 @@
+<manifest package="com.yunos.tvtaobao.businessview"
+
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <permission android:name="com.yunos.taobaotv.update.permission.updateservice" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup"
+        >
+        <activity
+            android:name="com.yunos.tvtaobao.biz.activity.UpdateActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="update" android:host="yunos_tvtaobao_update"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.yunos.tvtaobao.biz.activity.NotForceUpdateActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="not_force_update" android:host="yunos_tvtaobao_not_force_update"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.yunos.tvtaobao.biz.service.UpdateService"
+            android:exported="true"
+            android:permission="com.yunos.taobaotv.update.permission.updateservice" >
+            <intent-filter>
+                <action android:name="com.yunos.taobaotv.update.updateservice.IAppUpdate" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

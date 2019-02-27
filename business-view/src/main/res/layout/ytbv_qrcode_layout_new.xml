@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qrcode_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e60e1215">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_480"
+        android:layout_height="@dimen/dp_620"
+        android:layout_centerInParent="true"
+        android:background="@drawable/payment_background_qr_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/qrcode_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:gravity="center"
+            android:lines="1"
+            android:text="该商品仅支持手机扫码购买"
+            android:textAlignment="center"
+            android:textColor="@color/payment_color_black"
+            android:textSize="@dimen/sp_30" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_400"
+            android:layout_height="@dimen/dp_98"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:src="@drawable/ytbv_qr_support_apps" />
+        <!--<TextView-->
+        <!--android:id="@+id/message2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="【支付宝】扫码开通快捷支付"-->
+        <!--android:textColor="@color/payment_color_black"-->
+        <!--android:textSize="@dimen/sp_26" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/message3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="【支付宝】全程担保交易安全"-->
+        <!--android:textColor="@color/payment_color_black"-->
+        <!--android:textSize="@dimen/sp_26" />-->
+
+        <ImageView
+            android:id="@+id/qrcode_image"
+            android:layout_width="@dimen/dp_400"
+            android:layout_height="@dimen/dp_400"
+            android:background="@android:color/white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

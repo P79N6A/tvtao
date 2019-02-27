@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.flashsale.view.GoodsItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_414"
+    android:layout_height="@dimen/dp_228"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/fs_fl_stock_image"
+        android:layout_width="@dimen/dp_228"
+        android:layout_height="@dimen/dp_228" >
+
+        <ImageView
+            android:id="@+id/fs_iv_stock_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_default"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/fs_iv_stock_tip"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_marginTop="@dimen/dp_3"
+            android:paddingBottom="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:background="@drawable/fs_label"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/fs_iv_qiangguang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_187"
+        android:layout_height="@dimen/dp_228"
+        android:background="#66FFFFFF"
+        android:paddingLeft="@dimen/dp_10"
+        
+        >
+
+        <TextView
+            android:id="@+id/fs_tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dp_18"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#FF010000"
+            android:textSize="@dimen/sp_16" 
+            android:layout_marginRight="@dimen/dp_10"
+            />
+
+        <View
+            android:id="@+id/fs_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/fs_tv_desc"
+            android:layout_marginTop="@dimen/dp_8"
+          />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_70"
+            android:layout_marginRight="@dimen/dp_10" >
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp_f4"
+                android:id="@+id/fs_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#FF930034"
+                android:textSize="@dimen/sp_28" />
+
+            <TextView
+                android:id="@+id/fs_tv_saleprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_f8"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#5a3835"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_rebate_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/dp_131"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/img_rebate_tag"
+                android:layout_width="@dimen/dp_73"
+                android:layout_height="@dimen/dp_16"
+                android:ellipsize="end"
+                android:scaleType="fitXY"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/dp_0_7"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/txt_rebate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9c0b39"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <!--买就返-->
+
+        <ImageView
+            android:id="@+id/img_buy_rebate"
+            android:layout_marginTop="@dimen/dp_152"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_16"
+            android:src="@drawable/fs_rebate_coupon_list"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/dp_10" >
+
+            <ProgressBar
+                android:id="@+id/fs_pb_percent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/dp_122"
+                android:layout_height="@dimen/dp_5"
+                android:max="100"
+                android:indeterminate="false"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/dp_4"/>
+
+            <TextView
+                android:id="@+id/fs_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textColor="#52335c"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <TextView
+                android:layout_marginBottom="1dp"
+                android:id="@+id/fs_tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textColor="#52335c"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.yunos.tvtaobao.flashsale.view.GoodsItemView>

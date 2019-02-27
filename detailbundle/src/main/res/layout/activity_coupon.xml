@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_cart_e60e1215"
+    tools:context="com.yunos.tvtaobao.detailbundle.evaluate.CouponActivity">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_61"
+        android:focusable="false"
+        android:src="@drawable/coupon_top_title_icon"/>
+
+    <com.yunos.tvtaobao.detailbundle.evaluate.TvRecyclerView
+        android:id="@+id/rv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_62"
+        android:descendantFocusability="afterDescendants"
+        android:layout_below="@+id/iv_head">
+    </com.yunos.tvtaobao.detailbundle.evaluate.TvRecyclerView>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="32sp"
+        android:textColor="#ffffff"
+        android:text="店家还未发布优惠券哦～"/>
+
+</RelativeLayout>

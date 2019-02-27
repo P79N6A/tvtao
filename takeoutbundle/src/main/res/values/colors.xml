@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_e7f3ff">#e7f3ff</color>
+    <color name="color_d8081019">#d8081019</color>
+
+    <color name="color_202020">#202020</color>
+    <color name="color_8c94a3">#8c94a3</color>
+    <color name="color_606060">#606060</color>
+
+    <!-- common color -->
+    <color name="to_ol_normal_background">#525f77</color>
+
+    <color name="color_ff6000">#ff6000</color>
+    <color name="color_1b2530">#1b2530</color>
+    <color name="color_a2aaba">#a2aaba</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+    <color name="color_99202020">#99202020</color>
+    <color name="color_84202020">#d7202020</color>
+
+    <!-- 文字颜色 -->
+    <color name="transparent_grey_33">#338eaade</color>
+    <color name="color_cc000000">#cc000000</color>
+
+
+    <color name="color_4cffffff">#4cffffff</color>
+    <color name="gray_a2aaba">#a2aaba</color>
+    <color name="color_80ffffff">#80ffffff</color>
+
+    <color name="white_ffffffff">#ffffffff</color>
+    <color name="white_e7f3ff">#e7f3ff</color>
+    <color name="white_909ca7">#909ca7</color>
+    <color name="red_ff6000">#ff6000</color>
+    <color name="color_ffbe2d">#ffbe2d</color>
+    <color name="color_ff7c1d">#ff7c1d</color>
+    <color name="color_b11607">#80b11607</color>
+    <color name="color_4b5b75">#804b5b75</color>
+
+    <color name="color_e4e4e4">#e4e4e4</color>
+    <color name="color_3363708b">#3363708b</color>
+    <color name="color_ff6b00">#ff6b00</color>
+    <color name="color_ff4704">#ff4704</color>
+
+
+    <color name="to_highlight_color">#ff6000</color>
+
+
+    <color name="white_ededed">#ededed</color>
+    <color name="white_8396ae">#8396ae</color>
+    <color name="white_808396ae">#808396ae</color>
+
+</resources>

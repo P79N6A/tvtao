@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/sku_prop_item_name"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_67"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/sku_prop_item_layout"
+        android:layout_width="@dimen/dp_450"
+        android:layout_height="@dimen/dp_67"
+        android:layout_marginLeft="@dimen/dp_120"
+        android:background="@drawable/ytm_sku_select_bar" >
+
+        <com.yunos.tvtaobao.biz.widget.SkuView
+            android:id="@+id/sku_prop_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ytm_sku_prop_mask_left"
+            android:focusable="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ytm_sku_prop_mask_right"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sku_buy_num_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_70"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="@dimen/dp_194"
+                android:layout_height="@dimen/dp_67"
+                android:background="@drawable/ytm_sku_buy_num_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/sku_buy_num_left_array"
+                    android:layout_width="@dimen/dp_61"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/ytm_sku_buy_num_left_normal" />
+
+                <TextView
+                    android:id="@+id/sku_buy_num"
+                    android:layout_width="@dimen/dp_69"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_24" />
+
+                <ImageView
+                    android:id="@+id/sku_buy_num_right_array"
+                    android:layout_width="@dimen/dp_64"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/ytm_sku_buy_num_right_normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sku_unit_buy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:textSize="@dimen/sp_20"
+                android:layout_gravity="center_vertical"
+                android:textColor="#b0afaf"
+                android:text="@string/ytm_sku_unit_buy_text"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sku_kucun_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ytm_sku_kucun_text"
+            android:textColor="#b0afaf"
+            android:textSize="@dimen/sp_24" />
+    </LinearLayout>
+
+</RelativeLayout>

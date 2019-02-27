@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+def merge = getEnvValue("merge", "false")
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            if (merge == "true")
+                res.srcDirs = ['../newcartbundle/src/main/res',
+                               '../tradelinkbundle/src/main/res',
+                               "../mytaobaobundle/src/main/res",
+                               "../detailbundle/src/main/res",
+                               "../voicebundle/src/main/res",
+                               "../livebundle/src/main/res",
+                               "../takeoutbundle/src/main/res",
+                               "../answerbundle/src/main/res",
+                               "../goodlistbundle/src/main/res",
+                               "../menubundle/src/main/res",
+                               "../juhuasuanbundle/src/main/res",
+                               "../flashsalebundle/src/main/res",
+                               "../zhuantibundle/src/main/res",
+                               "../tvshoppingbundle/src/main/res",
+                               "../cartbagbundle/src/main/res",
+                               "../searchbundle/src/main/res",
+                               "../commonbundle/src/main/res",
+                ]
+        }
+    }
+}
+
+dependencies {
+    compile project(":business-view")
+    compile rootProject.ext.dependencies.constraintLayout
+    compile rootProject.ext.dependencies.appcompatV7
+    testCompile 'junit:junit:4.12'
+}

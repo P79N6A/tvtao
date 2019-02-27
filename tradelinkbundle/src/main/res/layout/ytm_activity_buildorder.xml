@@ -1,0 +1,29 @@
+<com.yunos.tv.app.widget.focus.FocusPositionManager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buildorder_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff23222c"
+    >
+
+    <!-- 确认下单的左侧商品信息 -->
+    <com.yunos.tvtaobao.tradelink.buildorder.view.FocusedRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+
+        <include
+            android:id="@+id/ytm_buildorder_info_layout"
+            layout="@layout/ytm_buildorder_info"
+            android:visibility="gone"/>
+
+        <!-- 确认下单的右侧购买信息 -->
+
+        <include
+            android:id="@+id/ytm_buildorder_buyorder_layout"
+            layout="@layout/ytm_buildorder_buyorder"
+            android:visibility="gone" />
+    </com.yunos.tvtaobao.tradelink.buildorder.view.FocusedRelativeLayout>
+
+
+</com.yunos.tv.app.widget.focus.FocusPositionManager>

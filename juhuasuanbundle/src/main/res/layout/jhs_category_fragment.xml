@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.tvtaobao.juhuasuan.activity.Category.CategoryFragmentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.yunos.tvtaobao.juhuasuan.activity.Category.CategoryViewPager
+        android:id="@+id/goods_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:soundEffectsEnabled="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/load_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.yunos.tvtaobao.biz.widget.TvTaoBaoProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/no_goods"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <ImageView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/jhs_no_goods" />
+        
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/jhs_brand_list_null"
+            android:textSize="@dimen/sp_24"
+            android:textColor="@color/no_goods_text"
+            android:layout_marginTop="@dimen/dp_32" />
+            
+    </LinearLayout>
+
+</com.yunos.tvtaobao.juhuasuan.activity.Category.CategoryFragmentLayout>

@@ -1,0 +1,15 @@
+<manifest package="com.yunos.tvtaobao.goodlist"
+
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup"
+        >
+        <activity android:name="com.yunos.tvtaobao.goodlist.activity.GoodListActivity"/>
+        <activity android:name=".activity.ShopActivity"/>
+    </application>
+
+</manifest>

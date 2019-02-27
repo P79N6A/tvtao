@@ -1,0 +1,98 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:update="http://schemas.android.com/apk/res-auto">
+
+    <style name="bs_up_myFrostedGlassDialog" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:backgroundDimAmount">0.8</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="bs_up_myButton">
+        <item name="android:layout_width">@dimen/bs_up_focus_width</item>
+        <item name="android:layout_height">@dimen/bs_up_focus_height</item>
+        <item name="android:focusable">true</item>
+        <item name="textSize">@dimen/bs_up_button_text_font</item>
+    </style>
+
+    <style name="translucent" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="bs_up_no_blur_myButton">
+        <item name="android:layout_width">@dimen/bs_up_no_blur_button_width</item>
+        <item name="android:layout_height">@dimen/bs_up_no_blur_button_height</item>
+        <item name="android:focusable">true</item>
+        <item name="textSize">@dimen/bs_up_no_blur_button_text_font</item>
+        <item name="isNoBlur">true</item>
+    </style>
+
+    <style name="bs_up_myProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/bs_up_progressbar</item>
+        <item name="android:minHeight">17dp</item>
+        <item name="android:maxHeight">17dp</item>
+    </style>
+
+    <style name="update_top_Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--是否无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <!--是否浮现在activity之上-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 去除黑色边框的关键设置项 -->
+    </style>
+
+    <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
+    </style>
+
+    <style name="bs_up_dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/bs_up_dialog_enter</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/bs_up_dialog_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+
+    <!--圆角Dialog-->
+    <style name="RoundCornerDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AlphaAnimDialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+
+    <!--圆角Dialog-->
+    <style name="NoBackgroundRoundRoundCornerDialog" parent="@style/RoundCornerDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AlphaAnimDialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="DialogNoTitleStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- common text size -->
+    <dimen name="tui_text_size_1">16sp</dimen>
+    <dimen name="tui_text_size_2">24sp</dimen>
+    <dimen name="tui_text_size_3">32sp</dimen>
+    <dimen name="tui_text_size_4">28sp</dimen>
+    <dimen name="tui_text_size_5">18sp</dimen>
+    
+        <!-- alert dialog layout -->
+    <dimen name="alert_dialog_top_margin_top">70dip</dimen>
+    <dimen name="alert_dialog_top_margin_bottom">11dip</dimen>
+    <dimen name="alert_dialog_btn_margin_top_1">48dip</dimen>
+    <dimen name="alert_dialog_btn_margin_top_2">29dip</dimen>
+    <dimen name="alert_dialog_btn_width">375dip</dimen>
+    <dimen name="alert_dialog_btn_height">84dip</dimen>
+    <dimen name="alert_dialog_btn_top_padding">27dip</dimen>
+    <dimen name="alert_dialog_back_margin_left">6dip</dimen>
+    <dimen name="alert_dialog_btn_container_height">336dip</dimen>
+    <dimen name="alert_dialog_btn_container_padding_t">40.67dip</dimen>
+    <dimen name="alert_dialog_btn_container_padding_b">60dip</dimen>
+    
+    <dimen name="alert_dialog_title_text_size">45sp</dimen>
+    <dimen name="alert_dialog_msg_text_size">21sp</dimen>
+    <dimen name="alert_dialog_msg_btn_text_size">26.7sp</dimen>
+    <dimen name="alert_dialog_msg_back_text_size">26.7sp</dimen>
+    
+    
+    <dimen name="alert_dialog_padding_5_">-5dp</dimen>
+    <dimen name="alert_dialog_padding_1">1dp</dimen>
+    <dimen name="alert_dialog_padding_2">2dp</dimen>
+    <dimen name="alert_dialog_padding_3">3dp</dimen>
+    <dimen name="alert_dialog_padding_4">4dp</dimen>
+    <dimen name="alert_dialog_padding_5">5dp</dimen>
+    <dimen name="alert_dialog_padding_6">6dp</dimen>
+    <dimen name="alert_dialog_padding_8">8dp</dimen>
+    <dimen name="alert_dialog_padding_9">9dp</dimen>
+    <dimen name="alert_dialog_padding_10">10dp</dimen>
+    <dimen name="alert_dialog_padding_12">12dp</dimen>
+    <dimen name="alert_dialog_padding_14">14dp</dimen>
+    
+    <dimen name="alert_dialog_parent_panel_minWidth">600dp</dimen>
+    <dimen name="alert_dialog_top_panel_minWidth">54dp</dimen>
+    <dimen name="alert_dialog_content_panel_minHeight">210dp</dimen>
+    
+    <dimen name="alert_dialog_leftSpacer_height">10dp</dimen>
+    <dimen name="alert_dialog_button_panel_minWidth">240dp</dimen>
+    <dimen name="alert_dialog_button_panel_maxWidth">300dp</dimen>
+    
+    	
+	<dimen name="key_height">50.0dip</dimen>
+	
+	<!-- new dialog begin~ -->
+    <dimen name="tui_text_size_30">20sp</dimen>
+    <dimen name="tui_text_size_65">40sp</dimen>
+    <dimen name="tui_text_size_40">26.7sp</dimen>
+    
+    <dimen name="tui_text_size_16_sp">16sp</dimen>
+    <dimen name="tui_text_size_24_sp">24sp</dimen>
+    <dimen name="tui_text_size_28_sp">28sp</dimen>
+    
+    <!-- alert dialog  -->
+    <dimen name="tui_alert_list_padding">40dp</dimen>
+    <dimen name="tui_alert_list_bottom_extend_padding">20dp</dimen>
+    <dimen name="tui_alert_list_min_height">80dp</dimen>
+    <dimen name="tui_alert_list_min_width">400dp</dimen>
+    <dimen name="tui_alert_margin_top">120dp</dimen>
+    <dimen name="tui_dialog_alert_min_width">428dp</dimen>
+    <dimen name="tui_dialog_alert_setnetwork_min_width">224dp</dimen>
+    <dimen name="tui_alert_list_setnetwork_min_height">60dp</dimen>
+    <dimen name="tui_alert_list_margin_top">56dp</dimen>
+    <dimen name="tui_alert_list_margin_top_backhint">28dp</dimen>
+    <dimen name="tui_alert_list_height">530dp</dimen>
+    
+    
+
+</resources>

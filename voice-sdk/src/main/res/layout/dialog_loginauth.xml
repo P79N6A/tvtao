@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_450"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_voice_card_mark"
+        android:focusable="false" />
+    
+    <ImageView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_128"
+        android:layout_marginBottom="@dimen/dp_112"
+        android:src="@drawable/item_zhifubao"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_32"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_228"
+        android:layout_marginBottom="@dimen/dp_156"
+        android:textColor="#ffffff"
+        android:lineSpacingExtra="0sp"
+        android:text="亲，请打开【支付宝】扫码付款"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_228"
+        android:layout_marginBottom="@dimen/dp_116"
+        android:textColor="#b2b5bdcc"
+        android:lineSpacingExtra="0sp"
+        android:text="开通电视快捷支付，500元以下无需扫码，即可支付" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_332"
+        android:layout_height="@dimen/dp_332"
+        android:background="@drawable/bg_qrcode"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_176"
+        android:layout_marginBottom="@dimen/dp_32"/>
+</RelativeLayout>

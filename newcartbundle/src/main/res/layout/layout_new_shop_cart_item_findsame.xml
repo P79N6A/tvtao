@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_find_same"
+    android:layout_width="@dimen/dp_284"
+    android:layout_height="@dimen/dp_398"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_6"
+    android:layout_marginRight="@dimen/dp_6"
+    android:layout_marginTop="@dimen/dp_10"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_findsame_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/good_guess_like_focus_select"
+        android:elevation="@dimen/dp_7"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_4"
+        android:background="@color/ytm_white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_item_des"
+            android:layout_width="@dimen/dp_278"
+            android:layout_height="@dimen/dp_278"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_shop_cart_img_default" />
+
+        <TextView
+            android:id="@+id/tv_item_paid_num"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_28"
+            android:layout_above="@+id/tv_item_goods_des"
+            android:background="@drawable/bg_new_shop_card_find_same"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:text="118人付款"
+            android:textColor="@color/ytm_black"
+            android:textSize="@dimen/sp_20"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_item_goods_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_info"
+            android:background="@color/ytm_white"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_1"
+            android:paddingTop="@dimen/dp_6"
+            android:text="短袖蕾丝娃娃领雪纺针衫..."
+            android:lineSpacingExtra="0sp"
+            android:textColor="@color/ytm_black"
+            android:textSize="@dimen/sp_22" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp_0_7"-->
+            <!--android:layout_above="@+id/layout_info"-->
+            <!--android:paddingLeft="@dimen/dp_8"-->
+            <!--android:paddingRight="@dimen/dp_8"-->
+            <!--android:src="@color/ytm_tmall_red"-->
+            <!--android:visibility="gone" />-->
+
+
+        <LinearLayout
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_2"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_goods_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_36"
+                android:background="@color/ytm_white"
+                android:textColor="#ff3300"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/sp_32"
+                android:text="￥218" />
+
+            <RelativeLayout
+                android:id="@+id/layout_rebate_findsame"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_2"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_rebate_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_24"
+                    android:maxHeight="@dimen/dp_24"
+                    android:adjustViewBounds="true" />
+
+                <TextView
+                    android:id="@+id/tv_rebate_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/ytm_white"
+                    android:layout_toRightOf="@+id/iv_rebate_icon"
+                    android:textColor="#ff3333"
+                    android:textSize="@dimen/sp_18"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="0sp"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/goodlist_grid_item_return_red_packet"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_24"
+                android:lineSpacingExtra="0sp"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:src="@drawable/newcart_rebate_coupon_list" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

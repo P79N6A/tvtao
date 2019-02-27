@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.alibaba.gradle.solib'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    //debugVersion
+//    compile('com.yunos.blitz:blitzsdk-standalone:2.0.1.201706011135-SNAPSHOT@aar')
+//            {
+//                exclude(group: 'com.taobao.android', module: 'securityguard')
+//                exclude(group: 'com.taobao.android', module: 'securityjni')
+//                exclude(group: 'com.taobao.android', module: 'securityguard-so')
+//                exclude(group: 'com.google.android', module: 'support-v4')
+//                exclude(group: 'com.google.android', module: 'annotations')
+//            }
+
+//    compile 'com.yunos.tv.dmode.alitvsdk:dmodealitvsdk-taobao:1.0.5@aar'
+//    compile 'com.yunos.tv.dmode.paycore:dmodepaycore-taobao:1.0.5@aar'
+
+//    compile 'com.yunos.tv.dmode.accountsdk:dmodeaccountsdk-taobao:1.0.5@aar'
+//    compile 'com.yunos.tv.dmode.account:dmodeaccount-taobao:1.0.6@aar'
+    compile 'com.yunos.tv.dmode.imageload:dmodeimageload-taobao:1.0.4@aar'
+
+//    compile 'com.yunos.tv.dmode.uuid:dmodeuuid-taobao:1.0.5@aar'
+    compile 'com.yunos.tvtaobao.uuid:ott-uuid:1.2.37'
+//    compile('com.yunos.tv.dmode.tyid:dmodetyid-taobao-v5:1.0.5-SNAPSHOT@aar') {
+//        exclude(group: 'com.google.zxing', module: 'zxing')
+//    }
+
+//    compile ('com.yunos.blitz:TvBlitzSdk:1.1.5.017') {
+//        exclude(group: 'com.yunos.tvtaobao', module: 'adoplayer_from_service')
+//    }
+//    compile ('com.yunos.blitz:blitzsdk_so:1.1.5.017@solib')
+
+//    compile 'com.yunos.tv.dmode.imageload:dmodeimageload-taobao:1.0.4@aar'
+//    compile 'com.yunos.tv.dmode.tyid:dmodetyid-taobao:1.0.5@aar'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile rootProject.ext.dependencies.appcompatV7
+    testCompile 'junit:junit:4.12'
+}
